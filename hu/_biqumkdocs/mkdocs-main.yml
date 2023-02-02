@@ -107,40 +107,20 @@ extra:
 #     - Example_Configs.md
 
 nav:
-  - Overview.md
-  - Features.md
-  - FAQ.md
-  - Releases.md
-  - Config_Changes.md
-  - Contact.md
   - Product_line1(core_board):
-    - Installation.md
-    - Configuration Reference:
-      - Config_Reference.md
-      - Rotation_Distance.md
-    - Config_checks.md
-    - Bed Level:
-      - Bed_Level.md
-      - Delta_Calibrate.md
-      - Probe_Calibrate.md
-      - BLTouch.md
-      - Manual_Level.md
-      - Bed_Mesh.md
-      - Endstop_Phase.md
-    - Resonance Compensation:
-      - Resonance_Compensation.md
-      - Measuring_Resonances.md
-    - Pressure_Advance.md
-    - G-Codes.md
-    - Command templates:
-      - Command_Templates.md
-      - Status_Reference.md
-    - TMC_Drivers.md
-    - Multi_MCU_Homing.md
-    - Slicers.md
-    - Skew_Correction.md
-    - Exclude_Object.md
-    - Using_PWM_Tools.md
+    - CB1:
+      - Document:
+        - CB1_Info.md
+      # - Tools and installation package download:
+      #   - Write_OS.md
+  #     - Software:
+  #       - SSH.md
+  #       - OS_Settings.md
+  #     - FAQ:
+  # - Product_line2(Manta):
+  #   - Code_Overview.md
+  # - Technical Tutorials:
+  #   - Example_Configs.md
   - Developer Documentation:
     - Code_Overview.md
     - Kinematics.md
