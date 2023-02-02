@@ -97,7 +97,7 @@ extra:
 #         - CB1_Info.md
 #       - Tools and installation package download:
 #         - Write_OS.md
-#       - Software:
+#       - Template dei comandi:
 #         - SSH.md
 #         - OS_Settings.md
 #       - FAQ:
@@ -107,40 +107,20 @@ extra:
 #     - Example_Configs.md
 
 nav:
-  - Product_line1(core_board):
+  - Product_line1(Core_board):
     - Riferimenti di configurazione:
       - Livello del piatto:
         - CB1_Info.md
-      # - Tools and installation package download:
-      #   - Write_OS.md
-  #     - Software:
-  #       - SSH.md
-  #       - OS_Settings.md
+      - Compensazione della risonanza:
+        - Write_OS.md
+      - Template dei comandi:
+        - SSH.md
+        - OS_Settings.md
   #     - FAQ:
   # - Product_line2(Manta):
   #   - Code_Overview.md
   # - Technical Tutorials:
   #   - Example_Configs.md
-  - Compensazione della risonanza:
-    - Code_Overview.md
-    - Kinematics.md
-    - Protocol.md
-    - API_Server.md
-    - MCU_Commands.md
-    - CANBUS_protocol.md
-    - Debugging.md
-    - Benchmarks.md
-    - CONTRIBUTING.md
-    - Packaging.md
-  - Template dei comandi:
-    - Example_Configs.md
-    - SDCard_Updates.md
-    - RPi_microcontroller.md
-    - Beaglebone.md
-    - Bootloaders.md
-    - CANBUS.md
-    - TSL1401CL_Filament_Width_Sensor.md
-    - Hall_Filament_Width_Sensor.md
-  - Sponsors.md
+
 
 

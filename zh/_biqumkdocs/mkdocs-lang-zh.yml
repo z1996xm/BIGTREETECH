@@ -97,7 +97,7 @@ extra:
 #         - CB1_Info.md
 #       - Tools and installation package download:
 #         - Write_OS.md
-#       - Software:
+#       - 命令模板:
 #         - SSH.md
 #         - OS_Settings.md
 #       - FAQ:
@@ -107,40 +107,20 @@ extra:
 #     - Example_Configs.md
 
 nav:
-  - Product_line1(core_board):
+  - Product_line1(Core_board):
     - 配置参考:
       - 打印床调平:
         - CB1_Info.md
-      # - Tools and installation package download:
-      #   - Write_OS.md
-  #     - Software:
-  #       - SSH.md
-  #       - OS_Settings.md
+      - 共振补偿:
+        - Write_OS.md
+      - 命令模板:
+        - SSH.md
+        - OS_Settings.md
   #     - FAQ:
   # - Product_line2(Manta):
   #   - Code_Overview.md
   # - Technical Tutorials:
   #   - Example_Configs.md
-  - 共振补偿:
-    - Code_Overview.md
-    - Kinematics.md
-    - Protocol.md
-    - API_Server.md
-    - MCU_Commands.md
-    - CANBUS_protocol.md
-    - Debugging.md
-    - Benchmarks.md
-    - CONTRIBUTING.md
-    - Packaging.md
-  - 命令模板:
-    - Example_Configs.md
-    - SDCard_Updates.md
-    - RPi_microcontroller.md
-    - Beaglebone.md
-    - Bootloaders.md
-    - CANBUS.md
-    - TSL1401CL_Filament_Width_Sensor.md
-    - Hall_Filament_Width_Sensor.md
-  - Sponsors.md
+
 
 
