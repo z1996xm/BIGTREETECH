@@ -90,22 +90,6 @@ extra:
     # Alternate language links automatically added here
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
-# nav:
-#   - Product_line1(Core board):
-#     - 配置参考:
-#       - 打印床调平:
-#         - CB1_Info.md
-#       - Tools and installation package download:
-#         - Write_OS.md
-#       - 命令模板:
-#         - SSH.md
-#         - OS_Settings.md
-#       - FAQ:
-#   - Product_line2(Manta):
-#     - Code_Overview.md
-#   - 设备特定文档:
-#     - Example_Configs.md
-
 nav:
   - Product_line1(Core_board):
     - 配置参考:
@@ -117,7 +101,6 @@ nav:
         - SSH.md
         - OS_Settings.md
       # - FAQ:
-      #   - FAQ.md
   - Product_line2(Manta):
     - Code_Overview.md
   - 设备特定文档:

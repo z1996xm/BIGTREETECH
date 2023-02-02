@@ -75,22 +75,6 @@ extra:
     # Alternate language links automatically added here
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
-# nav:
-#   - Product_line1(Core board):
-#     - CB1:
-#       - Document:
-#         - CB1_Info.md
-#       - Tools and installation package download:
-#         - Write_OS.md
-#       - Software:
-#         - SSH.md
-#         - OS_Settings.md
-#       - FAQ:
-#   - Product_line2(Manta):
-#     - Code_Overview.md
-#   - Technical Tutorials:
-#     - Example_Configs.md
-
 nav:
   - Product_line1(Core_board):
     - CB1:
@@ -102,7 +86,6 @@ nav:
         - SSH.md
         - OS_Settings.md
       # - FAQ:
-      #   - FAQ.md
   - Product_line2(Manta):
     - Code_Overview.md
   - Technical Tutorials:

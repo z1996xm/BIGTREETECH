@@ -90,22 +90,6 @@ extra:
     # Alternate language links automatically added here
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
-# nav:
-#   - Product_line1(Core board):
-#     - Riferimenti di configurazione:
-#       - Livello del piatto:
-#         - CB1_Info.md
-#       - Tools and installation package download:
-#         - Write_OS.md
-#       - Template dei comandi:
-#         - SSH.md
-#         - OS_Settings.md
-#       - FAQ:
-#   - Product_line2(Manta):
-#     - Code_Overview.md
-#   - Documenti specifici del dispositivo:
-#     - Example_Configs.md
-
 nav:
   - Product_line1(Core_board):
     - Riferimenti di configurazione:
@@ -117,7 +101,6 @@ nav:
         - SSH.md
         - OS_Settings.md
       # - FAQ:
-      #   - FAQ.md
   - Product_line2(Manta):
     - Code_Overview.md
   - Documenti specifici del dispositivo:
