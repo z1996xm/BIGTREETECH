@@ -30,12 +30,10 @@ while IFS="," read dirname langsite langdesc langsearch; do
   # read toc
   title=$(sed -n '1p' ${locale_dir}/Navigation.md)
   product_line1=$(sed -n '3p' ${locale_dir}/Navigation.md)
-  configuration_reference=$(sed -n '5p' ${locale_dir}/Navigation.md)
-  bed_level=$(sed -n '7p' ${locale_dir}/Navigation.md)
-  resonance_compensation=$(sed -n '9p' ${locale_dir}/Navigation.md)
-  command_template=$(sed -n '11p' ${locale_dir}/Navigation.md)
-  developer_documentation=$(sed -n '13p' ${locale_dir}/Navigation.md)
-  device_specific_documents=$(sed -n '15p' ${locale_dir}/Navigation.md)
+  cb1=$(sed -n '5p' ${locale_dir}/Navigation.md)
+  document=$(sed -n '7p' ${locale_dir}/Navigation.md)
+  developer_documentation=$(sed -n '9p' ${locale_dir}/Navigation.md)
+  device_specific_documents=$(sed -n '11p' ${locale_dir}/Navigation.md)
 
   # product_line1(core_board)=$(sed -n '1p' ${locale_dir}/Navigation.md)
   # product_line2(Manta_line)=$(sed -n '3p' ${locale_dir}/Navigation.md)
@@ -72,12 +70,10 @@ while IFS="," read dirname langsite langdesc langsearch; do
   sed -i "s%^  language: en$%  language: ${langsite}%" "${new_mkdocs_file}"
 
   echo "replace toc"
-  sed -i "s%Klipper documentation$%${title}%" "${new_mkdocs_file}"
+  sed -i "s%BIGTREETECH documentation$%${title}%" "${new_mkdocs_file}"
   sed -i "s%Product_line1:$%${product_line1}:%" "${new_mkdocs_file}"
-  sed -i "s%Configuration Reference:$%${configuration_reference}:%" "${new_mkdocs_file}"
-  sed -i "s%Bed Level:$%${bed_level}:%" "${new_mkdocs_file}"
-  sed -i "s%Resonance Compensation:$%${resonance_compensation}:%" "${new_mkdocs_file}"
-  sed -i "s%Command templates:$%${command_template}:%" "${new_mkdocs_file}"
+  sed -i "s%CB1:$%${cb1}:%" "${new_mkdocs_file}"
+  sed -i "s%Document:$%${document}:%" "${new_mkdocs_file}"
   sed -i "s%Developer Documentation:$%${developer_documentation}:%" "${new_mkdocs_file}"
   sed -i "s%Device Specific Documents:$%${device_specific_documents}:%" "${new_mkdocs_file}"
   # sed -i "s%Klipper documentation$%${title}%" "${new_mkdocs_file}"
