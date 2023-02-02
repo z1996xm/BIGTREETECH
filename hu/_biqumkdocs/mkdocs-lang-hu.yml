@@ -103,7 +103,7 @@ nav:
       # - FAQ:
   - Product_line2(Manta):
     - Code_Overview.md
-  - Eszközspecifikus Dokumentumok:
+  - Fejlesztői Dokumentáció:
     - Example_Configs.md
 
 

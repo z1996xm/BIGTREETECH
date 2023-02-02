@@ -103,7 +103,7 @@ nav:
       # - FAQ:
   - Product_line2(Manta):
     - Code_Overview.md
-  - Documents spécifiques à certains appareils:
+  - Documentation pour les développeurs:
     - Example_Configs.md
 
 

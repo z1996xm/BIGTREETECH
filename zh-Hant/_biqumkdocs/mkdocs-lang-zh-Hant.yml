@@ -103,7 +103,7 @@ nav:
       # - FAQ:
   - Product_line2(Manta):
     - Code_Overview.md
-  - 設備特定文件:
+  - 開發者文檔:
     - Example_Configs.md
 
 
