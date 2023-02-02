@@ -102,6 +102,7 @@ nav:
         - SSH.md
         - OS_Settings.md
       - FAQ:
+        - FAQ.md
   - Product_line2(Manta):
     - Code_Overview.md
   - Technical Tutorials:
