@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contact Directions
+    url: https://www.klipper3d.org/Contact.html
+    about: Have a question? Need help? Start here.
+  - name: BIGTREETECH Forum
+    url: https://community.klipper3d.org/
+    about: BIGTREETECH community Discourse server.
+  - name: BIGTREETECH Chat
+    url: https://discord.klipper3d.org/
+    about: BIGTREETECH community Discord chat server.
