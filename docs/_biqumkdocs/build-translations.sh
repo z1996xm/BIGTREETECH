@@ -29,7 +29,7 @@ while IFS="," read dirname langsite langdesc langsearch; do
 
   # read toc
   title=$(sed -n '1p' ${locale_dir}/Navigation.md)
-  product_line1(core_board)=$(sed -n '3p' ${locale_dir}/Navigation.md)
+  product_line1=$(sed -n '3p' ${locale_dir}/Navigation.md)
   configuration_reference=$(sed -n '5p' ${locale_dir}/Navigation.md)
   bed_level=$(sed -n '7p' ${locale_dir}/Navigation.md)
   resonance_compensation=$(sed -n '9p' ${locale_dir}/Navigation.md)
@@ -73,7 +73,7 @@ while IFS="," read dirname langsite langdesc langsearch; do
 
   echo "replace toc"
   sed -i "s%Klipper documentation$%${title}%" "${new_mkdocs_file}"
-  sed -i "s%Product_line1(core_board):$%${product_line1(core_board)}:%" "${new_mkdocs_file}"
+  sed -i "s%Product_line1:$%${product_line1}:%" "${new_mkdocs_file}"
   sed -i "s%Configuration Reference:$%${configuration_reference}:%" "${new_mkdocs_file}"
   sed -i "s%Bed Level:$%${bed_level}:%" "${new_mkdocs_file}"
   sed -i "s%Resonance Compensation:$%${resonance_compensation}:%" "${new_mkdocs_file}"
