@@ -100,10 +100,10 @@ extra:
 #       - Modèles de commandes:
 #         - SSH.md
 #         - OS_Settings.md
-#       - Documentation pour les développeurs:
+#       - FAQ:
 #   - Product_line2(Manta):
 #     - Code_Overview.md
-#   - Technical Tutorials:
+#   - Documents spécifiques à certains appareils:
 #     - Example_Configs.md
 
 nav:
@@ -116,12 +116,12 @@ nav:
       - Modèles de commandes:
         - SSH.md
         - OS_Settings.md
-      - Documentation pour les développeurs:
-        - FAQ.md
+      # - FAQ:
+      #   - FAQ.md
   - Product_line2(Manta):
     - Code_Overview.md
-  # - Technical Tutorials:
-  #   - Example_Configs.md
+  - Documents spécifiques à certains appareils:
+    - Example_Configs.md
 
 
 
