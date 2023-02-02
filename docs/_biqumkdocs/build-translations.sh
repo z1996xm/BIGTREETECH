@@ -32,8 +32,11 @@ while IFS="," read dirname langsite langdesc langsearch; do
   product_line1=$(sed -n '3p' ${locale_dir}/Navigation.md)
   cb1=$(sed -n '5p' ${locale_dir}/Navigation.md)
   document=$(sed -n '7p' ${locale_dir}/Navigation.md)
-  developer_documentation=$(sed -n '9p' ${locale_dir}/Navigation.md)
-  device_specific_documents=$(sed -n '11p' ${locale_dir}/Navigation.md)
+  package_download=$(sed -n '9p' ${locale_dir}/Navigation.md)
+  software=$(sed -n '11p' ${locale_dir}/Navigation.md)
+  faq=$(sed -n '13p' ${locale_dir}/Navigation.md)
+  product_line2=$(sed -n '15p' ${locale_dir}/Navigation.md)
+  technical_tutorials=$(sed -n '17p' ${locale_dir}/Navigation.md)
 
   # product_line1(core_board)=$(sed -n '1p' ${locale_dir}/Navigation.md)
   # product_line2(Manta_line)=$(sed -n '3p' ${locale_dir}/Navigation.md)
@@ -74,12 +77,12 @@ while IFS="," read dirname langsite langdesc langsearch; do
   sed -i "s%Product_line1:$%${product_line1}:%" "${new_mkdocs_file}"
   sed -i "s%CB1:$%${cb1}:%" "${new_mkdocs_file}"
   sed -i "s%Document:$%${document}:%" "${new_mkdocs_file}"
-  sed -i "s%Developer Documentation:$%${developer_documentation}:%" "${new_mkdocs_file}"
-  sed -i "s%Device Specific Documents:$%${device_specific_documents}:%" "${new_mkdocs_file}"
-  # sed -i "s%Klipper documentation$%${title}%" "${new_mkdocs_file}"
-  # sed -i "s%Installation and Configuration:$%${installation_and_configuration}:%" "${new_mkdocs_file}"
-  # sed -i "s%Configuration Reference:$%${configuration_reference}:%" "${new_mkdocs_file}"
-  # sed -i "s%Bed Level:$%${bed_level}:%" "${new_mkdocs_file}"
+  sed -i "s%Package download:$%${package_download}:%" "${new_mkdocs_file}"
+  sed -i "s%Software:$%${software}:%" "${new_mkdocs_file}"
+  sed -i "s%FAQ$%${faq}%" "${new_mkdocs_file}"
+  sed -i "s%Product_line2(Manta):$%${product_line2}:%" "${new_mkdocs_file}"
+  sed -i "s%Configuration Reference:$%${configuration_reference}:%" "${new_mkdocs_file}"
+  sed -i "s%Technical Tutorials:$%${technical_tutorials}:%" "${new_mkdocs_file}"
 
   # Build site
   echo "building site for ${langsite}"
