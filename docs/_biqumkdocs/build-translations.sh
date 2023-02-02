@@ -35,8 +35,10 @@ while IFS="," read dirname langsite langdesc langsearch; do
   package_download=$(sed -n '9p' ${locale_dir}/Navigation.md)
   software=$(sed -n '11p' ${locale_dir}/Navigation.md)
   # faq=$(sed -n '13p' ${locale_dir}/Navigation.md)
-  product_line2=$(sed -n '13p' ${locale_dir}/Navigation.md)
-  technical_tutorials=$(sed -n '15p' ${locale_dir}/Navigation.md)
+  # product_line2=$(sed -n '13p' ${locale_dir}/Navigation.md)
+  # technical_tutorials=$(sed -n '15p' ${locale_dir}/Navigation.md)
+  technical_tutorials=$(sed -n '13p' ${locale_dir}/Navigation.md)
+  product_line2=$(sed -n '15p' ${locale_dir}/Navigation.md)
 
   # Copy markdown files to new_docs_dir
   echo "Copying $dirname to $langsite"
