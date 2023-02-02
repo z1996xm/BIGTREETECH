@@ -100,10 +100,10 @@ extra:
 #       - Parancssablonok:
 #         - SSH.md
 #         - OS_Settings.md
-#       - FAQ:
+#       - Fejlesztői Dokumentáció:
 #   - Product_line2(Manta):
 #     - Code_Overview.md
-#   - Eszközspecifikus Dokumentumok:
+#   - Technical Tutorials:
 #     - Example_Configs.md
 
 nav:
@@ -116,11 +116,12 @@ nav:
       - Parancssablonok:
         - SSH.md
         - OS_Settings.md
-  #     - FAQ:
+      - Fejlesztői Dokumentáció:
+        - FAQ.md
   - Product_line2(Manta):
     - Code_Overview.md
-  - Eszközspecifikus Dokumentumok:
-    - Example_Configs.md
+  # - Technical Tutorials:
+  #   - Example_Configs.md
 
 
 

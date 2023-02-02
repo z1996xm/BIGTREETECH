@@ -100,10 +100,10 @@ extra:
 #       - 命令模板:
 #         - SSH.md
 #         - OS_Settings.md
-#       - FAQ:
+#       - 开发者文档:
 #   - Product_line2(Manta):
 #     - Code_Overview.md
-#   - 设备特定文档:
+#   - Technical Tutorials:
 #     - Example_Configs.md
 
 nav:
@@ -116,11 +116,12 @@ nav:
       - 命令模板:
         - SSH.md
         - OS_Settings.md
-  #     - FAQ:
+      - 开发者文档:
+        - FAQ.md
   - Product_line2(Manta):
     - Code_Overview.md
-  - 设备特定文档:
-    - Example_Configs.md
+  # - Technical Tutorials:
+  #   - Example_Configs.md
 
 
 
