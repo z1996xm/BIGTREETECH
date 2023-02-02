@@ -776,7 +776,7 @@ micro-controller.</p>
 <h2 id="motion-analysis-and-data-logging">Motion analysis and data logging<a class="headerlink" href="#motion-analysis-and-data-logging" title="Permanent link">&para;</a></h2>
 <p>Klipper supports logging its internal motion history, which can be
 later analyzed. To use this feature, Klipper must be started with the
-<a href="API_Server.html">API Server</a> enabled.</p>
+<a href="API_Server.md">API Server</a> enabled.</p>
 <p>Data logging is enabled with the <code>data_logger.py</code> tool. For example:</p>
 <div class="highlight"><pre><span></span><code>~/klipper/scripts/motan/data_logger.py /tmp/klippy_uds mylog
 </code></pre></div>
@@ -826,7 +826,7 @@ options - use the <code>--help</code> option to see a list. It may also be
 convenient to view/modify the
 <a href="https://github.com/z1996xm/BIGTREETECH/blob/master/scripts/motan/motan_graph.py">motan_graph.py</a> script itself.</p>
 <p>The raw data logs produced by the <code>data_logger.py</code> tool follow the
-format described in the <a href="API_Server.html">API Server</a>. It may be useful
+format described in the <a href="API_Server.md">API Server</a>. It may be useful
 to inspect the data with a Unix command like the following:
 <code>gunzip &lt; mylog.json.gz | tr '\03' '\n' | less</code></p>
 <h2 id="generating-load-graphs">Generating load graphs<a class="headerlink" href="#generating-load-graphs" title="Permanent link">&para;</a></h2>
