@@ -20,4 +20,4 @@ Please download and install the OS image we provided: https://github.com/bigtree
 * Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="500"/><br/>
 * Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="500"/><br/>
   
-
+test 2023-02-02-14:14
