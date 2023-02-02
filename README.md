@@ -1,6 +1,6 @@
 This GitHub repository is used for Klipper translations.
 
-The main Klipper project is at https://www.mkdocstest.org/
+The main Klipper project is at https://z1996xm.github.io/BIGTREETECH/
 
 You can help translate the program at [Hosted Weblate](https://hosted.weblate.org/widgets/klipper).
 
