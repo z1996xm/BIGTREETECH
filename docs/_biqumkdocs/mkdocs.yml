@@ -16,7 +16,7 @@ site_dir: '../../site/'
 markdown_extensions:
   - toc:
       permalink: True
-      toc_depth: 6
+      toc_depth: 10
   - attr_list
   - mdx_partial_gfm
   - mdx_truly_sane_lists
@@ -75,22 +75,6 @@ extra:
     # Alternate language links automatically added here
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
-# nav:
-#   - Product_line1(Core board):
-#     - CB1:
-#       - Document:
-#         - CB1_Info.md
-#       - Tools and installation package download:
-#         - Write_OS.md
-#       - Software:
-#         - SSH.md
-#         - OS_Settings.md
-#       - FAQ:
-#   - Product_line2(Manta):
-#     - Code_Overview.md
-#   - Technical Tutorials:
-#     - Example_Configs.md
-
 nav:
   - Product_line1(Core_board):
     - CB1:
@@ -101,8 +85,7 @@ nav:
       - Software:
         - SSH.md
         - OS_Settings.md
-      # - FAQ:
-      #   - FAQ.md
+      - FAQ:
   - Product_line2(Manta):
     - Code_Overview.md
   - Technical Tutorials:
