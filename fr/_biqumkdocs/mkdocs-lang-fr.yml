@@ -103,7 +103,7 @@ extra:
 #       - FAQ:
 #   - Product_line2(Manta):
 #     - Code_Overview.md
-#   - Technical Tutorials:
+#   - Documents spécifiques à certains appareils:
 #     - Example_Configs.md
 
 nav:
@@ -119,8 +119,8 @@ nav:
   #     - FAQ:
   - Product_line2(Manta):
     - Code_Overview.md
-  # - Technical Tutorials:
-  #   - Example_Configs.md
+  - Documents spécifiques à certains appareils:
+    - Example_Configs.md
 
 
 

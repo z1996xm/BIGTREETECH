@@ -103,7 +103,7 @@ extra:
 #       - FAQ:
 #   - Product_line2(Manta):
 #     - Code_Overview.md
-#   - Technical Tutorials:
+#   - Eszközspecifikus Dokumentumok:
 #     - Example_Configs.md
 
 nav:
@@ -119,8 +119,8 @@ nav:
   #     - FAQ:
   - Product_line2(Manta):
     - Code_Overview.md
-  # - Technical Tutorials:
-  #   - Example_Configs.md
+  - Eszközspecifikus Dokumentumok:
+    - Example_Configs.md
 
 
 
