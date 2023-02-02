@@ -76,7 +76,7 @@ while IFS="," read dirname langsite langdesc langsearch; do
   sed -i "s%Software:$%${software}:%" "${new_mkdocs_file}"
   # sed -i "s%FAQ$%${faq}%" "${new_mkdocs_file}"
   sed -i "s%Product_line2:$%${product_line2}:%" "${new_mkdocs_file}"
-  # sed -i "s%Technical Tutorials:$%${technical_tutorials}:%" "${new_mkdocs_file}"
+  sed -i "s%Technical Tutorials:$%${technical_tutorials}:%" "${new_mkdocs_file}"
 
   # Build site
   echo "building site for ${langsite}"
