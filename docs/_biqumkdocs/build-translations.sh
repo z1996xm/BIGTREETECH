@@ -38,11 +38,6 @@ while IFS="," read dirname langsite langdesc langsearch; do
   product_line2=$(sed -n '15p' ${locale_dir}/Navigation.md)
   technical_tutorials=$(sed -n '17p' ${locale_dir}/Navigation.md)
 
-  # product_line1(core_board)=$(sed -n '1p' ${locale_dir}/Navigation.md)
-  # product_line2(Manta_line)=$(sed -n '3p' ${locale_dir}/Navigation.md)
-  # CB1
-  # technical_tutorials=$(sed -n '5p' ${locale_dir}/Navigation.md)
-
   # Copy markdown files to new_docs_dir
   echo "Copying $dirname to $langsite"
   mkdir -p "${new_docs_dir}"
@@ -80,7 +75,7 @@ while IFS="," read dirname langsite langdesc langsearch; do
   sed -i "s%Package download:$%${package_download}:%" "${new_mkdocs_file}"
   sed -i "s%Software:$%${software}:%" "${new_mkdocs_file}"
   sed -i "s%FAQ$%${faq}%" "${new_mkdocs_file}"
-  sed -i "s%Product_line2(Manta):$%${product_line2}:%" "${new_mkdocs_file}"
+  sed -i "s%Product_line2:$%${product_line2}:%" "${new_mkdocs_file}"
   sed -i "s%Technical Tutorials:$%${technical_tutorials}:%" "${new_mkdocs_file}"
 
   # Build site
