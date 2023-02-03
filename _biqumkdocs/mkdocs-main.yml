@@ -85,7 +85,8 @@ nav:
       - Software:
         - SSH.md
         - OS_Settings.md
-      # - FAQ:
+      - TESTFAQ:
+        - OS_Settings.md
   - Product_line2(Manta):
     - Code_Overview.md
   - Technical Tutorials:
