@@ -43,7 +43,7 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: grey
       accent: light blue
       toggle:
         icon: material/lightbulb-outline
