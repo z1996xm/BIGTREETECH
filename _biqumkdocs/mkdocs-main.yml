@@ -94,7 +94,7 @@ nav:
     - EBB Series:
       - EBB 36 CAN.md
       - EBB 42 CAN.md
-      - EBB 2240\2209 CAN.md
+      - EBB 2240 2209 CAN.md
       - U2C.md
   - IOT:
     - CB1.md
@@ -113,7 +113,6 @@ nav:
       - TMC5160.md
       - TMC2209.md
       - TMC2208.md
-      - TMC2130.md
     - EZ Series:
       - EZ2130.md
       - EZ2208.md
@@ -125,7 +124,7 @@ nav:
       - EZ2240.md
       - EZ31865.md
   - Tutorials:
-    - test3.md
+    - Tutorials.md
 
 
 
