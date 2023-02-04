@@ -1,5 +1,7 @@
 # CB1
+
 ## Hardware
+
 ### Pin
 
 ​	aaaaa
@@ -13,6 +15,7 @@
 ​	ccccc
 
 ## Software
+
 ### AAAA
 
 ​	dddd
@@ -20,6 +23,10 @@
 ### BBBB
 
 ​	eeeee
+
+## FAQ
+
+​	fffffff
 
 
 
