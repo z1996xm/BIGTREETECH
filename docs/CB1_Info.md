@@ -1,4 +1,7 @@
-# Feature Highlights 
+# CB1
+
+## Feature Highlights 
+
 * CPU: ALLWINNER H616, Quad-core Cortex-A53 @1.5GHz
 * GPU: Mali G31 MP2, Support OpenGL3.2
 * RAM: 512MB/1GB DDR3L SDRAM
@@ -7,7 +10,7 @@
 * Support 100M Ethernet + 100M WiFi
 * Having the same BTB header as the Raspberry Pi CM4.
 
-# Specifications 
+## Specifications 
 * Product Size: 40mm x 55mm
 * Mounting Size: 33mm x 48mm
 * Input Voltage: 5V±5%/2A
@@ -15,10 +18,13 @@
 * Output Voltage: 1.8V±2%/100mA
 * WiFi: 2.4G/802.11 b/g/n
 
-# Dimensions
+## Dimensions
 <img src=img/CB1_Size.png/><br/>
 
-# 2 * 100 pins
+## Pin Definition
+
+**2 * 100 pins**
+
 A Pin | Signal | Description | A Pin | Signal | Description | B Pin | Signal | Description | B Pin | Signal | Description 
 -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
 1 | GND | | 2 | GND | | 101 | NC | | 102 | NC |
