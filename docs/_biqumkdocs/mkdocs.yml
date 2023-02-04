@@ -48,6 +48,9 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    alternate: material/web
   features:
       #- navigation.tabs
       #- navigation.expand
