@@ -81,22 +81,51 @@ extra_css:
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
-  - Product_line1(Core_board):
+  - Motherboards:
+    - SKR Series:
+      - SKR MINI E3.md
+    - Octopus Series:
+      - Octopus.md
+      - Octopus Pro.md
+    - Manta Series:
+      - M4P.md
+      - M5P.md
+      - M8P.md
+    - EBB Series:
+      - EBB 36 CAN.md
+      - EBB 42 CAN.md
+      - EBB 2240\2209 CAN.md
+      - U2C.md
+  - IOT:
     - CB1.md
-    - CB2.md
-    - CB3.md
-  - Product_line2(Manta):
-    - M4P.md
-    - M5P.md
-    - M8P.md
-  - Product_line3:
-    - test1.md
-  - Product_line4:
-    - test2.md
-  - Technical Tutorials:
+    - PI4B.md
+  - Displays:
+    - TFT 43-DIP.md
+    - TFT35 E3.md
+    - TFT35.md
+    - TFT24.md
+    - TFT35 SPI.md
+    - HDMI5.md
+    - HDMI7.md
+  - Motor Drives:
+    - TMC Series:
+      - TMC2130.md
+      - TMC5160.md
+      - TMC2209.md
+      - TMC2208.md
+      - TMC2130.md
+    - EZ Series:
+      - EZ2130.md
+      - EZ2208.md
+      - EZ2225.md
+      - EZ2226.md
+      - EZ5160 Pro.md
+      - EZDriver Connector.md
+      - EZ2209.md
+      - EZ2240.md
+      - EZ31865.md
+  - Tutorials:
     - test3.md
-  - FAQ:
-    - test4.md
 
 
 
