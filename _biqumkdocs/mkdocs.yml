@@ -48,6 +48,7 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
+  logo: img/BQ-LOGO.svg
   icon:
     repo: fontawesome/brands/github
     alternate: material/web
