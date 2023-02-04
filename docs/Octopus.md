@@ -1,2 +1,2 @@
-# OctopusHardware
+# Octopus
 
