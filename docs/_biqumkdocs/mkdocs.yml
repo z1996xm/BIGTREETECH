@@ -77,24 +77,21 @@ extra_css:
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
   - Product_line1(Core_board):
-    - CB1:
-      - Document:
-        - CB1_Info.md
-      - Package download:
-        - Write_OS.md
-      - Software:
-        - SSH.md
-        - OS_Settings.md
-      - FAQ:
-        - OS_Settings.md
+    - CB1.md
+    - CB2.md
+    - CB3.md
   - Product_line2(Manta):
-    - Code_Overview.md
+    - M4P.md
+    - M5P.md
+    - M8P.md
   - Product_line3:
     - Example_Configs.md
   - Product_line4:
     - Code_Overview.md
   - Technical Tutorials:
     - Example_Configs.md
+  - FAQ:
+    - Code_Overview.md
 
 
 
