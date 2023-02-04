@@ -36,7 +36,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: blue grey
       accent: blue
       toggle:
         icon: material/lightbulb
@@ -48,7 +48,7 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
-  logo: img/BQ-LOGO.svg
+  logo: img/BQ-BIQU.svg
   icon:
     repo: fontawesome/brands/github
     alternate: material/web
