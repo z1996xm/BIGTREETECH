@@ -23,70 +23,156 @@
 
 <img src=img/CB1_Size.png /><br/>
 
+## Schematic
+
+[BIGTREETECH_CB1_V22_220812_SCH](./doc/BIGTREETECH_CB1_V22_220812_SCH.pdf) 
+
 ## Pin Definition
 
-**2 * 100 pins**
+### 40 pin GPIO
 
-| A Pin | Signal   | Description     | A Pin | Signal   | Description          | B Pin | Signal  | Description  | B Pin | Signal    | Description       |
-| ----- | -------- | --------------- | ----- | -------- | -------------------- | ----- | ------- | ------------ | ----- | --------- | ----------------- |
-| 1     | GND      |                 | 2     | GND      |                      | 101   | NC      |              | 102   | NC        |                   |
-| 3     | NC       |                 | 4     | EPHY-TXP | Ethernet TX Positive | 103   | USB1-DM | Host USB1    | 104   | LineOut L |                   |
-| 5     | NC       |                 | 6     | EPHY-TXN | Ethernet TX Negative | 105   | USB1-DP | Host USB1    | 106   | LineOut R |                   |
-| 7     | GND      |                 | 8     | GND      |                      | 107   | GND     |              | 108   | GND       |                   |
-| 9     | NC       |                 | 10    | EPHY-RXP | Ethernet RX Positive | 109   | NC      |              | 110   | NC        |                   |
-| 11    | NC       |                 | 12    | EPHY-RXN | Ethernet RX Negative | 111   | TV_OUT  | CVBS OUT     | 112   | NC        |                   |
-| 13    | GND      |                 | 14    | GND      |                      | 113   | GND     |              | 114   | GND       |                   |
-| 15    | LINK_LED | Ethernet LED    | 16    | NC       |                      | 115   | NC      |              | 116   | NC        |                   |
-| 17    | SPD_LED  | Ethernet LED    | 18    | NC       |                      | 117   | NC      |              | 118   | NC        |                   |
-| 19    | NC       |                 | 20    | NC       |                      | 119   | GND     |              | 120   | GND       |                   |
-| 21    | PH5      | System LED(ACT) | 22    | GND      |                      | 121   | NC      |              | 122   | NC        |                   |
-| 23    | GND      |                 | 24    | PC15     |                      | 123   | NC      |              | 124   | NC        |                   |
-| 25    | PC8      |                 | 26    | PC6      |                      | 125   | GND     |              | 126   | GND       |                   |
-| 27    | PH10     |                 | 28    | NC       |                      | 127   | NC      |              | 128   | USB3-DM   | Host USB3         |
-| 29    | NC       |                 | 30    | PG6      |                      | 129   | NC      |              | 130   | USB3-DP   | Host USB3         |
-| 31    | PG9      |                 | 32    | GND      |                      | 131   | GND     |              | 132   | GND       |                   |
-| 33    | GND      |                 | 34    | NC       |                      | 133   | NC      |              | 134   | USB2-DM   | Host USB2         |
-| 35    | PG7      |                 | 36    | NC       |                      | 135   | NC      |              | 136   | USB2-DP   | Host USB3         |
-| 37    | PG8      |                 | 38    | PH6      |                      | 137   | GND     |              | 138   | GND       |                   |
-| 39    | NC       |                 | 40    | PH8      |                      | 139   | NC      |              | 140   | USB0-DM   | OTG USB           |
-| 41    | NC       |                 | 42    | GND      |                      | 141   | NC      |              | 142   | USB0-DP   | OTG USB           |
-| 43    | GND      |                 | 44    | PH7      |                      | 143   | NC      |              | 144   | GND       |                   |
-| 45    | PC9      |                 | 46    | PC10     |                      | 145   | NC      |              | 146   | NC        |                   |
-| 47    | PC11     |                 | 48    | PC12     |                      | 147   | NC      |              | 148   | NC        |                   |
-| 49    | PC13     |                 | 50    | PC14     |                      | 149   | NC      |              | 150   | GND       |                   |
-| 51    | SoC_RX   | DEBUG UART      | 52    | GND      |                      | 151   | HCEC    | HDMI CEC     | 152   | NC        |                   |
-| 53    | GND      |                 | 54    | PC7      |                      | 153   | HHPD    | HDMI HotPlug | 154   | NC        |                   |
-| 55    | SoC_TX   | DEBUG UART      | 56    | NC       |                      | 155   | GND     |              | 156   | GND       |                   |
-| 57    | SDC0-CLK | MicroSD Card    | 58    | NC       |                      | 157   | NC      |              | 158   | NC        |                   |
-| 59    | GND      |                 | 60    | GND      |                      | 159   | NC      |              | 160   | NC        |                   |
-| 61    | SDC0-D3  | MicroSD Card    | 62    | SDC0-CMD | MicroSD Card         | 161   | GND     |              | 162   | GND       |                   |
-| 63    | SDC0-D0  | MicroSD Card    | 64    | PG11     |                      | 163   | NC      |              | 164   | NC        |                   |
-| 65    | GND      |                 | 66    | GND      |                      | 165   | NC      |              | 166   | NC        |                   |
-| 67    | SDC0-D1  | MicroSD Card    | 68    | PG12     |                      | 167   | GND     |              | 168   | GND       |                   |
-| 69    | SDC0-D2  | MicroSD Card    | 70    | PG13     |                      | 169   | NC      |              | 170   | HTX2P     | HDMI TX2 Positive |
-| 71    | GND      |                 | 72    | PG14     |                      | 171   | NC      |              | 172   | HTX2N     | HDMI TX2 Negative |
-| 73    | PG16     |                 | 74    | GND      |                      | 173   | GND     |              | 174   | GND       |                   |
-| 75    | NC       |                 | 76    | PI16     | MicroSD Card detect  | 175   | NC      |              | 176   | HTX1P     | HDMI TX1 Positive |
-| 77    | 5V       |                 | 78    | NC       |                      | 177   | NC      |              | 178   | HTX1N     | HDMI TX1 Negative |
-| 79    | 5V       | In 2A           | 80    | NC       |                      | 179   | GND     |              | 180   | GND       |                   |
-| 81    | 5V       | In 2A           | 82    | NC       |                      | 181   | NC      |              | 182   | HTX0P     | HDMI TX0 Positive |
-| 83    | 5V       | In 2A           | 84    | 3.3V     | Out 200mA            | 183   | NC      |              | 184   | HTX0N     | HDMI TX0 Negative |
-| 85    | 5V       | In 2A           | 86    | 3.3V     | Out 200mA            | 185   | GND     |              | 186   | GND       |                   |
-| 87    | 5V       | In 2A           | 88    | 1.8V     | Out 100mA            | 187   | NC      |              | 188   | HTXCP     | HDMI CLK Positive |
-| 89    | NC       |                 | 90    | 1.8V     | Out 100mA            | 189   | NC      |              | 190   | HTXCN     | HDMI CLK Negative |
-| 91    | NC       |                 | 92    | PWRON    |                      | 191   | GND     |              | 192   | GND       |                   |
-| 93    | FEL      |                 | 94    | NC       |                      | 193   | NC      |              | 194   | NC        |                   |
-| 95    | NC       |                 | 96    | NC       |                      | 195   | NC      |              | 196   | NC        |                   |
-| 97    | NC       |                 | 98    | GND      |                      | 197   | GND     |              | 198   | GND       |                   |
-| 99    | Recovery |                 | 100   | Reset    |                      | 199   | HSDA    | HDMI I2C     | 200   | HSCL      | HDMI I2C          |
+* The 40 pin GPIO on the motherboard when CB1 is used with motherboard like Manta M4P, M5P, M8P, PI4B_Adapter, etc.
+
+| Pin  | Signal | Description        | Pin  | Signal | Description       |
+| ---- | ------ | ------------------ | ---- | ------ | ----------------- |
+| 1    | 3.3V   |                    | 2    | 5V     |                   |
+| 3    | NC     |                    | 4    | 5V     |                   |
+| 5    | NC     |                    | 6    | GND    |                   |
+| 7    | PC7    | GPIO71             | 8    | PH0    | GPIO224, UART0_TX |
+| 9    | GND    |                    | 10   | PH1    | GPIO225, UART0_RX |
+| 11   | PC14   | GPIO78             | 12   | PC13   | GPIO77            |
+| 13   | PC12   | GPIO76             | 14   | GND    |                   |
+| 15   | PC10   | GPIO74             | 16   | PC11   | GPIO75            |
+| 17   | 3.3V   |                    | 18   | PC9    | GPIO73            |
+| 19   | PH7    | GPIO231, SPI1_MOSI | 20   | GND    |                   |
+| 21   | PH8    | GPIO232, SPI1_MISO | 22   | NC     |                   |
+| 23   | PH6    | GPIO230, SPI1_CLK  | 24   | NC     |                   |
+| 25   | GND    |                    | 26   | PG8    | GPIO200           |
+| 27   | NC     |                    | 28   | PG7    | GPIO199           |
+| 29   | NC     |                    | 30   | GND    |                   |
+| 31   | PG6    | GPIO198            | 32   | PG9    | GPIO201           |
+| 33   | NC     |                    | 34   | GND    |                   |
+| 35   | PC6    | GPIO70             | 36   | NC     |                   |
+| 37   | PC15   | GPIO79             | 38   | PH10   | GPIO234, IR_RX    |
+| 39   | GND    |                    | 40   | PC8    | GPIO72            |
+
+### **2 * 100 pins**
+
+| A Pin | Signal   | Description     | A Pin | Signal   | Description          |
+| ----- | -------- | --------------- | ----- | -------- | -------------------- |
+| 1     | GND      |                 | 2     | GND      |                      |
+| 3     | NC       |                 | 4     | EPHY-TXP | Ethernet TX Positive |
+| 5     | NC       |                 | 6     | EPHY-TXN | Ethernet TX Negative |
+| 7     | GND      |                 | 8     | GND      |                      |
+| 9     | NC       |                 | 10    | EPHY-RXP | Ethernet RX Positive |
+| 11    | NC       |                 | 12    | EPHY-RXN | Ethernet RX Negative |
+| 13    | GND      |                 | 14    | GND      |                      |
+| 15    | LINK_LED | Ethernet LED    | 16    | NC       |                      |
+| 17    | SPD_LED  | Ethernet LED    | 18    | NC       |                      |
+| 19    | NC       |                 | 20    | NC       |                      |
+| 21    | PH5      | System LED(ACT) | 22    | GND      |                      |
+| 23    | GND      |                 | 24    | PC15     |                      |
+| 25    | PC8      |                 | 26    | PC6      |                      |
+| 27    | PH10     |                 | 28    | NC       |                      |
+| 29    | NC       |                 | 30    | PG6      |                      |
+| 31    | PG9      |                 | 32    | GND      |                      |
+| 33    | GND      |                 | 34    | NC       |                      |
+| 35    | PG7      |                 | 36    | NC       |                      |
+| 37    | PG8      |                 | 38    | PH6      |                      |
+| 39    | NC       |                 | 40    | PH8      |                      |
+| 41    | NC       |                 | 42    | GND      |                      |
+| 43    | GND      |                 | 44    | PH7      |                      |
+| 45    | PC9      |                 | 46    | PC10     |                      |
+| 47    | PC11     |                 | 48    | PC12     |                      |
+| 49    | PC13     |                 | 50    | PC14     |                      |
+| 51    | SoC_RX   | DEBUG UART      | 52    | GND      |                      |
+| 53    | GND      |                 | 54    | PC7      |                      |
+| 55    | SoC_TX   | DEBUG UART      | 56    | NC       |                      |
+| 57    | SDC0-CLK | MicroSD Card    | 58    | NC       |                      |
+| 59    | GND      |                 | 60    | GND      |                      |
+| 61    | SDC0-D3  | MicroSD Card    | 62    | SDC0-CMD | MicroSD Card         |
+| 63    | SDC0-D0  | MicroSD Card    | 64    | PG11     |                      |
+| 65    | GND      |                 | 66    | GND      |                      |
+| 67    | SDC0-D1  | MicroSD Card    | 68    | PG12     |                      |
+| 69    | SDC0-D2  | MicroSD Card    | 70    | PG13     |                      |
+| 71    | GND      |                 | 72    | PG14     |                      |
+| 73    | PG16     |                 | 74    | GND      |                      |
+| 75    | NC       |                 | 76    | PI16     | MicroSD Card detect  |
+| 77    | 5V       |                 | 78    | NC       |                      |
+| 79    | 5V       | In 2A           | 80    | NC       |                      |
+| 81    | 5V       | In 2A           | 82    | NC       |                      |
+| 83    | 5V       | In 2A           | 84    | 3.3V     | Out 200mA            |
+| 85    | 5V       | In 2A           | 86    | 3.3V     | Out 200mA            |
+| 87    | 5V       | In 2A           | 88    | 1.8V     | Out 100mA            |
+| 89    | NC       |                 | 90    | 1.8V     | Out 100mA            |
+| 91    | NC       |                 | 92    | PWRON    |                      |
+| 93    | FEL      |                 | 94    | NC       |                      |
+| 95    | NC       |                 | 96    | NC       |                      |
+| 97    | NC       |                 | 98    | GND      |                      |
+| 99    | Recovery |                 | 100   | Reset    |                      |
+
+| B Pin | Signal  | Description  | B Pin | Signal    | Description       |
+| ----- | ------- | ------------ | ----- | --------- | ----------------- |
+| 101   | NC      |              | 102   | NC        |                   |
+| 103   | USB1-DM | Host USB1    | 104   | LineOut L |                   |
+| 105   | USB1-DP | Host USB1    | 106   | LineOut R |                   |
+| 107   | GND     |              | 108   | GND       |                   |
+| 109   | NC      |              | 110   | NC        |                   |
+| 111   | TV_OUT  | CVBS OUT     | 112   | NC        |                   |
+| 113   | GND     |              | 114   | GND       |                   |
+| 115   | NC      |              | 116   | NC        |                   |
+| 117   | NC      |              | 118   | NC        |                   |
+| 119   | GND     |              | 120   | GND       |                   |
+| 121   | NC      |              | 122   | NC        |                   |
+| 123   | NC      |              | 124   | NC        |                   |
+| 125   | GND     |              | 126   | GND       |                   |
+| 127   | NC      |              | 128   | USB3-DM   | Host USB3         |
+| 129   | NC      |              | 130   | USB3-DP   | Host USB3         |
+| 131   | GND     |              | 132   | GND       |                   |
+| 133   | NC      |              | 134   | USB2-DM   | Host USB2         |
+| 135   | NC      |              | 136   | USB2-DP   | Host USB3         |
+| 137   | GND     |              | 138   | GND       |                   |
+| 139   | NC      |              | 140   | USB0-DM   | OTG USB           |
+| 141   | NC      |              | 142   | USB0-DP   | OTG USB           |
+| 143   | NC      |              | 144   | GND       |                   |
+| 145   | NC      |              | 146   | NC        |                   |
+| 147   | NC      |              | 148   | NC        |                   |
+| 149   | NC      |              | 150   | GND       |                   |
+| 151   | HCEC    | HDMI CEC     | 152   | NC        |                   |
+| 153   | HHPD    | HDMI HotPlug | 154   | NC        |                   |
+| 155   | GND     |              | 156   | GND       |                   |
+| 157   | NC      |              | 158   | NC        |                   |
+| 159   | NC      |              | 160   | NC        |                   |
+| 161   | GND     |              | 162   | GND       |                   |
+| 163   | NC      |              | 164   | NC        |                   |
+| 165   | NC      |              | 166   | NC        |                   |
+| 167   | GND     |              | 168   | GND       |                   |
+| 169   | NC      |              | 170   | HTX2P     | HDMI TX2 Positive |
+| 171   | NC      |              | 172   | HTX2N     | HDMI TX2 Negative |
+| 173   | GND     |              | 174   | GND       |                   |
+| 175   | NC      |              | 176   | HTX1P     | HDMI TX1 Positive |
+| 177   | NC      |              | 178   | HTX1N     | HDMI TX1 Negative |
+| 179   | GND     |              | 180   | GND       |                   |
+| 181   | NC      |              | 182   | HTX0P     | HDMI TX0 Positive |
+| 183   | NC      |              | 184   | HTX0N     | HDMI TX0 Negative |
+| 185   | GND     |              | 186   | GND       |                   |
+| 187   | NC      |              | 188   | HTXCP     | HDMI CLK Positive |
+| 189   | NC      |              | 190   | HTXCN     | HDMI CLK Negative |
+| 191   | GND     |              | 192   | GND       |                   |
+| 193   | NC      |              | 194   | NC        |                   |
+| 195   | NC      |              | 196   | NC        |                   |
+| 197   | GND     |              | 198   | GND       |                   |
+| 199   | HSDA    | HDMI I2C     | 200   | HSCL      | HDMI I2C          |
 
 ## OS_Settings
 
-### Ethernet
+### Network Settings
+
+#### Ethernet
 
 * Plug-and-play with an Ethernet cable, no additional setup required.
 
-### WiFi Settings
+#### WiFi Settings
 
 * After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `system.cfg` file with `Notpad`, `Notpad++` or `VSCode`.
   <img src=img/system.png /><br/>
@@ -94,12 +180,11 @@
   For example: `WIFI_SSID="CB1 Tester"`
   <img src=img/wifi.png /><br/>
 
-## Overlays Settings
+### Overlays Settings
 
-* After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`.
-  <img src=img/BoardEnv.png /><br/>
-
-* Set as required as shown in the figure below.
+* After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png /><br/>
+  
+* Set as required as shown in the figure below. <br/><img src=img/overlays.png /><br/>
 
   * The default value is `console=display`, This means that the `UART0` of CB1 is used as the debugging port by default. We can use `MobaXterm` to connect to CB1 by UART0 and debug. If klipper wants to use `UART0` to control the motherboard, we need to set it to `console=serial`, now klippe can use `UART0` as `/dev/ttyS0`.
 
@@ -122,8 +207,6 @@
      param_spidev_spi_cs=1
      param_spidev_max_freq=1000000
     ```
-
-    <img src=img/overlays.png /><br/>
 
 * NOTE: TFT35 SPI and MCP2515 multiplex a group of SPI1
 
@@ -148,9 +231,13 @@ Please download and install the OS image we provided: https://github.com/bigtree
 * balenaEtcher: https://www.balena.io/etcher/
   <br/>Both of the above software can be used, just choose one to download and install
 
+### Format SD card
+
+* Normally, you can format the SD card with the tools provided by the computer system. Completely format the SD card with professional SD card format software. https://www.sdcard.org/downloads/formatter/
+
 ### Write OS
 
-### Raspberry Pi Imager
+#### Raspberry Pi Imager
 
 * Insert a MicroSD into your computer.
 * Choose OS. <br/><img src=img/RPI_Imager_1.png width="500"/><br/>
@@ -158,14 +245,14 @@ Please download and install the OS image we provided: https://github.com/bigtree
 * Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="500"/><br/>
 * Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="500"/><br/>
 
-### balenaEtcher
+#### balenaEtcher
 
 * Insert a MicroSD card to your computer through a card reader.
 * Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="500"/><br/>
 * Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="500"/><br/>
 * Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="500"/><br/>
 
-# SSH Connection
+## SSH Connection
 
 * Install the ssh application Mobaxterm: https://mobaxterm.mobatek.net/download-home-edition.html
 * Insert the Micro SD card (installed OS) to motherboard, wait for system to load after power on, aprox. 1-2min. the ACT LED on the motherboard will flash continuously after startup successfully.
