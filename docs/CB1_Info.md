@@ -19,7 +19,7 @@
 * WiFi: 2.4G/802.11 b/g/n
 
 ## Dimensions
-<img src=img/CB1_Size.png/><br/>
+<img src=img/CB1Size.png/><br/>
 
 ## Pin Definition
 

@@ -21,7 +21,7 @@
 
 ## Dimensions
 
-<img src=img/CB1_Size.png/><br/>
+<img src=img/CB1_Size.png /><br/>
 
 ## Pin Definition
 
