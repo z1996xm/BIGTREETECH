@@ -97,7 +97,9 @@ M4P is designed with a USB 2.0 Hub, in order to save power consumption, the USB 
 
 If you want to enable it, you need to add the following content to the config.txt file:
 
-`dtoverlay=dwc2,dr_mode=host`
+```
+dtoverlay=dwc2,dr_mode=host
+```
 
 #### 1.4.2 DSI1 Display Interface
 
