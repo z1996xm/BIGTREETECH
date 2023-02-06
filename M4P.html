@@ -2005,12 +2005,15 @@
 <h3 id="adxl345-accelerometer">ADXL345 Accelerometer<a class="headerlink" href="#adxl345-accelerometer" title="Permanent link">&para;</a></h3>
 <p>Refer to here: <a href="https://www.klipper3d.org/Measuring_Resonances.html">https://www.klipper3d.org/Measuring_Resonances.html</a>, We can refer to the following wiring and configuration when connecting to the M4P motherboard</p>
 <p><img src=img/M4P_ADXL345.png /></p>
-<p>[adxl345]
+<p>[adxl345]</p>
+<pre><code>```
 cs_pin: PD9
-spi_bus: spi1</p>
-<h1 id="spi_software_sclk_pin-pa5">spi_software_sclk_pin: PA5<a class="headerlink" href="#spi_software_sclk_pin-pa5" title="Permanent link">&para;</a></h1>
-<h1 id="spi_software_mosi_pin-pa7">spi_software_mosi_pin: PA7<a class="headerlink" href="#spi_software_mosi_pin-pa7" title="Permanent link">&para;</a></h1>
-<h1 id="spi_software_miso_pin-pa6">spi_software_miso_pin: PA6<a class="headerlink" href="#spi_software_miso_pin-pa6" title="Permanent link">&para;</a></h1>
+spi_bus: spi1
+#spi_software_sclk_pin: PA5
+#spi_software_mosi_pin: PA7
+#spi_software_miso_pin: PA6
+```
+</code></pre>
 
               
             </article>
