@@ -1,6 +1,8 @@
 # CB1
 
-## Main Features
+## 1. Brief Introduction
+
+### 1.1 Main Features
 
 * CPU: ALLWINNER H616, Quad-core Cortex-A53 @1.5GHz
 * GPU: Mali G31 MP2, Support OpenGL3.2
@@ -10,7 +12,7 @@
 * Support 100M Ethernet + 100M WiFi
 * Having the same BTB header as the Raspberry Pi CM4.
 
-## Basic Parameters
+### 1.2 Basic Parameters
 
 * Product Size: 40mm x 55mm
 * Mounting Size: 33mm x 48mm
@@ -19,17 +21,17 @@
 * Output Voltage: 1.8V±2%/100mA
 * WiFi: 2.4G/802.11 b/g/n
 
-## Dimensions
+### 1.3 Dimensions
 
 <img src=img/CB1_Size.png /><br/>
 
-## Schematic
+### 1.4 Schematic
 
 [BIGTREETECH_CB1_V22_220812_SCH](./doc/BIGTREETECH_CB1_V22_220812_SCH.pdf) 
 
-## Pin Definition
+## 2.0 Peripheral Interface
 
-### 40 pin GPIO
+### 2.1 40 pin GPIO
 
 * The 40 pin GPIO on the motherboard when CB1 is used with motherboard like Manta M4P, M5P, M8P, PI4B_Adapter, etc.
 
@@ -56,7 +58,7 @@
 | 37   | PC15   | GPIO79             | 38   | PH10   | GPIO234, IR_RX    |
 | 39   | GND    |                    | 40   | PC8    | GPIO72            |
 
-### **2 * 100 pins**
+### 2.2 **2 * 100 pins**
 
 | A Pin | Signal   | Description     | A Pin | Signal   | Description          |
 | ----- | -------- | --------------- | ----- | -------- | -------------------- |
@@ -164,15 +166,15 @@
 | 197   | GND     |              | 198   | GND       |                   |
 | 199   | HSDA    | HDMI I2C     | 200   | HSCL      | HDMI I2C          |
 
-## OS_Settings
+## 3. OS_Settings
 
-### Network Settings
+### 3.1 Network Settings
 
-#### Ethernet
+#### 3.1.1 Ethernet
 
 * Plug-and-play with an Ethernet cable, no additional setup required.
 
-#### WiFi Settings
+#### 3.1.2 WiFi Settings
 
 * After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `system.cfg` file with `Notpad`, `Notpad++` or `VSCode`.
   <img src=img/system.png /><br/>
@@ -180,7 +182,7 @@
   For example: `WIFI_SSID="CB1 Tester"`
   <img src=img/wifi.png /><br/>
 
-### Overlays Settings
+### 3.2 Overlays Settings
 
 * After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png /><br/>
   
@@ -219,25 +221,25 @@
   MCP2515_IRQ=PC9
   ```
 
-## Write_OS
+## 4. Write_OS
 
-### Download the OS Image
+### 4.1 Download the OS Image
 
 Please download and install the OS image we provided: https://github.com/bigtreetech/CB1/releases
 
-### Download and Install Writing Software
+### 4.2 Download and Install Writing Software
 
 * The official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 * balenaEtcher: https://www.balena.io/etcher/
   <br/>Both of the above software can be used, just choose one to download and install
 
-### Format SD card
+### 4.3 Format SD card
 
 * Normally, you can format the SD card with the tools provided by the computer system. Completely format the SD card with professional SD card format software. https://www.sdcard.org/downloads/formatter/
 
-### Write OS
+### 4.4 Write OS
 
-#### Raspberry Pi Imager
+#### 4.4.1 Raspberry Pi Imager
 
 * Insert a MicroSD into your computer.
 * Choose OS. <br/><img src=img/RPI_Imager_1.png width="500"/><br/>
@@ -245,14 +247,14 @@ Please download and install the OS image we provided: https://github.com/bigtree
 * Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="500"/><br/>
 * Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="500"/><br/>
 
-#### balenaEtcher
+#### 4.4.2 balenaEtcher
 
 * Insert a MicroSD card to your computer through a card reader.
 * Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="500"/><br/>
 * Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="500"/><br/>
 * Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="500"/><br/>
 
-## SSH Connection
+## 5.0 SSH Connection
 
 * Install the ssh application Mobaxterm: https://mobaxterm.mobatek.net/download-home-edition.html
 * Insert the Micro SD card (installed OS) to motherboard, wait for system to load after power on, aprox. 1-2min. the ACT LED on the motherboard will flash continuously after startup successfully.

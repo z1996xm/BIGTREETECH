@@ -134,56 +134,56 @@ For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2
 
 **Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
 
-| Driver chips                                                 | MS1                                                          | MS2  | MS3  | Microsteps  | Excitation Mode |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---- | ----------- | --------------- |
-| A498816 microstep max 35V 2A                                 | L                                                            | L    | L    | Full Step   | 2 Phase         |
-| H                                                            | L                                                            | L    | 1/2  | 1-2 Phase   |                 |
-| L                                                            | H                                                            | L    | 1/4  | W1-2 Phase  |                 |
-| H                                                            | H                                                            | L    | 1/8  | 2W1-2 Phase |                 |
-| H                                                            | H                                                            | H    | 1/16 | 4W1-2 Phase |                 |
-| Current ![img](file:///C:\Users\admin\AppData\Local\Temp\ksohtml17292\wps1.jpg)=0.1Ω | ![img](file:///C:\Users\admin\AppData\Local\Temp\ksohtml17292\wps2.jpg) |      |      |             |                 |
+| Driver chips                  | MS1                           | MS2  | MS3  | Microsteps | Excitation Mode |
+| ----------------------------- | ----------------------------- | ---- | ---- | ---------- | --------------- |
+| A498816 microstep max 35V 2A  | L                             | L    | L    | Full Step  | 2 Phase         |
+|                               | H                             | L    | L    | 1/2        | 1-2 Phase       |
+|                               | L                             | H    | L    | 1/4        | W1-2 Phase      |
+|                               | H                             | H    | L    | 1/8        | 2W1-2 Phase     |
+|                               | H                             | H    | H    | 1/16       | 4W1-2 Phase     |
+| <img src=img/M4P_Data2.png /> | <img src=img/M4P_Data1.png /> |      |      |            |                 |
 
  
 
-| Driver chips                                                 | MODE2                                                        | MODE1 | MODE0 | Microsteps | Excitation Mode |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ----- | ----- | ---------- | --------------- |
-| DRV8825Maximum 32microsteps8.2V-45V 2.5A at 24V T=25℃        | L                                                            | L     | L     | Full Step  | 2 Phase         |
-| L                                                            | L                                                            | H     | 1/2   | 1-2 Phase  |                 |
-| L                                                            | H                                                            | L     | 1/4   | W1-2 Phase |                 |
-| L                                                            | H                                                            | H     | 1/8   |            |                 |
-| H                                                            | L                                                            | L     | 1/16  |            |                 |
-| H                                                            | L                                                            | H     | 1/32  |            |                 |
-| H                                                            | H                                                            | L     | 1/32  |            |                 |
-| H                                                            | H                                                            | H     | 1/32  |            |                 |
-| Current![img](file:///C:\Users\admin\AppData\Local\Temp\ksohtml17292\wps3.jpg)=0.1Ω | ![img](file:///C:\Users\admin\AppData\Local\Temp\ksohtml17292\wps4.jpg) |       |       |            |                 |
+| Driver chips                                          | MODE2                         | MODE1 | MODE0 | Microsteps | Excitation Mode |
+| ----------------------------------------------------- | ----------------------------- | ----- | ----- | ---------- | --------------- |
+| DRV8825Maximum 32microsteps8.2V-45V 2.5A at 24V T=25℃ | L                             | L     | L     | Full Step  | 2 Phase         |
+|                                                       | L                             | L     | H     | 1/2        | 1-2 Phase       |
+|                                                       | L                             | H     | L     | 1/4        | W1-2 Phase      |
+|                                                       | L                             | H     | H     | 1/8        |                 |
+|                                                       | H                             | L     | L     | 1/16       |                 |
+|                                                       | H                             | L     | H     | 1/32       |                 |
+|                                                       | H                             | H     | L     | 1/32       |                 |
+|                                                       | H                             | H     | H     | 1/32       |                 |
+| <img src=img/M4P_Data3.png />                         | <img src=img/M4P_Data4.png /> |       |       |            |                 |
 
  
 
-| Driver chips                        | MD3                                                          | MD2  | MD1   | Microsteps   | Excitation Mode |
-| ----------------------------------- | ------------------------------------------------------------ | ---- | ----- | ------------ | --------------- |
-| LV8729Maximum 128microsteps36V 1.8A | L                                                            | L    | L     | Full Step    | 2 Phase         |
-| L                                   | L                                                            | H    | 1/2   | 1-2 Phase    |                 |
-| L                                   | H                                                            | L    | 1/4   | W1-2 Phase   |                 |
-| L                                   | H                                                            | H    | 1/8   | 2W1-2 Phase  |                 |
-| H                                   | L                                                            | L    | 1/16  | 4W1-2 Phase  |                 |
-| H                                   | L                                                            | H    | 1/32  | 8W1-2 Phase  |                 |
-| H                                   | H                                                            | L    | 1/64  | 16W1-2 Phase |                 |
-| H                                   | H                                                            | H    | 1/128 | 32W1-2 Phase |                 |
-| Current RF1=0.22Ω                   | ![img](file:///C:\Users\admin\AppData\Local\Temp\ksohtml17292\wps5.jpg) = (![img](file:///C:\Users\admin\AppData\Local\Temp\ksohtml17292\wps6.jpg) / 5 ) / RF1 |      |       |              |                 |
+| Driver chips                        | MD3                           | MD2  | MD1  | Microsteps | Excitation Mode |
+| ----------------------------------- | ----------------------------- | ---- | ---- | ---------- | --------------- |
+| LV8729Maximum 128microsteps36V 1.8A | L                             | L    | L    | Full Step  | 2 Phase         |
+|                                     | L                             | L    | H    | 1/2        | 1-2 Phase       |
+|                                     | L                             | H    | L    | 1/4        | W1-2 Phase      |
+|                                     | L                             | H    | H    | 1/8        | 2W1-2 Phase     |
+|                                     | H                             | L    | L    | 1/16       | 4W1-2 Phase     |
+|                                     | H                             | L    | H    | 1/32       | 8W1-2 Phase     |
+|                                     | H                             | H    | L    | 1/64       | 16W1-2 Phase    |
+|                                     | H                             | H    | H    | 1/128      | 32W1-2 Phase    |
+| <img src=img/M4P_Data5.png />       | <img src=img/M4P_Data6.png /> |      |      |            |                 |
 
  
 
-| Driver chips                       | MS3                                                          | MS2  | MS1   | Microsteps |
-| ---------------------------------- | ------------------------------------------------------------ | ---- | ----- | ---------- |
-| ST820Maximum 256microsteps45V 1.5A | L                                                            | L    | L     | Full Step  |
-| L                                  | L                                                            | H    | 1/2   |            |
-| L                                  | H                                                            | L    | 1/4   |            |
-| L                                  | H                                                            | H    | 1/8   |            |
-| H                                  | L                                                            | L    | 1/16  |            |
-| H                                  | L                                                            | H    | 1/32  |            |
-| H                                  | H                                                            | L    | 1/128 |            |
-| H                                  | H                                                            | H    | 1/256 |            |
-| CurrentRs=0.15Ω                    | ![img](file:///C:\Users\admin\AppData\Local\Temp\ksohtml17292\wps7.jpg) |      |       |            |
+| Driver chips                       | MS3                           | MS2  | MS1  | Microsteps |
+| ---------------------------------- | ----------------------------- | ---- | ---- | ---------- |
+| ST820Maximum 256microsteps45V 1.5A | L                             | L    | L    | Full Step  |
+|                                    | L                             | L    | H    | 1/2        |
+|                                    | L                             | H    | L    | 1/4        |
+|                                    | L                             | H    | H    | 1/8        |
+|                                    | H                             | L    | L    | 1/16       |
+|                                    | H                             | L    | H    | 1/32       |
+|                                    | H                             | H    | L    | 1/128      |
+|                                    | H                             | H    | H    | 1/256      |
+| <img src=img/M4P_Data7.png />      | <img src=img/M4P_Data8.png /> |      |      |            |
 
 #### 3.4.2 UART Mode of TMC Driver
 
