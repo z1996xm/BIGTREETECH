@@ -1,6 +1,6 @@
 # CB1
 
-## Feature Highlights 
+## Main Features
 
 * CPU: ALLWINNER H616, Quad-core Cortex-A53 @1.5GHz
 * GPU: Mali G31 MP2, Support OpenGL3.2
@@ -10,7 +10,7 @@
 * Support 100M Ethernet + 100M WiFi
 * Having the same BTB header as the Raspberry Pi CM4.
 
-## Specifications 
+## Basic Parameters
 
 * Product Size: 40mm x 55mm
 * Mounting Size: 33mm x 48mm
