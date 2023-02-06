@@ -1,8 +1,6 @@
 # M4P
 
-<img src=img/M4P_Title.png />
-
-<a href ="https://z1996xm.github.io/BIGTREETECH/"><<img src=img/M4P_Title.png />
+[<img src=img/M4P_Title.png />](https://z1996xm.github.io/BIGTREETECH/)
 
 ## 1. Brief Introduction
 
