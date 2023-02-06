@@ -248,9 +248,11 @@ Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer
 <img src=img/M4P_ADXL345.png />
 
 [adxl345]
-cs_pin: PD9
-spi_bus: spi1
-#spi_software_sclk_pin: PA5
-#spi_software_mosi_pin: PA7
-#spi_software_miso_pin: PA6
 
+    ```
+    cs_pin: PD9
+    spi_bus: spi1
+    #spi_software_sclk_pin: PA5
+    #spi_software_mosi_pin: PA7
+    #spi_software_miso_pin: PA6
+    ```
