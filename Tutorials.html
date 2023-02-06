@@ -1615,7 +1615,9 @@ sudo ./rpiboot(Mac/Linux) or rpiboot.exe on Windows, then the eMMC of CM4 will b
 <h4 id="141-usb-20-hub-ports">1.4.1 USB 2.0 Hub Ports<a class="headerlink" href="#141-usb-20-hub-ports" title="Permanent link">&para;</a></h4>
 <p>M4P is designed with a USB 2.0 Hub, in order to save power consumption, the USB port of CM4 is disabled by default. </p>
 <p>If you want to enable it, you need to add the following content to the config.txt file:</p>
-<p><code>dtoverlay=dwc2,dr_mode=host</code></p>
+<div class="highlight"><pre><span></span><code>dtoverlay=dwc2,dr_mode=host
+</code></pre></div>
+
 <h4 id="142-dsi1-display-interface">1.4.2 DSI1 Display Interface<a class="headerlink" href="#142-dsi1-display-interface" title="Permanent link">&para;</a></h4>
 <p>The default display interface is HDMI. The onboard DSI port of M4P uses the DSI1 
 interface. You need to download the DSI1 driver and enter the following sentence in 
