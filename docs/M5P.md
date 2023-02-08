@@ -66,11 +66,11 @@
 
 <img src=img/M5P/M5P_Dimension1.png />
 
-![](img/M5P/M5P_Dimension2.png /)
+<img src=img/M5P/M5P_Dimension2.png />
 
 ## · CAD
 
-![](img/M5P/M5P_Diagram.png /)
+<img src=img/M5P/M5P_Diagram.png />
 
 ## · Schematic
 
@@ -78,7 +78,7 @@
 
 ## · Pin Out
 
-![](img/M5P/M5P_Pinout.png /)
+<img src=img/M5P/M5P_Pinout.png />
 
 ## **· Hardware Configuration**
 
