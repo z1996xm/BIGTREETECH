@@ -134,7 +134,6 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <td colspan="5"><img src=img/M5P/M5P_DRI2.png /></td>
     <tr>    
 </table>
-
 <table>
 	<tr>
     <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td></tr>
@@ -158,7 +157,7 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
 	<tr>
     <td>Driver Chips</td><td>MD3</td><td>MD2</td><td>MD1</td><td>Microsteps</td><td>Excitation Mode</td></td>
     <tr>
-    <td rowspan="8"><p style=``"text-align:center"``>LV8729 Maximum 128 microsteps<br />  36V 1.8A</p></td>
+    <td rowspan="8">LV8729 Maximum 128 microsteps<br /> 36V 1.8A</td> 
     <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
     <tr>
     <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td>
@@ -178,6 +177,7 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <td><img src=img/M5P/M5P_DRI5.png /></td>
     <td colspan="5"><img src=img/M5P/M5P_DRI6.png /></td>  
 </table>
+
 
 
 #### · UART Mode of TMC Driver
