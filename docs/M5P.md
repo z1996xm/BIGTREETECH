@@ -12,29 +12,29 @@
 
 ## · Main Features
 
-1. 32bit 64MHz ARM Cortex-M0+ series STM32G0B1RET6 MCU.
+- 32bit 64MHz ARM Cortex-M0+ series STM32G0B1RET6 MCU.
 
-2. The thermistor circuit is protected to prevent MCU damage from shorted heated bed and heater cartridge connections. 
+- The thermistor circuit is protected to prevent MCU damage from shorted heated bed and heater cartridge connections. 
 
-3. The CNC fan's voltage is selectable in 24V, 12V, and 5V, no more need for external stepdown thus preventing board damage from user error.
+- The CNC fan's voltage is selectable in 24V, 12V, and 5V, no more need for external stepdown thus preventing board damage from user error.
 
-4. Thermistor connection supports pull-up resistance value setting using jumpers, no more extra module needed for PT1000.
+- Thermistor connection supports pull-up resistance value setting using jumpers, no more extra module needed for PT1000.
 
-5. MCU firmware can be upgraded via an SD card, or use DFU via Klipper's make flash command.
+- MCU firmware can be upgraded via an SD card, or use DFU via Klipper's make flash command.
 
-6. BTB connectors are adopted between the motherboard and core board, allowing the choice of other core board solutions in addition to CM4.
+- BTB connectors are adopted between the motherboard and core board, allowing the choice of other core board solutions in addition to CM4.
 
-7. Integrated SPI and UART mode of TMC driver and DIAG pin, easily configurable with jumpers.
+- Integrated SPI and UART mode of TMC driver and DIAG pin, easily configurable with jumpers.
 
-8. Support filament runout sensor, BLTouch, RGB, etc.
+- Support filament runout sensor, BLTouch, RGB, etc.
 
-9. Replaceable fuse for easy maintenance.
+- Replaceable fuse for easy maintenance.
 
-10. Onboard proximity switch port, support NPN and PNP type selection, (24V, 12V, 5V) voltage selection.
+- Onboard proximity switch port, support NPN and PNP type selection, (24V, 12V, 5V) voltage selection.
 
-11. Onboard SPI interface for connecting acceleration sensor to enable Klipper's input shaping.
+- Onboard SPI interface for connecting acceleration sensor to enable Klipper's input shaping.
 
-12. The new E-FUSE fuse is equipped, which can respond quickly, enhance self-protection ability, and greatly reduce the motherboard burnout caused by short circuits or ignition.
+- The new E-FUSE fuse is equipped, which can respond quickly, enhance self-protection ability, and greatly reduce the motherboard burnout caused by short circuits or ignition.
 
 ## · Basic Parameters
 
@@ -128,7 +128,7 @@
 </table>
 <table>
 	<tr>
-    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td></tr>
+    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td>	 </tr>
     <tr>
     <td rowspan="5">A4988 16 microstep max 35V 2A</td>
     <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
