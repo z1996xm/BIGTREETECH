@@ -122,8 +122,8 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/32</td><td></td></tr>
     <tr>
-    <td><img src=img/M5P/M5P_DRI1.png /></td>
-    <td colspan="5"><img src=img/M5P/M5P_DRI2.png /></td>
+    <td><img src=img/M5P/M5P_DRI1.png width="200" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI2.png width="200" /></td>
     <tr>    
 </table>
 <table>
@@ -141,8 +141,8 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td>
     <tr>
-    <td><img src=img/M5P/M5P_DRI3.png /></td>
-    <td colspan="5"><img src=img/M5P/M5P_DRI4.png /></td>  
+    <td><img src=img/M5P/M5P_DRI3.png width="200" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI4.png width="200" /></td>  
     <tr>    
 </table>
 <table>
@@ -166,9 +166,10 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/128</td><td>32W1-2 Phase</td></tr>
     <tr>
-    <td><img src=img/M5P/M5P_DRI5.png /></td>
-    <td colspan="5"><img src=img/M5P/M5P_DRI6.png /></td>  
+    <td><img src=img/M5P/M5P_DRI5.png width="200" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
 </table>
+
 
 
 
@@ -255,3 +256,17 @@ As shown in the figure below, 24V as an example, normally closed (PNP type), nee
 
 ## **· Software Configuration**
 
+For details, please click: https://z1996xm.github.io/BIGTREETECH/Software Configuration.html
+
+## **· Software Installation**
+
+For details, please click: https://z1996xm.github.io/BIGTREETECH/Software Installation.html
+
+## · FAQs
+
+1. All unplugging and plugging operations should be performed under the condition of 
+   power off, including enabling the eMMC writing.
+2. Pay attention to the heat dissipation of CM4 and CB1. If the running application 
+   consumes too many system resources, the CM4/CB1 will get hot quite seriously.
+
+## · Product Purchase Link
