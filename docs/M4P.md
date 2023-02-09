@@ -1,10 +1,16 @@
 # M4P
 
-[<img src=img/M4P_Title.png width="800"/>](https://z1996xm.github.io/BIGTREETECH/M4P.html)
+[<img src=img/M4P/M4P_Title.png width="600"/>](https://z1996xm.github.io/BIGTREETECH/M4P.html)
 
-## 1. Brief Introduction
+## **· Introduction**
 
-### 1.1 Main Features
+​		BIGTREETECH CB1 is an alternative to Raspberry Pi CM4, which is currently out of stock. BIGTREETECH M4P is a 4-axis motherboard using a CM4 BTB header, which can work with CB1 or CM4 perfectly.
+
+## **· Announcements**
+
+
+
+## · Main Features
 
 - DSI1, CSI1 interface (for CM4)
 
@@ -54,7 +60,7 @@
 
 - Adopt replaceable fuse for easy replacement
 
-### 1.2 Basic Parameters
+## **· Basic Parameters**
 
 - Product Size: 160 x 95mm
 
@@ -88,122 +94,149 @@
 
 - Display Screen: RepRapDiscount EXP-1 + EXP-2
 
-### 1.3 Product Dimension
+## **· Dimensions**
 
-<img src=img/M4P_Size.png width="800"/>
+<img src=img/M4P/M4P_Size.png width="600"/>
 
-## 2. Peripheral Interface
+## **· CAD**
 
-### 2.1 Interface Diagram
+<img src=img/M4P/M4P_Interface_Diagram.png width="600" />
 
-<img src=img/M4P_Interface_Diagram.png width="800" />
+## **· Schematic**
 
-### 2.2 Pin Out
 
-<img src=img/M4P_Pin_Out.png width="800" />
 
-## 3. Interface Instruction
+## **· Pin Out**
 
-### 3.1 Installing the Core Board
+<img src=img/M4P/M4P_Pin_Out.png width="600" />
 
-M4P+CM4：Pay attention to the direction, as shown below.
+## **· Hardware Configuration**
 
-<img src=img/M4P+CM4.png width="800" />
 
-M4P+CB1：Pay attention to the direction, as shown below.
 
-<img src=img/M4P+CB1.png width="800" />
+## **· Hardware Installation**
 
-### 3.2 40 pin GPIO
+### · Stepper Driver
 
-When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry Pi. When working with CB1, it is a custom IO arrangement, as shown in the figure below, the 'GPIO4' in front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.
+#### · Normal STEP/DIR(STANDALONE) Mode
 
-<img src=img/M4P_40_Pin.png width="800" />
+​	For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.
 
-### 3.3 TYPE-C
+<img src=img/M4P/M4P_Stepper_Driver.png width="600" />
 
-After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up, indicating that the power supply is normal. The J8 on the middle of the board is the power selection terminal, it needs to be short circuited only when the type-C USB is used to supply power to the motherboard or the USB is used to supply power externally. The signal of type-C is connected to the SoC, Only used when writing OS image for CM4 eMMC version.
+​	**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
 
-<img src=img/M4P_TYPE_C.png width="800" />
-
-### 3.4 Stepper Driver
-
-#### 3.4.1 Normal STEP/DIR(STANDALONE) Mode
-
-For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.
-
-<img src=img/M4P_Stepper_Driver.png width="800" />
-
-**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
-
-| Driver chips                  | MS1                           | MS2  | MS3  | Microsteps | Excitation Mode |
-| ----------------------------- | ----------------------------- | ---- | ---- | ---------- | --------------- |
-| A498816 microstep max 35V 2A  | L                             | L    | L    | Full Step  | 2 Phase         |
-|                               | H                             | L    | L    | 1/2        | 1-2 Phase       |
-|                               | L                             | H    | L    | 1/4        | W1-2 Phase      |
-|                               | H                             | H    | L    | 1/8        | 2W1-2 Phase     |
-|                               | H                             | H    | H    | 1/16       | 4W1-2 Phase     |
-| <img src=img/M4P_Data2.png /> | <img src=img/M4P_Data1.png /> |      |      |            |                 |
-
- 
-
-| Driver chips                                          | MODE2                         | MODE1 | MODE0 | Microsteps | Excitation Mode |
-| ----------------------------------------------------- | ----------------------------- | ----- | ----- | ---------- | --------------- |
-| DRV8825Maximum 32microsteps8.2V-45V 2.5A at 24V T=25℃ | L                             | L     | L     | Full Step  | 2 Phase         |
-|                                                       | L                             | L     | H     | 1/2        | 1-2 Phase       |
-|                                                       | L                             | H     | L     | 1/4        | W1-2 Phase      |
-|                                                       | L                             | H     | H     | 1/8        |                 |
-|                                                       | H                             | L     | L     | 1/16       |                 |
-|                                                       | H                             | L     | H     | 1/32       |                 |
-|                                                       | H                             | H     | L     | 1/32       |                 |
-|                                                       | H                             | H     | H     | 1/32       |                 |
-| <img src=img/M4P_Data3.png />                         | <img src=img/M4P_Data4.png /> |       |       |            |                 |
-
- 
-
-| Driver chips                        | MD3                           | MD2  | MD1  | Microsteps | Excitation Mode |
-| ----------------------------------- | ----------------------------- | ---- | ---- | ---------- | --------------- |
-| LV8729Maximum 128microsteps36V 1.8A | L                             | L    | L    | Full Step  | 2 Phase         |
-|                                     | L                             | L    | H    | 1/2        | 1-2 Phase       |
-|                                     | L                             | H    | L    | 1/4        | W1-2 Phase      |
-|                                     | L                             | H    | H    | 1/8        | 2W1-2 Phase     |
-|                                     | H                             | L    | L    | 1/16       | 4W1-2 Phase     |
-|                                     | H                             | L    | H    | 1/32       | 8W1-2 Phase     |
-|                                     | H                             | H    | L    | 1/64       | 16W1-2 Phase    |
-|                                     | H                             | H    | H    | 1/128      | 32W1-2 Phase    |
-| <img src=img/M4P_Data5.png />       | <img src=img/M4P_Data6.png /> |      |      |            |                 |
-
- 
-
-| Driver chips                       | MS3                           | MS2  | MS1  | Microsteps |
-| ---------------------------------- | ----------------------------- | ---- | ---- | ---------- |
-| ST820Maximum 256microsteps45V 1.5A | L                             | L    | L    | Full Step  |
-|                                    | L                             | L    | H    | 1/2        |
-|                                    | L                             | H    | L    | 1/4        |
-|                                    | L                             | H    | H    | 1/8        |
-|                                    | H                             | L    | L    | 1/16       |
-|                                    | H                             | L    | H    | 1/32       |
-|                                    | H                             | H    | L    | 1/128      |
-|                                    | H                             | H    | H    | 1/256      |
-| <img src=img/M4P_Data7.png />      | <img src=img/M4P_Data8.png /> |      |      |            |
+<table>
+	<tr>
+    <td>Driver Chips</td><td>MODE2</td><td>MODE1</td><td>MODE0</td><td>Microsteps</td><td>Excitation Mode</td></tr>
+    <tr>
+    <td rowspan="8">DRV8825 Maximum 32 microsteps<br /> 
+        8.2V-45V 2.5A at 24V T=25℃</td>
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
+    <tr>
+    <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>H</td><td>1/8</td><td></td></tr>
+    <tr>
+    <td>H</td><td>L</td><td>L</td><td>1/16</td><td></td></tr>
+    <tr>
+    <td>H</td><td>L</td><td>H</td><td>1/32</td><td></td></tr>
+    <tr>
+    <td>H</td><td>H</td><td>L</td><td>1/32</td><td></td></tr>
+    <tr>
+    <td>H</td><td>H</td><td>H</td><td>1/32</td><td></td></tr>
+    <tr>
+    <td><img src=img/M5P/M5P_DRI1.png width="130" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI2.png width="200" /></td>
+    <tr>    
+</table>
+<table>
+	<tr>
+    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td>	 </tr>
+    <tr>
+    <td rowspan="5">A4988 16 microstep max 35V 2A</td>
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
+    <tr>
+    <td>H</td><td>L</td><td>L</td><td>1/2</td><td>1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td>
+    <tr>
+    <td>H</td><td>H</td><td>L</td><td>1/8</td><td>2W1-2 Phase</td>
+    <tr>
+    <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td>
+    <tr>
+    <td><img src=img/M5P/M5P_DRI3.png width="110" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI4.png width="200" /></td>  
+    <tr>    
+</table>
+<table>
+	<tr>
+    <td>Driver Chips</td><td>MD3</td><td>MD2</td><td>MD1</td><td>Microsteps</td><td>Excitation Mode</td></td>
+    <tr>
+    <td rowspan="8">LV8729 Maximum 128 microsteps<br /> 36V 1.8A</td> 
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
+    <tr>
+    <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>H</td><td>1/8</td><td>2W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>L</td><td>L</td><td>1/16</td><td>4W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>L</td><td>H</td><td>1/32</td><td>8W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>H</td><td>L</td><td>1/64</td><td>16W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>H</td><td>H</td><td>1/128</td><td>32W1-2 Phase</td></tr>
+    <tr>
+    <td><img src=img/M5P/M5P_DRI5.png width="100" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
+</table>
+<table>
+	<tr>
+    <td>Driver Chips</td><td>MS3</td><td>MS2</td><td>MS1</td><td>Microsteps</td>
+    <tr>
+    <td rowspan="8">ST820 Maximum <br />256 microsteps <br />45V 1.5A</td> 
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td>
+    <tr>
+    <td>L</td><td>L</td><td>H</td><td>1/2</td>
+    <tr>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td>
+    <tr>
+    <td>L</td><td>H</td><td>H</td><td>1/8</td>
+    <tr>
+    <td>H</td><td>L</td><td>L</td><td>1/16</td>
+    <tr>
+    <td>H</td><td>L</td><td>H</td><td>1/32</td>
+    <tr>
+    <td>H</td><td>H</td><td>L</td><td>1/64</td>
+    <tr>
+    <td>H</td><td>H</td><td>H</td><td>1/128</td>
+    <tr>
+    <td><img src=img/M5P/M5P_DRI5.png width="100" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
+</table>
 
 #### 3.4.2 UART Mode of TMC Driver
 
 For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.
 
-<img src=img/M4P_TMC_UART_Mode.png width="800" />
+<img src=img/M4P/M4P_TMC_UART_Mode.png width="600" />
 
 #### 3.4.3 SPI Mode of TMC Driver 
 
 For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.
 
-<img src=img/M4P_TMC_SPI_Mode.png width="800" />
+<img src=img/M4P/M4P_TMC_SPI_Mode.png width="600" />
 
 #### 3.4.4 DIAG(Sensorless Homing) of TMC Driver 
 
 As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need to cut the DIAG pin of the driver.
 
-<img src=img/M4P_TMC_DIAG_Mode.png width="800" />
+<img src=img/M4P/M4P_TMC_DIAG_Mode.png width="600" />
 
 #### 3.4.5 Stepper Driver Voltage Selection
 
@@ -213,43 +246,65 @@ The power supply of each driver can be set by the jumper. When the jumper is ins
 
 The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.
 
-<img src=img/M4P_IPS.png width="800" />
+<img src=img/M4P/M4P_IPS.png width="600" />
 
 ##### Main power supply
 
 The jumper is inserted into the right side and powered by the main POWER port. the 12/24v voltage is supported.
 
-<img src=img/M4P_MPS.png width="800" />
+<img src=img/M4P/M4P_MPS.png width="600" />
+
+### 3.1 Installing the Core Board
+
+M4P+CM4：Pay attention to the direction, as shown below.
+
+<img src=img/M4P/M4P+CM4.png width="600" />
+
+M4P+CB1：Pay attention to the direction, as shown below.
+
+<img src=img/M4P/M4P+CB1.png width="600" />
+
+### 3.2 40 pin GPIO
+
+When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry Pi. When working with CB1, it is a custom IO arrangement, as shown in the figure below, the 'GPIO4' in front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.
+
+<img src=img/M4P/M4P_40_Pin.png width="600" />
+
+### 3.3 TYPE-C
+
+After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up, indicating that the power supply is normal. The J8 on the middle of the board is the power selection terminal, it needs to be short circuited only when the type-C USB is used to supply power to the motherboard or the USB is used to supply power externally. The signal of type-C is connected to the SoC, Only used when writing OS image for CM4 eMMC version.
+
+<img src=img/M4P/M4P_TYPE_C.png width="600" />
 
 ### 3.5 BLTouch Wiring
 
 M4P_BLTouch_Wiring
 
-<img src=img/M4P_BLTouch_Wiring.png width="800" />
+<img src=img/M4P/M4P_BLTouch_Wiring.png width="600" />
 
 ### 3.6 EXP1+EXP2 and LCD Screen Wiring
 
 M4P_E1_E2_LCD
 
-<img src=img/M4P_E1_E2_LCD.png width="800" />
+<img src=img/M4P/M4P_E1_E2_LCD.png width="600" />
 
 ### 3.7 RGB Wiring
 
-<img src=img/M4P_RGB_Wiring.png width="800" />
+<img src=img/M4P/M4P_RGB_Wiring.png width="600" />
 
 ### 3.8 DSI/CSI Wiring
 
-<img src=img/M4P_DSI_CSI_Wiring.png width="800" />
+<img src=img/M4P/M4P_DSI_CSI_Wiring.png width="600" />
 
 ### 3.9 SPI Display Wiring
 
-<img src=img/M4P_SPI_Display_Wiring.png width="800" />
+<img src=img/M4P/M4P_SPI_Display_Wiring.png width="600" />
 
 ### 3.10 ADXL345 Accelerometer
 
 Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the M4P motherboard
 
-<img src=img/M4P_ADXL345.png width="800" />
+<img src=img/M4P/M4P_ADXL345.png width="600" />
 
 [adxl345]
 
