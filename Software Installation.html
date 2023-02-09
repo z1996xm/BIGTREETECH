@@ -1347,9 +1347,9 @@
 <p>​   Raspberry Pi official OS: <a href="https://www.raspberrypi.com/software/operating-systems">https://www.raspberrypi.com/software/operating-systems</a></p>
 <p>​   (CM4 needs to refer to the following system settings to enable the system's USB, DSI and other interfaces, whose operation is slightly different from       the standard Raspberry Pi 3B, 4B, etc.)</p>
 <p>​   Raspberry_Pi_OS</p>
-<p><img src=img/Raspberry_Pi_OS.png width="800"/></p>
+<p><img src=img/Raspberry_Pi_OS.png width="600"/></p>
 <h3 id="download-and-install-raspberry-pi-imager"><strong>· Download and Install Raspberry Pi Imager</strong><a class="headerlink" href="#download-and-install-raspberry-pi-imager" title="Permanent link">&para;</a></h3>
-<p>​   Install the official Raspberry Pi Imager: <a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a></p>
+<p>​       Install the official Raspberry Pi Imager: <a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a></p>
 <h3 id="write-os"><strong>· Write OS</strong><a class="headerlink" href="#write-os" title="Permanent link">&para;</a></h3>
 <h4 id="cm4-lite-version-micro-sd-card"><strong>· CM4 LITE Version (Micro SD Card)</strong><a class="headerlink" href="#cm4-lite-version-micro-sd-card" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1360,15 +1360,15 @@
 <p>Select Operating System</p>
 </li>
 </ol>
-<p><img src=img/Rasp1.png width="800" /></p>
+<p><img src=img/Rasp1.png width="600" /></p>
 <ol>
 <li>Select "Use Custom", then select a custom.img from your computer</li>
 </ol>
-<p><img src=img/Rasp2.png width="800" /></p>
+<p><img src=img/Rasp2.png width="600" /></p>
 <ol>
 <li>Click the setting icon in the lower right corner</li>
 </ol>
-<p><img src=img/Rasp3.png width="800" /></p>
+<p><img src=img/Rasp3.png width="600" /></p>
 <ol>
 <li>“Enable SSH”and click“SAVE”， There are other features that can be set in this menu. Please modify them according to your own needs. Details are as follows：
    <strong>Set hostname: raspberrypi.local</strong> //Custom hostname Default:raspberrypi.local
@@ -1377,25 +1377,26 @@
    username: pi password：raspberry
    <strong>Configure wireless LAN</strong> // Custom the SSID and password of WLAN</li>
 </ol>
-<p><img src=img/Rasp4.png width="800" /></p>
+<p><img src=img/Rasp4.png width="600" /></p>
 <ol>
 <li>Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card. Be careful not to select the wrong storage device, otherwise, the data will be formatted).</li>
 </ol>
-<p><img src=img/Rasp5.png width="800" /></p>
+<p><img src=img/Rasp5.png width="600" /></p>
 <ol>
 <li>Wait for the writing to finish.</li>
 </ol>
-<p><img src=img/Rasp6.png width="800" /></p>
+<p><img src=img/Rasp6.png width="600" /></p>
 <h4 id="cm4-emmc-version"><strong>· CM4 eMMC Version</strong><a class="headerlink" href="#cm4-emmc-version" title="Permanent link">&para;</a></h4>
 <p>​   <strong>(Note: eMMC version will not tun the system from the Micro SD card.)</strong></p>
 <ol>
-<li>Install rpiboot For Windows:<a href="http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe">http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe</a></li>
+<li>Install rpiboot<p>For Windows:<a href="http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe">http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe</a></p>
+</li>
 </ol>
-<p>​   For Mac and Linux:<a href="https://github.com/raspberrypi/usbboot#building">https://github.com/raspberrypi/usbboot#building</a></p>
+<p>​       For Mac and Linux:<a href="https://github.com/raspberrypi/usbboot#building">https://github.com/raspberrypi/usbboot#building</a></p>
 <ol>
 <li>Push the DIP switch 4 (USB OTG) and 3 (BOOT) to ON to enter BOOT mode.</li>
 </ol>
-<p><img src=img/M4P_USB.png width="800" /></p>
+<p><img src=img/M4P_USB.png width="600" /></p>
 <ol>
 <li>
 <p>Plug the Type-C into the USB port of the computer(in order to avoid problems caused by the insufficient USB power supply of the computer, it is best to use an external 24V power supply to power the motherboard). Run <strong>sudo ./rpiboot</strong>(Mac/Linux) or rpiboot.exe on Windows, then the eMMC of CM4 will be recognized as a mass storage device by the computer (if rpiboot reports an error at this time, you can try to re-plug the USB).</p>
@@ -1417,19 +1418,19 @@
 <li>Plug the Micro SD card into the computer via a card reader.</li>
 <li>Select Operating System.</li>
 </ol>
-<p><img src=img/Rasp1.png width="800" /></p>
+<p><img src=img/Rasp1.png width="600" /></p>
 <ol>
 <li>Select "Use Custom", then select a custom.img from your computer.</li>
 </ol>
-<p><img src=img/Rasp2.png width="800" /></p>
+<p><img src=img/Rasp2.png width="600" /></p>
 <ol>
 <li>Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card. Be careful not to select the wrong storage device, otherwise, the data will be formatted).</li>
 </ol>
-<p><img src=img/Rasp5.png width="800" /></p>
+<p><img src=img/Rasp5.png width="600" /></p>
 <ol>
 <li>Wait for the writing to finish.</li>
 </ol>
-<p><img src=img/Rasp6.png width="800" /></p>
+<p><img src=img/Rasp6.png width="600" /></p>
 
               
             </article>
