@@ -167,26 +167,3 @@ There will be an error message “dfu-util: Error during download get_status” 
 <img src=img/M4P_Conf_Klipper3.png width="800" />
 
 Refer to https://www.klipper3d.org/Overview.html for detailed configuration guide according to your machine type.
-
-## 4. Precautions
-
-1. All unplugging and plugging operations should be performed under the condition of 
-power off, including enabling the eMMC writing.
-2. Pay attention to the heat dissipation of CM4 and CB1. If the running application 
-consumes too many system resources, the CM4/CB1 will get hot quite seriously.
-
-
-
-
-
-If you need other resources for this product, please visit https://github.com/bigtreetech/ 
-
-and find them yourself. If you cannot find the resources you need, you can contact our after-sales support.
-
-
-
-If you encounter other problems during use, feel free to contact us, and we are answering them carefully; 
-
-Any good opinions or suggestions on our products are also welcome, too, and we will consider them carefully. 
-
-Thank you for choosing BIGTREETECH. Your support means a lot to us! 

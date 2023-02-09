@@ -256,11 +256,11 @@ As shown in the figure below, 24V as an example, normally closed (PNP type), nee
 
 ## **· Software Configuration**
 
-For details, please click: https://z1996xm.github.io/BIGTREETECH/Software Configuration.html
+For details, please click: https://z1996xm.github.io/BIGTREETECH/Software%20Configuration.html
 
 ## **· Software Installation**
 
-For details, please click: https://z1996xm.github.io/BIGTREETECH/Software Installation.html
+For details, please click: https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
 
 ## · FAQs
 
