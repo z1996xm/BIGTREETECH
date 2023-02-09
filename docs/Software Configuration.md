@@ -1,4 +1,4 @@
-# **Software Configuration**
+# Software Configuration
 
 ## **· System Settings (CM4)**
 

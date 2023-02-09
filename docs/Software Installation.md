@@ -1,17 +1,13 @@
-# **Software Installation**
+# Software Installation
 
 ## **· Raspberry PI CM4 Setup steps**
 
 ### **· Download OS Image**
 
-​	If CM4 core board is used, You can directly download the images of Fluidd or 
-​	Mainsail, also can download the OS image from the official website of Raspberry Pi 
-​	Fluidd: https://github.com/fluidd-core/FluiddPI/releases
+​	If CM4 core board is used, You can directly download the images of Fluidd or Mainsail, also can download the OS image from the official website of 	  	Raspberry Pi Fluidd: https://github.com/fluidd-core/FluiddPI/releases
 ​	Mainsail: https://github.com/mainsail-crew/MainsailOS/releases
 ​	Raspberry Pi official OS: https://www.raspberrypi.com/software/operating-systems
-​	(CM4 needs to refer to the following system settings to enable the system's USB, DSI 
-​	and other interfaces, whose operation is slightly different from the standard Raspberry 
-​	Pi 3B, 4B, etc.)
+​	(CM4 needs to refer to the following system settings to enable the system's USB, DSI and other interfaces, whose operation is slightly different from 	 	the standard Raspberry Pi 3B, 4B, etc.)
 
 ​	Raspberry_Pi_OS
 
@@ -81,9 +77,7 @@
 
 ### **· Download OS Image**
 
-​	If BIGTREETECH CB1 core board is used, You can only download and install the system image provided by BIGTREETECH:
-
-​	https://github.com/bigtreetech/CB1/releases
+​	If BIGTREETECH CB1 core board is used, You can only download and install the system image provided by BIGTREETECH:https://github.com/bigtreetech/CB1/releases
 
 ### **· Download and Install Raspberry Pi Imager**
 
