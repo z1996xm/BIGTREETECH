@@ -1,8 +1,8 @@
-# Software Installation
+# **Software Installation**
 
-## · Raspberry PI CM4 Setup steps
+## **· Raspberry PI CM4 Setup steps**
 
-### · Download OS Image
+### **· Download OS Image**
 
 ​	If CM4 core board is used, You can directly download the images of Fluidd or 
 ​	Mainsail, also can download the OS image from the official website of Raspberry Pi 
@@ -17,13 +17,13 @@
 
 <img src=img/Raspberry_Pi_OS.png width="800"/>
 
-### · Download and Install Raspberry Pi Imager
+### **· Download and Install Raspberry Pi Imager**
 
 ​	Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
-### · Write OS
+### **· Write OS**
 
-#### · CM4 LITE Version (Micro SD Card)
+#### **· CM4 LITE Version (Micro SD Card)**
 
 1. Plug the Micro SD card into the computer via a card reader
 
@@ -59,7 +59,7 @@
 
 <img src=img/Rasp6.png width="800" />
 
-#### · CM4 eMMC Version
+#### **· CM4 eMMC Version**
 
 ​	**(Note: eMMC version will not tun the system from the Micro SD card.)**
 
@@ -77,19 +77,19 @@
 
 5. When the writing is completed, push the DIP switch 4 (USB OTG) and 3 (BOOT) back to OFF after power off, and power on again to enter the normal working mode.
 
-## · BIGTREETECH CB1 Setup steps
+## **· BIGTREETECH CB1 Setup steps**
 
-### · Download OS Image
+### **· Download OS Image**
 
 ​	If BIGTREETECH CB1 core board is used, You can only download and install the system image provided by BIGTREETECH:
 
 ​	https://github.com/bigtreetech/CB1/releases
 
-### · Download and Install Raspberry Pi Imager
+### **· Download and Install Raspberry Pi Imager**
 
 ​	Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/ .The system image of CB1 can also be written with this software.
 
-### · Write OS Image
+### **· Write OS Image**
 
 1. Plug the Micro SD card into the computer via a card reader.
 2. Select Operating System.

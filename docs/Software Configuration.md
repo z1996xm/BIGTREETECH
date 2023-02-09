@@ -1,8 +1,8 @@
-# Software Configuration
+# **Software Configuration**
 
-## · System Settings (CM4)
+## **· System Settings (CM4)**
 
-### · USB 2.0 Hub Ports
+### **· USB 2.0 Hub Ports**
 
 ​	M4P is designed with a USB 2.0 Hub, in order to save power consumption, the USB port of CM4 is disabled by default. If you want to enable it, you 	 	need to add the following content to the config.txt file:
 
@@ -10,7 +10,7 @@
 dtoverlay=dwc2,dr_mode=host
 ```
 
-### · DSI1 Display Interface
+### **· DSI1 Display Interface**
 
 ​	The default display interface is HDMI. The onboard DSI port of M4P uses the DSI1 
 ​	interface. You need to download the DSI1 driver and enter the following sentence in 
@@ -22,11 +22,11 @@ sudo wget https://datasheets.raspberrypi.com/cmio/dt-blob-disp1-cam1.bin -O /boo
 
 ​	After downloading this driver and restarting, the screen of DSI1 will work normally. If you want to use the HDMI interface, you need to delete the 		  	downloaded **/boot/dt-blob.bin** driver and restart, then the HDMI can output normally.
 
-### · CSI1 Camera
+### **· CSI1 Camera**
 
 ​	The DSI1 driver downloaded in 4.4.2 DSI1 Display Interface also includes the CSI1 driver. If you just want to install the CSI1 driver, not DSI1, please find 	the driver you want to use at https://datasheets.raspberrypi.com/licence.html and download it in the boot folder of CM4 and rename it to dt-blob.bin, 	and then refer to the settings here. https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/
 
-## · WIFI Setting
+## **· WIFI Setting**
 
 ​	Note: This step can be skipped if you are using a network cable connection.CB1 cannot directly use the Raspberry Pi Imager to set the WiFi name and 	password like CM4. After the OS image writing is completed, the MicroSD card will have a FAT32 partition recognized by the computer, find"system.cfg"
 
@@ -38,9 +38,9 @@ Open it with Notepad, replace WIFI-SSID with your WiFi name, and PASSWORD with y
 
 <img src=img/wifi.png width="600" />
 
-## · Configure the motherboard
+## **· Configure the motherboard**
 
-### · ssh connect to device
+### **· ssh connect to device**
 
 1. Install the ssh application Mobaxterm: https://mobaxterm.mobatek.net/downloadhome-edition.html
 
@@ -71,7 +71,7 @@ CB1:
 
 <img src=img/SSH_Terminal.png width="600" />
 
-### · Compile firmware
+### **· Compile firmware**
 
 1. After ssh successfully connected to the device, enter in terminal:
 
@@ -96,9 +96,9 @@ CB1:
 
 3. Run **make** to compile firmware，”klipper.bin” file will be generated in **home/pi/kliiper/out** folder when make is finished, download it onto your computer using the ssh application.
 
-### · Firmware update
+### **· Firmware update**
 
-#### · Update using SD Card
+#### **· Update using SD Card**
 
 1. Rename klipper.bin to ”firmware.bin”, Copy to the SD card root directory, insert the SD card into the SD card slot of the M4P, click the “reset” button or power on again. The firmware will be updated automatically. After the update, the "firmware.bin" in the SD card will be renamed as "FIRMWARE.CUR".
 
@@ -110,7 +110,7 @@ ls /dev/serial/by-id/
 
 <img src=img/M4P_Update_Using_SD.png width="600" />
 
-#### · Update using DFU
+#### **· Update using DFU**
 
 ​	If the MCU klipper device ID can be found by **ls /dev/serial/by-id/**, we can input:
 
@@ -124,7 +124,7 @@ make flash FLASH_DEVICE= /dev/serial/by-id/usb-Klipper_stm32g0b1xx_190028000D504
 
 ​	There will be an error message “dfu-util: Error during download get_status” after update. Just ignore it.
 
-### · Configure Klipper
+### **· Configure Klipper**
 
 1. Enter your device IP address into your browser to open the webUI，find the reference config for motherboard in the directory shown below，if there is no such config available, update your klipper source code to the newest version or download from github: https://github.com/bigtreetech/Manta-M4P
 
