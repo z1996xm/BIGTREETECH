@@ -122,7 +122,7 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/32</td><td></td></tr>
     <tr>
-    <td><img src=img/M5P/M5P_DRI1.png width="200" /></td>
+    <td><img src=img/M5P/M5P_DRI1.png width="130" /></td>
     <td colspan="5"><img src=img/M5P/M5P_DRI2.png width="200" /></td>
     <tr>    
 </table>
@@ -141,7 +141,7 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td>
     <tr>
-    <td><img src=img/M5P/M5P_DRI3.png width="200" /></td>
+    <td><img src=img/M5P/M5P_DRI3.png width="110" /></td>
     <td colspan="5"><img src=img/M5P/M5P_DRI4.png width="200" /></td>  
     <tr>    
 </table>
@@ -166,9 +166,10 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/128</td><td>32W1-2 Phase</td></tr>
     <tr>
-    <td><img src=img/M5P/M5P_DRI5.png width="200" /></td>
+    <td><img src=img/M5P/M5P_DRI5.png width="100" /></td>
     <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
 </table>
+
 
 
 
