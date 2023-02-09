@@ -198,7 +198,7 @@ When using sensorless homing, place jumpers according to the diagram below, ther
 
 <img src=img/M5P/M5P_DRI_Vol2.png width="800" />
 
-### Install the Core Board via BTB Connection
+### · Install the Core Board via BTB Connection
 
 M5P+CM4: Note the direction, as shown in the figure below:
 
@@ -208,44 +208,44 @@ M5P+CB1: Note the direction, as shown in the figure below:
 
 <img src=img/M5P/M5P_CB1.png width="800" />
 
-### Voltage Selection for CNC Fan
+### · Voltage Selection for CNC Fan
 
 Through the jumper cap, you can set the output voltage to 5V, 12V, or 24V.
 Note: We are not responsible for fan burnout caused by incorrect voltage selection. Please confirm the voltage the fan supports before selecting the voltage.
 
 <img src=img/M5P/M5P_Vol_CNC.png width="800" />
 
-### 100K NTC or PT1000 Setting
+### · 100K NTC or PT1000 Setting
 
 When using 100K NTC, no jumpers need to be connected, the pull up resistance of TH0-TH3 is 4.7K 0.1%. When using PT1000, the pins indicated in the picture below need to be connected via jumpers, parallel connection of 4.12K 0.1% resistors, the pull-up resistance of TH0-TH1 is 2.2K. (This method has a much lower accuracy than the MAX31865 in reading temperature.)
 
 <img src=img/M5P/M5P_100K.png width="800" />
 
-### BLTouch Wiring
+### · BLTouch Wiring
 
 <img src=img/M5P/M5P_BLTouch_Wiring.png width="800" />
 
-### Wiring between LCD Screen and EXP1+EXP2
+### · Wiring between LCD Screen and EXP1+EXP2
 
 <img src=img/M5P/M5P_LCD_E1_E2.png width="800" />
 
-### RGB Wiring
+### · RGB Wiring
 
 <img src=img/M5P/M5P_RGB_Wiring.png width="800" />
 
-### Filament Sensor Wiring
+### · Filament Sensor Wiring
 
 <img src=img/M5P/M5P_Filament.png width="800" />
 
-### 40 Pins GPIO
+### · 40 Pins GPIO
 
 <img src=img/M5P/M5P_40_Pins.png width="800" />
 
-### DSI/CSI Wiring
+### · DSI/CSI Wiring
 
 <img src=img/M5P/M5P_DSI.png width="800" />
 
-### Proximity Switch Wiring
+### · Proximity Switch Wiring
 
 As shown in the figure below, 24V as an example, normally open (NPN type), no need for shorting through a jumper cap:
 
@@ -255,11 +255,11 @@ As shown in the figure below, 24V as an example, normally closed (PNP type), nee
 
 <img src=img/M5P/M5P_Proximity1.png width="800" />
 
-## **· Software Configuration**
+## · Software Configuration
 
 For details, please click: https://z1996xm.github.io/BIGTREETECH/Software%20Configuration.html
 
-## **· Software Installation**
+## · Software Installation
 
 For details, please click: https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
 
