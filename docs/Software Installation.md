@@ -4,15 +4,15 @@
 
 ### **· Download OS Image**
 
-<p>If CM4 core board is used, You can directly download the images of Fluidd or Mainsail, also can<br> download the OS image from the official website of<br>Raspberry Pi Fluidd: https://github.com/fluidd-core/FluiddPI/releases<br> Mainsail: https://github.com/mainsail-crew/MainsailOS/releases<br> Raspberry Pi official OS: https://www.raspberrypi.com/software/operating-systems <br>(CM4 needs to refer to the following system settings to enable the system's USB, DSI and other<br> interfaces, whose operation is slightly different from the standard Raspberry Pi 3B, 4B, etc.)<br></p>
+<p>If CM4 core board is used, You can directly download the images of Fluidd or Mainsail, also can<br> download the OS image from the official website of<br>Raspberry Pi Fluidd: <a href="https://github.com/fluidd-core/FluiddPI/releases">https://github.com/fluidd-core/FluiddPI/releases</a><br> Mainsail: <a href="https://github.com/mainsail-crew/MainsailOS/releases">https://github.com/mainsail-crew/MainsailOS/releases</a> <br> Raspberry Pi official OS: <a href="https://www.raspberrypi.com/software/operating-systems">https://www.raspberrypi.com/software/operating-systems</a></a> <br>(CM4 needs to refer to the following system settings to enable the system's USB, DSI and other<br> interfaces, whose operation is slightly different from the standard Raspberry Pi 3B, 4B, etc.)<br></p>
 
-​	Raspberry_Pi_OS
+Raspberry_Pi_OS
 
 <img src=img/Raspberry_Pi_OS.png width="600"/>
 
 ### **· Download and Install Raspberry Pi Imager**
 
-<p>Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/</p>
+​	Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
 ### **· Write OS**
 
