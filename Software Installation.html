@@ -1341,18 +1341,18 @@
 <h1 id="software-installation">Software Installation<a class="headerlink" href="#software-installation" title="Permanent link">&para;</a></h1>
 <h2 id="raspberry-pi-cm4-setup-steps">· Raspberry PI CM4 Setup steps<a class="headerlink" href="#raspberry-pi-cm4-setup-steps" title="Permanent link">&para;</a></h2>
 <h3 id="download-os-image">· Download OS Image<a class="headerlink" href="#download-os-image" title="Permanent link">&para;</a></h3>
-<p>If CM4 core board is used, You can directly download the images of Fluidd or 
-Mainsail, also can download the OS image from the official website of Raspberry Pi 
-Fluidd: <a href="https://github.com/fluidd-core/FluiddPI/releases">https://github.com/fluidd-core/FluiddPI/releases</a>
-Mainsail: <a href="https://github.com/mainsail-crew/MainsailOS/releases">https://github.com/mainsail-crew/MainsailOS/releases</a>
-Raspberry Pi official OS: <a href="https://www.raspberrypi.com/software/operating-systems">https://www.raspberrypi.com/software/operating-systems</a>
-(CM4 needs to refer to the following system settings to enable the system's USB, DSI 
-and other interfaces, whose operation is slightly different from the standard Raspberry 
-Pi 3B, 4B, etc.)</p>
-<p>Raspberry_Pi_OS</p>
+<p>​   If CM4 core board is used, You can directly download the images of Fluidd or 
+​   Mainsail, also can download the OS image from the official website of Raspberry Pi 
+​   Fluidd: <a href="https://github.com/fluidd-core/FluiddPI/releases">https://github.com/fluidd-core/FluiddPI/releases</a>
+​   Mainsail: <a href="https://github.com/mainsail-crew/MainsailOS/releases">https://github.com/mainsail-crew/MainsailOS/releases</a>
+​   Raspberry Pi official OS: <a href="https://www.raspberrypi.com/software/operating-systems">https://www.raspberrypi.com/software/operating-systems</a>
+​   (CM4 needs to refer to the following system settings to enable the system's USB, DSI 
+​   and other interfaces, whose operation is slightly different from the standard Raspberry 
+​   Pi 3B, 4B, etc.)</p>
+<p>​   Raspberry_Pi_OS</p>
 <p><img src=img/Raspberry_Pi_OS.png width="800"/></p>
 <h3 id="download-and-install-raspberry-pi-imager">· Download and Install Raspberry Pi Imager<a class="headerlink" href="#download-and-install-raspberry-pi-imager" title="Permanent link">&para;</a></h3>
-<p>Install the official Raspberry Pi Imager: <a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a></p>
+<p>​   Install the official Raspberry Pi Imager: <a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a></p>
 <h3 id="write-os">· Write OS<a class="headerlink" href="#write-os" title="Permanent link">&para;</a></h3>
 <h4 id="cm4-lite-version-micro-sd-card">· CM4 LITE Version (Micro SD Card)<a class="headerlink" href="#cm4-lite-version-micro-sd-card" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1373,22 +1373,16 @@ Pi 3B, 4B, etc.)</p>
 </ol>
 <p><img src=img/Rasp3.png width="800" /></p>
 <ol>
-<li>
-<p>“Enable SSH”and click“SAVE”， There are other features that can be set in this menu. </p>
-<p>Please modify them according to your own needs. Details are as follows：
-Set hostname: raspberrypi.local //Custom hostname Default:raspberrypi.local
-Enable SSH
-Set username and password // Custom username and password，Default 
-username: pi password：raspberry
-Configure wireless LAN // Custom the SSID and password of WLAN</p>
-</li>
+<li>“Enable SSH”and click“SAVE”， There are other features that can be set in this menu. Please modify them according to your own needs. Details are as follows：
+   <strong>Set hostname: raspberrypi.local</strong> //Custom hostname Default:raspberrypi.local
+   Enable SSH
+   <strong>Set username and password</strong> // Custom username and password，Default 
+   username: pi password：raspberry
+   <strong>Configure wireless LAN</strong> // Custom the SSID and password of WLAN</li>
 </ol>
 <p><img src=img/Rasp4.png width="800" /></p>
 <ol>
-<li>
-<p>Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card.</p>
-<p>Be careful not to select the wrong storage device, otherwise, the data will be formatted).</p>
-</li>
+<li>Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card. Be careful not to select the wrong storage device, otherwise, the data will be formatted).</li>
 </ol>
 <p><img src=img/Rasp5.png width="800" /></p>
 <ol>
@@ -1396,7 +1390,7 @@ Configure wireless LAN // Custom the SSID and password of WLAN</p>
 </ol>
 <p><img src=img/Rasp6.png width="800" /></p>
 <h4 id="cm4-emmc-version">· CM4 eMMC Version<a class="headerlink" href="#cm4-emmc-version" title="Permanent link">&para;</a></h4>
-<p><strong>(Note: eMMC version will not tun the system from the Micro SD card.)</strong></p>
+<p>​   <strong>(Note: eMMC version will not tun the system from the Micro SD card.)</strong></p>
 <ol>
 <li>Install rpiboot For Windows:<a href="http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe">http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe</a></li>
 </ol>
@@ -1407,27 +1401,21 @@ Configure wireless LAN // Custom the SSID and password of WLAN</p>
 <p><img src=img/M4P_USB.png width="800" /></p>
 <ol>
 <li>
-<p>Plug the Type-C into the USB port of the computer(in order to avoid problems caused by the insufficient USB </p>
-<p>power supply of the computer, it is best to use an external 24V power supply to power the motherboard). Run 
-sudo ./rpiboot(Mac/Linux) or rpiboot.exe on Windows, then the eMMC of CM4 will be recognized as a mass </p>
-<p>storage device by the computer (if rpiboot reports an error at this time, you can try to re-plug the USB).</p>
+<p>Plug the Type-C into the USB port of the computer(in order to avoid problems caused by the insufficient USB power supply of the computer, it is best to use an external 24V power supply to power the motherboard). Run <strong>sudo ./rpiboot</strong>(Mac/Linux) or rpiboot.exe on Windows, then the eMMC of CM4 will be recognized as a mass storage device by the computer (if rpiboot reports an error at this time, you can try to re-plug the USB).</p>
 </li>
 <li>
-<p>The step of using the Raspberry Pi Imager to write the OS image is exactly the same as the LITE version. </p>
-<p>Note: the SSH function should also be enabled.</p>
+<p>The step of using the Raspberry Pi Imager to write the OS image is exactly the same as the LITE version. Note: the SSH function should also be enabled.</p>
 </li>
 <li>
-<p>When the writing is completed, push the DIP switch 4 (USB OTG) and 3 (BOOT) back to OFF after power off, </p>
-<p>and power on again to enter the normal working mode.</p>
+<p>When the writing is completed, push the DIP switch 4 (USB OTG) and 3 (BOOT) back to OFF after power off, and power on again to enter the normal working mode.</p>
 </li>
 </ol>
 <h2 id="bigtreetech-cb1-setup-steps">· BIGTREETECH CB1 Setup steps<a class="headerlink" href="#bigtreetech-cb1-setup-steps" title="Permanent link">&para;</a></h2>
 <h3 id="download-os-image_1">· Download OS Image<a class="headerlink" href="#download-os-image_1" title="Permanent link">&para;</a></h3>
-<p>If BIGTREETECH CB1 core board is used, You can only download and install the system image provided by BIGTREETECH:</p>
-<p><a href="https://github.com/bigtreetech/CB1/releases">https://github.com/bigtreetech/CB1/releases</a></p>
+<p>​   If BIGTREETECH CB1 core board is used, You can only download and install the system image provided by BIGTREETECH:</p>
+<p>​   <a href="https://github.com/bigtreetech/CB1/releases">https://github.com/bigtreetech/CB1/releases</a></p>
 <h3 id="download-and-install-raspberry-pi-imager_1">· Download and Install Raspberry Pi Imager<a class="headerlink" href="#download-and-install-raspberry-pi-imager_1" title="Permanent link">&para;</a></h3>
-<p>Install the official Raspberry Pi Imager: <a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a>
-The system image of CB1 can also be written with this software.</p>
+<p>​   Install the official Raspberry Pi Imager: <a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a> .The system image of CB1 can also be written with this software.</p>
 <h3 id="write-os-image">· Write OS Image<a class="headerlink" href="#write-os-image" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Plug the Micro SD card into the computer via a card reader.</li>
@@ -1439,10 +1427,7 @@ The system image of CB1 can also be written with this software.</p>
 </ol>
 <p><img src=img/Rasp2.png width="800" /></p>
 <ol>
-<li>
-<p>Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card.</p>
-<p>Be careful not to select the wrong storage device, otherwise, the data will be formatted).</p>
-</li>
+<li>Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card. Be careful not to select the wrong storage device, otherwise, the data will be formatted).</li>
 </ol>
 <p><img src=img/Rasp5.png width="800" /></p>
 <ol>
