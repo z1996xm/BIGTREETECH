@@ -1,6 +1,6 @@
 # M5P
 
-[<img src=img/M5P/M5P_Title.png />](https://z1996xm.github.io/BIGTREETECH/M5P.html)
+[<img src=img/M5P/M5P_Title.png width="800" />](https://z1996xm.github.io/BIGTREETECH/M5P.html)
 
 ## · Introduction
 
