@@ -4,15 +4,7 @@
 
 ### **· Download OS Image**
 
-​	If CM4 core board is used, You can directly download the images of Fluidd or Mainsail, also can download the OS image from the official website of 
-
-​	Raspberry Pi Fluidd: https://github.com/fluidd-core/FluiddPI/releases
-
-​	Mainsail: https://github.com/mainsail-crew/MainsailOS/releases
-
-​	Raspberry Pi official OS: https://www.raspberrypi.com/software/operating-systems
-
-​	(CM4 needs to refer to the following system settings to enable the system's USB, DSI and other interfaces, whose operation is slightly different from 	 	the standard Raspberry Pi 3B, 4B, etc.)
+<p>If CM4 core board is used, You can directly download the images of Fluidd or Mainsail, also can<br> download the OS image from the official website of<br>Raspberry Pi Fluidd: https://github.com/fluidd-core/FluiddPI/releases<br> Mainsail: https://github.com/mainsail-crew/MainsailOS/releases<br> Raspberry Pi official OS: https://www.raspberrypi.com/software/operating-systems <br>(CM4 needs to refer to the following system settings to enable the system's USB, DSI and other<br> interfaces, whose operation is slightly different from the standard Raspberry Pi 3B, 4B, etc.)<br></p>
 
 ​	Raspberry_Pi_OS
 
@@ -20,7 +12,7 @@
 
 ### **· Download and Install Raspberry Pi Imager**
 
-​		Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
+<p>Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/</p>
 
 ### **· Write OS**
 
@@ -43,10 +35,11 @@
 <img src=img/Rasp3.png width="600" />
 
 5. “Enable SSH”and click“SAVE”， There are other features that can be set in this menu. Please modify them according to your own needs. Details are as follows：
-   **Set hostname: raspberrypi.local** //Custom hostname Default:raspberrypi.local
-   Enable SSH
-   **Set username and password** // Custom username and password，Default 
-   username: pi password：raspberry
+
+   **Set hostname: raspberrypi.local** //Custom hostname Default:raspberrypi.local Enable SSH
+
+   **Set username and password** // Custom username and password，Default username: pi password：raspberry
+
    **Configure wireless LAN** // Custom the SSID and password of WLAN
 
 <img src=img/Rasp4.png width="600" />
