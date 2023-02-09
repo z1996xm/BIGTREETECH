@@ -4,9 +4,7 @@
 
 ### · USB 2.0 Hub Ports
 
-M4P is designed with a USB 2.0 Hub, in order to save power consumption, the USB port of CM4 is disabled by default. 
-
-If you want to enable it, you need to add the following content to the config.txt file:
+​	M4P is designed with a USB 2.0 Hub, in order to save power consumption, the USB port of CM4 is disabled by default. If you want to enable it, you 	 	need to add the following content to the config.txt file:
 
 ```
 dtoverlay=dwc2,dr_mode=host
@@ -14,43 +12,31 @@ dtoverlay=dwc2,dr_mode=host
 
 ### · DSI1 Display Interface
 
-The default display interface is HDMI. The onboard DSI port of M4P uses the DSI1 
-interface. You need to download the DSI1 driver and enter the following sentence in 
-the command line:
+​	The default display interface is HDMI. The onboard DSI port of M4P uses the DSI1 
+​	interface. You need to download the DSI1 driver and enter the following sentence in 
+​	the command line:
 
 ```
 sudo wget https://datasheets.raspberrypi.com/cmio/dt-blob-disp1-cam1.bin -O /boot/dt-blob.bin
 ```
 
-After downloading this driver and restarting, the screen of DSI1 will work normally. If 
-you want to use the HDMI interface, you need to delete the downloaded **/boot/dt-blob.bin** driver and restart, 
-
-then the HDMI can output normally.
+​	After downloading this driver and restarting, the screen of DSI1 will work normally. If you want to use the HDMI interface, you need to delete the 		  	downloaded **/boot/dt-blob.bin** driver and restart, then the HDMI can output normally.
 
 ### · CSI1 Camera
 
-The DSI1 driver downloaded in 4.4.2 DSI1 Display Interface also includes the CSI1 driver. If you just want to install 
-
-the CSI1 driver, not DSI1, please find the driver you want to use at https://datasheets.raspberrypi.com/licence.html 
-
-and download it in the boot folder of CM4 and rename it to dt-blob.bin, and then refer to the settings here. 
-https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/
+​	The DSI1 driver downloaded in 4.4.2 DSI1 Display Interface also includes the CSI1 driver. If you just want to install the CSI1 driver, not DSI1, please find 	the driver you want to use at https://datasheets.raspberrypi.com/licence.html and download it in the boot folder of CM4 and rename it to dt-blob.bin, 	and then refer to the settings here. https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/
 
 ## · WIFI Setting
 
-Note: This step can be skipped if you are using a network cable connection.CB1 cannot directly use the Raspberry Pi 
+​	Note: This step can be skipped if you are using a network cable connection.CB1 cannot directly use the Raspberry Pi Imager to set the WiFi name and 	password like CM4. After the OS image writing is completed, the MicroSD card will have a FAT32 partition recognized by the computer, find"system.cfg"
 
-Imager to set the WiFi name and password like CM4. After the OS image writing is completed, the MicroSD card will 
-
-have a FAT32 partition recognized by the computer, find "system.cfg"
-
-<img src=img/M4P_WIFI1.png width="800"/>
+<img src=img/M4P_WIFI1.png width="600"/>
 
 
 
 Open it with Notepad, replace WIFI-SSID with your WiFi name, and PASSWORD with your password.
 
-<img src=img/wifi.png width="800" />
+<img src=img/wifi.png width="600" />
 
 ## · Configure the motherboard
 
@@ -64,19 +50,16 @@ Open it with Notepad, replace WIFI-SSID with your WiFi name, and PASSWORD with y
 
 4. Find the device IP address in your router page
 
-<img src=img/Router.png width="800" />
+<img src=img/Router.png width="600" />
 
-5. Or use the https://angryip.org/ tool，scan all IP address in the current network organize by names, find
+5. Or use the https://angryip.org/ tool，scan all IP address in the current network organize by names, findthe IP named Fluidd, Mailsail (CM4) or Hurakan (CB1) like shown below
 
-   the IP named Fluidd, Mailsail (CM4) or Hurakan (CB1) like shown below
 
-<img src=img/AngryIP.png width="800" />
+<img src=img/AngryIP.png width="600" />
 
-6. Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and 
+6. Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and click “OK” (note: your computer and the device needs to be in the same network)
 
-  click “OK” (note: your computer and the device needs to be in the same network)
-
-<img src=img/MobaXterm_Login.png width="800" />
+<img src=img/MobaXterm_Login.png width="600" />
 
 7. Input the login name and password to enter the SSH terminal interface
 CM4:
@@ -86,7 +69,7 @@ CB1:
  login as: biqu
  password: biqu
 
-<img src=img/SSH_Terminal.png width="800" />
+<img src=img/SSH_Terminal.png width="600" />
 
 ### · Compile firmware
 
@@ -109,61 +92,50 @@ CB1:
 * Clock Reference (8 MHz crystal) ---> 
 * Communication interface (USB (on PA11/PA12)) --->
 
-<img src=img/M4P_Make.png width="800" />
+<img src=img/M4P_Make.png width="600" />
 
-3. Run **make** to compile firmware，”klipper.bin” file will be generated in **home/pi/kliiper/out** folder when make is finished, 
-
-  download it onto your computer using the ssh application.
+3. Run **make** to compile firmware，”klipper.bin” file will be generated in **home/pi/kliiper/out** folder when make is finished, download it onto your computer using the ssh application.
 
 ### · Firmware update
 
 #### · Update using SD Card
 
-1. Rename klipper.bin to ”firmware.bin”, Copy to the SD card root directory, insert the SD card into the SD card 
+1. Rename klipper.bin to ”firmware.bin”, Copy to the SD card root directory, insert the SD card into the SD card slot of the M4P, click the “reset” button or power on again. The firmware will be updated automatically. After the update, the "firmware.bin" in the SD card will be renamed as "FIRMWARE.CUR".
 
-  slot of the M4P, click the “reset” button or power on again. The firmware will be updated automatically. After 
-
-  the update, the "firmware.bin" in the SD card will be renamed as "FIRMWARE.CUR".
-
-2. Enter: **ls /dev/serial/by-id/** in terminal to check motherboad ID to confirm 
-    whether firmware is updated successfully like showm below.
+2. Enter: **ls /dev/serial/by-id/** in terminal to check motherboad ID to confirm whether firmware is updated successfully like showm below.
 
 ```
 ls /dev/serial/by-id/
 ```
 
-<img src=img/M4P_Update_Using_SD.png width="800" />
+<img src=img/M4P_Update_Using_SD.png width="600" />
 
 #### · Update using DFU
 
-If the MCU klipper device ID can be found by **ls /dev/serial/by-id/**, we can input:
+​	If the MCU klipper device ID can be found by **ls /dev/serial/by-id/**, we can input:
 
 ```
 make flash FLASH_DEVICE= /dev/serial/by-id/usb-Klipper_stm32g0b1xx_190028000D50415833323520-if00
 ```
 
-to update firmware **(NOTE: Replace /dev/serial/by-id/xxx with the actual ID found in the previous step)**
+​	to update firmware **(NOTE: Replace /dev/serial/by-id/xxx with the actual ID found in the previous step)**
 
-<img src=img/M4P_DFU.png width="800" />
+<img src=img/M4P_DFU.png width="600" />
 
-There will be an error message “dfu-util: Error during download get_status” after update. Just ignore it.
+​	There will be an error message “dfu-util: Error during download get_status” after update. Just ignore it.
 
 ### · Configure Klipper
 
-1. Enter your device IP address into your browser to open the webUI，find the reference config for motherboard 
+1. Enter your device IP address into your browser to open the webUI，find the reference config for motherboard in the directory shown below，if there is no such config available, update your klipper source code to the newest version or download from github: https://github.com/bigtreetech/Manta-M4P
 
-  in the directory shown below，if there is no such config available, update your klipper source code to the newest
-
-  version or download from github: https://github.com/bigtreetech/Manta-M4P
-
-<img src=img/M4P_Conf_Klipper1.png width="800" />
+<img src=img/M4P_Conf_Klipper1.png width="600" />
 
 2. Upload your finished config file into Configuration Files, and rename to “printer.cfg”
 
-<img src=img/M4P_Conf_Klipper2.png width="800" />
+<img src=img/M4P_Conf_Klipper2.png width="600" />
 
 3. Insert the correct motherboad ID
 
-<img src=img/M4P_Conf_Klipper3.png width="800" />
+<img src=img/M4P_Conf_Klipper3.png width="600" />
 
-Refer to https://www.klipper3d.org/Overview.html for detailed configuration guide according to your machine type.
+​	Refer to https://www.klipper3d.org/Overview.html for detailed configuration guide according to your machine type.

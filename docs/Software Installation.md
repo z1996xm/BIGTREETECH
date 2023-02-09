@@ -4,22 +4,22 @@
 
 ### · Download OS Image
 
-If CM4 core board is used, You can directly download the images of Fluidd or 
-Mainsail, also can download the OS image from the official website of Raspberry Pi 
-Fluidd: https://github.com/fluidd-core/FluiddPI/releases
-Mainsail: https://github.com/mainsail-crew/MainsailOS/releases
-Raspberry Pi official OS: https://www.raspberrypi.com/software/operating-systems
-(CM4 needs to refer to the following system settings to enable the system's USB, DSI 
-and other interfaces, whose operation is slightly different from the standard Raspberry 
-Pi 3B, 4B, etc.)
+​	If CM4 core board is used, You can directly download the images of Fluidd or 
+​	Mainsail, also can download the OS image from the official website of Raspberry Pi 
+​	Fluidd: https://github.com/fluidd-core/FluiddPI/releases
+​	Mainsail: https://github.com/mainsail-crew/MainsailOS/releases
+​	Raspberry Pi official OS: https://www.raspberrypi.com/software/operating-systems
+​	(CM4 needs to refer to the following system settings to enable the system's USB, DSI 
+​	and other interfaces, whose operation is slightly different from the standard Raspberry 
+​	Pi 3B, 4B, etc.)
 
-Raspberry_Pi_OS
+​	Raspberry_Pi_OS
 
 <img src=img/Raspberry_Pi_OS.png width="800"/>
 
 ### · Download and Install Raspberry Pi Imager
 
-Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
+​	Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
 ### · Write OS
 
@@ -41,20 +41,17 @@ Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
 <img src=img/Rasp3.png width="800" />
 
-5. “Enable SSH”and click“SAVE”， There are other features that can be set in this menu. 
-
-  Please modify them according to your own needs. Details are as follows：
-  Set hostname: raspberrypi.local //Custom hostname Default:raspberrypi.local
-  Enable SSH
-  Set username and password // Custom username and password，Default 
-  username: pi password：raspberry
-  Configure wireless LAN // Custom the SSID and password of WLAN
+5. “Enable SSH”and click“SAVE”， There are other features that can be set in this menu. Please modify them according to your own needs. Details are as follows：
+   **Set hostname: raspberrypi.local** //Custom hostname Default:raspberrypi.local
+   Enable SSH
+   **Set username and password** // Custom username and password，Default 
+   username: pi password：raspberry
+   **Configure wireless LAN** // Custom the SSID and password of WLAN
 
 <img src=img/Rasp4.png width="800" />
 
-6. Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card.
+6. Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card. Be careful not to select the wrong storage device, otherwise, the data will be formatted).
 
-   Be careful not to select the wrong storage device, otherwise, the data will be formatted).
 
 <img src=img/Rasp5.png width="800" />
 
@@ -64,7 +61,7 @@ Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
 #### · CM4 eMMC Version
 
-**(Note: eMMC version will not tun the system from the Micro SD card.)**
+​	**(Note: eMMC version will not tun the system from the Micro SD card.)**
 
 1. Install rpiboot For Windows:http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe
 
@@ -74,33 +71,23 @@ Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
 <img src=img/M4P_USB.png width="800" />
 
-3. Plug the Type-C into the USB port of the computer(in order to avoid problems caused by the insufficient USB 
+3. Plug the Type-C into the USB port of the computer(in order to avoid problems caused by the insufficient USB power supply of the computer, it is best to use an external 24V power supply to power the motherboard). Run **sudo ./rpiboot**(Mac/Linux) or rpiboot.exe on Windows, then the eMMC of CM4 will be recognized as a mass storage device by the computer (if rpiboot reports an error at this time, you can try to re-plug the USB).
 
-  power supply of the computer, it is best to use an external 24V power supply to power the motherboard). Run 
-  sudo ./rpiboot(Mac/Linux) or rpiboot.exe on Windows, then the eMMC of CM4 will be recognized as a mass 
+4. The step of using the Raspberry Pi Imager to write the OS image is exactly the same as the LITE version. Note: the SSH function should also be enabled.
 
-  storage device by the computer (if rpiboot reports an error at this time, you can try to re-plug the USB).
-
-4. The step of using the Raspberry Pi Imager to write the OS image is exactly the same as the LITE version. 
-
-  Note: the SSH function should also be enabled.
-
-5. When the writing is completed, push the DIP switch 4 (USB OTG) and 3 (BOOT) back to OFF after power off, 
-
-  and power on again to enter the normal working mode.
+5. When the writing is completed, push the DIP switch 4 (USB OTG) and 3 (BOOT) back to OFF after power off, and power on again to enter the normal working mode.
 
 ## · BIGTREETECH CB1 Setup steps
 
 ### · Download OS Image
 
-If BIGTREETECH CB1 core board is used, You can only download and install the system image provided by BIGTREETECH:
+​	If BIGTREETECH CB1 core board is used, You can only download and install the system image provided by BIGTREETECH:
 
-https://github.com/bigtreetech/CB1/releases
+​	https://github.com/bigtreetech/CB1/releases
 
 ### · Download and Install Raspberry Pi Imager
 
-Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
-The system image of CB1 can also be written with this software.
+​	Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/ .The system image of CB1 can also be written with this software.
 
 ### · Write OS Image
 
@@ -113,9 +100,8 @@ The system image of CB1 can also be written with this software.
 
 <img src=img/Rasp2.png width="800" />
 
-4. Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card.
+4. Select the Micro SD card and click "WRITE" (Writing the image will format the Micro SD card. Be careful not to select the wrong storage device, otherwise, the data will be formatted).
 
-   Be careful not to select the wrong storage device, otherwise, the data will be formatted).
 
 <img src=img/Rasp5.png width="800" />
 
