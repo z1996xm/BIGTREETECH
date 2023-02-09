@@ -59,8 +59,8 @@ Raspberry_Pi_OS
 1. Install rpiboot
 
     For Windows:http://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe
-
-​		For Mac and Linux:https://github.com/raspberrypi/usbboot#building
+    
+    For Mac and Linux:https://github.com/raspberrypi/usbboot#building
 
 2. Push the DIP switch 4 (USB OTG) and 3 (BOOT) to ON to enter BOOT mode.
 
