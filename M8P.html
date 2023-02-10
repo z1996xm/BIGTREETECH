@@ -434,9 +434,89 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          M8P
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="M8P.html" class="md-nav__link md-nav__link--active">
         M8P
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    · Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#announcements" class="md-nav__link">
+    · Announcements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    · Main Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-parameters" class="md-nav__link">
+    · Basic Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    · Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-out" class="md-nav__link">
+    · Pin Out
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cad" class="md-nav__link">
+    · CAD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    · Schematic
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1117,6 +1197,70 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    · Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#announcements" class="md-nav__link">
+    · Announcements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    · Main Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-parameters" class="md-nav__link">
+    · Basic Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    · Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-out" class="md-nav__link">
+    · Pin Out
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cad" class="md-nav__link">
+    · CAD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    · Schematic
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1133,6 +1277,74 @@
 
 
 <h1 id="m8p">M8P<a class="headerlink" href="#m8p" title="Permanent link">&para;</a></h1>
+<p><a href="https://z1996xm.github.io/BIGTREETECH/M8P.html"><img src=img/M8P/M8P_Title.png width="600" /></a></p>
+<h2 id="introduction"><strong>· Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>BIGTREETECH MANTA M8P is a 32-bit printer motherboard developed by the 3D printing team of <br> Shenzhen Big Tree Technology Co., Ltd. for Klipper firmware. You can simply plug in the core<br> board to run the Klipper firmware, which greatly simplifies the connection between the motherboard and <br>the Raspberry Pi, and saves a lot of space. Moreover, the BTB connector is designed to install CM4 or<br> other solutions to solve the current expensive problem of CM4.<br></p>
+
+<h2 id="announcements"><strong>· Announcements</strong><a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h2>
+<h2 id="main-features"><strong>· Main Features</strong><a class="headerlink" href="#main-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Adopt 32-bit 64MHz ARM Cortex-M0+ series STM32G0B1VET6 as the main control chip;</li>
+<li>The power chip, TPS5450-5A, supports DC12/24V power input. The output current of the chip is up to 5A, and the peak value can reach 6A, which perfectly supports the power supply of Raspberry Pi; </li>
+<li>There is a BOOT button reserved on the motherboard, users can update the bootloader through DFU;</li>
+<li>The thermistor part includes a protection circuit that protects the main control chip from the possibility of burning caused by leakage of the heated bed or heater cartridge;</li>
+<li>24V, 12V, and 5V voltages are available for CNC fans, eliminating the need for an external transformer module, thereby reducing the chance of damage to the motherboard due to improper operation;</li>
+<li>The thermistor can select the pull-up resistor value through the jumper, in this way, it supports PT1000 without an external module, which is convenient for customers to DIY;</li>
+<li>The MCU firmware can be updated via an SD card, or through Klipper's make flash command using DFU;</li>
+<li>The motherboard and the core board use the BTB connection to allow using other solutions other than CM4;</li>
+<li>On-board TMC-driver SPI and UART working modes, on-board DIAG function pins, can be used by simply plugging and unplugging the jumper cap;</li>
+<li>Support filament runout detection, auto shutdown, BLTouch, RGB lights...</li>
+<li>High efficiency MOSFET for less heat generation;</li>
+<li>Adopt replaceable fuse for easy replacement;</li>
+<li>Three-way four-wire fan interface is reserved, and can be used to connect the water cooling device;</li>
+<li>The proximity switch interface is reserved, supports NPN and PNP types, (24V, 12V, 5V) voltage selection is available, common voltage selection with VFAN6;</li>
+<li>Provide the SPI expansion interface to allow Klipper firmware users to connect an external acceleration sensor for acceleration compensation.</li>
+</ul>
+<h2 id="basic-parameters"><strong>· Basic Parameters</strong><a class="headerlink" href="#basic-parameters" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Product Size: 170 x 102.7mm, you can read more details here <strong>BIGTREETECH MANTA M8P V1.0-SIZE-top.pdf</strong></li>
+<li>Installation Size: Please read: <strong>BIGTREETECH MANTA M8P V1.0-SIZE-top.pdf</strong></li>
+<li>Microprocessor: ARM Cortex-M0+ STM32G0B1VET6 64MHz</li>
+<li>Drive Input Voltage: VIN（12V/24V） Or HV(≤56V) </li>
+<li>Motherboard Input Voltage: VIN=DC12V or DC24V</li>
+<li>Heated Bed Input Voltage: BED IN=DC12V or DC24V</li>
+<li>Logic Voltage: DC3.3V</li>
+<li>Heating Port: Heated Bed(HB), Heater Cartridge(HE0, HE1, HE2, HE3)</li>
+<li>The maximum output current of the heated bed port: 10A, Peak Value: 12A</li>
+<li>The maximum output current of the heater cartridge port: 5.5A, Peak Value: 6A</li>
+<li>Fan Port: Two-wire CNC Fan (FAN0, FAN1, FAN2, FAN3), four-wire CNC Fan fan (FAN4, FAN5, FAN6), Always-on Fan (24V FAN x 2), among which the CNC Fan voltages are 5V, 12V, 24V optional</li>
+<li>The maximum output current of the fan port: 1A, Peak Value: 1.5A</li>
+<li>Total current for heater cartridge + driver + fan: ＜12A</li>
+<li>Extended Interface: BLTouch(Servos, Probe), PS-ON, Fil-DET, RGBx2, SPI</li>
+<li>Motor Driver: Support TMC5160, TMC2209, TMC2225, TMC2226, TMC2208, TMC2130, ST820, LV8729, DRV8825, A4988...</li>
+<li>Driver Working Mode Support: SPI, UART, STEP/DIR</li>
+<li>Motor Drive Interface: Motor1, Motor2, Motor3(dual motor interface), Motor4, Motor5, Motor6, Motor7, Motor8, a total of Eight</li>
+<li>Temperature Sensor Interface: 5-way 100K NTC, of which 4-way 100K NTC and PT1000 are optional</li>
+<li>Support Screen: SPI Touch Screen, LCD Screen</li>
+<li>PC Communication Interface: Type-C</li>
+<li>Functional Interface: USB 2.0 x 3, LAN, DSI, CSI, SPI, 40Pin-GPIO, HDMI0 and HDMI1, SOC-Card, MCU-Card</li>
+<li>Support Machine Structure: Cartesian, Delta, Kossel, Ultimaker, CoreXY</li>
+<li>Recommended Software: Cura, Simplify3D, Pronterface, Repetier-host, Makerware</li>
+</ul>
+<h2 id="dimensions"><strong>· Dimensions</strong><a class="headerlink" href="#dimensions" title="Permanent link">&para;</a></h2>
+<p><img src=img/M8P/M8P_Dimensions1.png width="600" /></p>
+<p><img src=img/M8P/M8P_Dimensions2.png width="600" /></p>
+<h2 id="pin-out"><strong>· Pin Out</strong><a class="headerlink" href="#pin-out" title="Permanent link">&para;</a></h2>
+<p><img src=img/M8P/M8P_Pin_Out.png width="600" /></p>
+<p><strong>Differences between V1.0 and V1.1</strong></p>
+<p>Changes in V1.1 include：M6，M7，M8，SPI，MCU-Card，RGB1&amp;RGB2，FAN4，CAN，Pi-FAN</p>
+<p><img src=img/M8P/M8P_Pin_Out1.png width="600" /></p>
+<h2 id="cad"><strong>· CAD</strong><a class="headerlink" href="#cad" title="Permanent link">&para;</a></h2>
+<p><img src=img/M8P/M8P_CAD.png width="600" /></p>
+<p><strong>V1.1 added functions</strong></p>
+<p>CAN interface（2Pin*2 XH2.54），USB port function selection（UART to USB，USB OTG），Pi-FAN（Controlled by GPIO26），FAN4 becomes a 2-wire CNC fan.</p>
+<p><img src=img/M8P/M8P_Add_Func1.png width="600" /></p>
+<p>The 5V and 12V power output ports are added with E-FUSE protection, which has short reaction time, strong protection and realizes over-current protection, short circuit protection and spark protection.</p>
+<p><strong>M8P V1.1+CB1：</strong></p>
+<p><img src=img/M8P/M8P_Add_Func2.png width="600" /></p>
+<p><strong>M8P V1.1-Bot：</strong></p>
+<p><img src=img/M8P/M8P_Add_Func3.png width="600" /></p>
+<h2 id="schematic"><strong>· Schematic</strong><a class="headerlink" href="#schematic" title="Permanent link">&para;</a></h2>
 
               
             </article>
