@@ -185,16 +185,16 @@
 #### 3.1.2 WiFi Settings
 
 * After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `system.cfg` file with `Notpad`, `Notpad++` or `VSCode`.
-  <img src=img/system.png /><br/>
+  <img src=img/system.png width="600" /><br/>
 * Set `WIFI_SSID` as your actual wifi name and `WIFI_PASSWD` as your actual wifi password, The space character can be parsed normally without additional escape character.
   For example: `WIFI_SSID="CB1 Tester"`
-  <img src=img/wifi.png /><br/>
+  <img src=img/wifi.png width="600" /><br/>
 
 ### 3.2 Overlays Settings
 
-* After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png /><br/>
+* After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png width="600" /><br/>
   
-* Set as required as shown in the figure below. <br/><img src=img/overlays.png /><br/>
+* Set as required as shown in the figure below. <br/><img src=img/overlays.png width="600" /><br/>
 
   * The default value is `console=display`, This means that the `UART0` of CB1 is used as the debugging port by default. We can use `MobaXterm` to connect to CB1 by UART0 and debug. If klipper wants to use `UART0` to control the motherboard, we need to set it to `console=serial`, now klippe can use `UART0` as `/dev/ttyS0`.
 
@@ -250,17 +250,17 @@ Please download and install the OS image we provided: https://github.com/bigtree
 #### 4.4.1 Raspberry Pi Imager
 
 * Insert a MicroSD into your computer.
-* Choose OS. <br/><img src=img/RPI_Imager_1.png width="500"/><br/>
-* Select "Use custom", then select the image that you downloaded. <br/><img src=img/RPI_Imager_2.png width="500"/><br/>
-* Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="500"/><br/>
-* Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="500"/><br/>
+* Choose OS. <br/><img src=img/RPI_Imager_1.png width="600"/><br/>
+* Select "Use custom", then select the image that you downloaded. <br/><img src=img/RPI_Imager_2.png width="600"/><br/>
+* Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="600"/><br/>
+* Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="600"/><br/>
 
 #### 4.4.2 balenaEtcher
 
 * Insert a MicroSD card to your computer through a card reader.
-* Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="500"/><br/>
-* Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="500"/><br/>
-* Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="500"/><br/>
+* Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="600"/><br/>
+* Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="600"/><br/>
+* Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="600"/><br/>
 
 ## 5.0 SSH Connection
 
@@ -268,11 +268,11 @@ Please download and install the OS image we provided: https://github.com/bigtree
 * Insert the Micro SD card (installed OS) to motherboard, wait for system to load after power on, aprox. 1-2min. the ACT LED on the motherboard will flash continuously after startup successfully.
 * The device will automatically be assigned a IP address after successfully connected to the network
 * Find the device IP address in your router page
-  <img src=img/Router.png /><br/> 
+  <img src=img/Router.png width="600" /><br/> 
 * Or use the https://angryip.org/ tool，scan all IP address in the current network organize by names, find the IP named Hurakan, BTT-CB1 like shown below
-  <img src=img/AngryIP.png /><br/> 
+  <img src=img/AngryIP.png width="600" /><br/> 
 * Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and click “OK” (note: your computer and the device needs to be in the same network)
-  <img src=img/MobaXterm_Login.png /><br/> 
+  <img src=img/MobaXterm_Login.png width="600" /><br/> 
 * Input the login name and password to enter the SSH terminal interface
   * login as: biqu
   * password: biqu
