@@ -2,15 +2,15 @@
 
 [<img src=img/M4P/M4P_Title.png width="600"/>](https://z1996xm.github.io/BIGTREETECH/M4P.html)
 
-## **Introduction**
+## · **Introduction**
 
 <p>BIGTREETECH CB1 is an alternative to Raspberry Pi CM4, which is currently out of stock. <br>BIGTREETECH M4P is a 4-axis motherboard using a CM4 BTB header, which can work with CB1 or CM4 perfectly.<br></p>
 
-## **Announcements**
+## · **Announcements**
 
 
 
-## **Main Features**
+## **· Main Features**
 
 - DSI1, CSI1 interface (for CM4)
 
@@ -60,7 +60,7 @@
 
 - Adopt replaceable fuse for easy replacement
 
-## **Basic Parameters**
+## **· Basic Parameters**
 
 - Product Size: 160 x 95mm
 
@@ -94,23 +94,23 @@
 
 - Display Screen: RepRapDiscount EXP-1 + EXP-2
 
-## **Dimensions**
+## **· Dimensions**
 
 <img src=img/M4P/M4P_Size.png width="600"/>
 
-## **CAD**
+## **· CAD**
 
 <img src=img/M4P/M4P_Interface_Diagram.png width="600" />
 
-## **Schematic**
+## **· Schematic**
 
 
 
-## **Pin Out**
+## **· Pin Out**
 
 <img src=img/M4P/M4P_Pin_Out.png width="600" />
 
-## **Hardware Configuration**
+## **· Hardware Configuration**
 
 **TYPE-C**
 
@@ -118,11 +118,11 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 
 <img src=img/M4P/M4P_TYPE_C.png width="600" />
 
-## **Hardware Installation**
+## **· Hardware Installation**
 
-### **Stepper Driver**
+### **· Stepper Driver**
 
-#### **Normal STEP/DIR(STANDALONE) Mode**
+#### **· Normal STEP/DIR(STANDALONE) Mode**
 
 ​	For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.
 
