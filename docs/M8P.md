@@ -92,3 +92,212 @@ The 5V and 12V power output ports are added with E-FUSE protection, which has sh
 
 ## **· Schematic**
 
+## **· Hardware Configuration**
+
+​	**USB Power Supply**
+
+​	After the M8P motherboard is powered on, the D32 red light on the left side of the MCU will light up, indicating that the power supply is normal. The 	VUSB in the middle of the board is the power selection terminal. Only when using USB to supply power to the motherboard or need to supply power through USB, do you need to use the jumper to short it.
+
+<img src=img/M8P/M8P_USB_PS.png width="600" />
+
+## **· Hardware Installation**
+
+### **· Stepper Driver**
+
+#### **· STEP/DIR (STANDALONE) Mode**
+
+​	For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.
+
+<img src=img/M8P/M8P_Dri_Step.png width="600" />
+
+​	**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
+
+<table>
+	<tr>
+    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td>	 </tr>
+    <tr>
+    <td rowspan="5">A4988 16 microstep max 35V 2A</td>
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
+    <tr>
+    <td>H</td><td>L</td><td>L</td><td>1/2</td><td>1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td>
+    <tr>
+    <td>H</td><td>H</td><td>L</td><td>1/8</td><td>2W1-2 Phase</td>
+    <tr>
+    <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td>
+    <tr>
+    <td><img src=img/M5P/M5P_DRI3.png width="110" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI4.png width="200" /></td>  
+    <tr>    
+</table>
+<table>
+	<tr>
+    <td>Driver Chips</td><td>MD3</td><td>MD2</td><td>MD1</td><td>Microsteps</td><td>Excitation Mode</td></td>
+    <tr>
+    <td rowspan="8">LV8729 Maximum 128 microsteps<br /> 36V 1.8A</td> 
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
+    <tr>
+    <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td>
+    <tr>
+    <td>L</td><td>H</td><td>H</td><td>1/8</td><td>2W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>L</td><td>L</td><td>1/16</td><td>4W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>L</td><td>H</td><td>1/32</td><td>8W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>H</td><td>L</td><td>1/64</td><td>16W1-2 Phase</td></tr>
+    <tr>
+    <td>H</td><td>H</td><td>H</td><td>1/128</td><td>32W1-2 Phase</td></tr>
+    <tr>
+    <td><img src=img/M5P/M5P_DRI5.png width="100" /></td>
+    <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
+</table>
+<table>
+	<tr>
+    <td>Driver Chips</td><td>MS3</td><td>MS2</td><td>MS1</td><td>Microsteps</td>
+    <tr>
+    <td rowspan="8">ST820 Maximum <br />256 microsteps <br />45V 1.5A</td> 
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td>
+    <tr>
+    <td>L</td><td>L</td><td>H</td><td>1/2</td>
+    <tr>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td>
+    <tr>
+    <td>L</td><td>H</td><td>H</td><td>1/8</td>
+    <tr>
+    <td>H</td><td>L</td><td>L</td><td>1/16</td>
+    <tr>
+    <td>H</td><td>L</td><td>H</td><td>1/32</td>
+    <tr>
+    <td>H</td><td>H</td><td>L</td><td>1/64</td>
+    <tr>
+    <td>H</td><td>H</td><td>H</td><td>1/128</td>
+    <tr>
+    <td><img src=img/M8P/M8P_Dri_Step1.png width="120" /></td>
+    <td colspan="5"><img src=img/M8P/M8P_Dri_Step2.png width="150" /></td>  
+</table>
+
+#### **· UART Mode of TMC Driver**
+
+​	For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
+
+<img src=img/M8P/M8P_Dri_Uart_Mode.png width="600" />
+
+#### **· SPI Mode of TMC Driver** 
+
+​	For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
+
+<img src=img/M8P/M8P_Dri_SPI_Mode.png width="600" />
+
+#### **· DIAG(Sensorless Homing) of TMC Driver** 
+
+​	As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. 
+
+<img src=img/M8P/M8P_Dri_Diag_Mode.png width="600" />
+
+#### **· Driver Voltage Selection** 
+
+<img src=img/M8P/M8P_Sel_PS1.png width="600" />
+
+<img src=img/M8P/M8P_Sel_PS1.png width="600" />
+
+### **· Install the Core Board via BTB Connection**
+
+​	**M8P+CM4: Pay attention to the direction, as shown below.**
+
+<img src=img/M8P/M8P_M8P+CM4.png width="600" />
+
+​	**M8P+CB1: Pay attention to the direction, as shown below.**
+
+<img src=img/M8P/M8P_M8P+CB1.png width="600" />
+
+### **· Voltage Selection for CNC Fans**
+
+​	Set the output voltage to 5V, 12V, or 24V with a jumper cap. Note: Please confirm the fan's operating voltage before choosing a voltage. Our company 	is not responsible for fan burnout caused by wrong selection.
+
+<img src=img/M8P/M8P_CNC_Fans.png width="600" />
+
+### **· 100K NTC or PT1000 Setting**
+
+​	When using a 100K NTC thermistor, there is no need to insert the jumper cap, and the pull-up resistance of TH0-TH3 is 4.7K 0.1%. When using PT1000, 	you need to use a jumper cap to connect the two pins in the red box in the figure below and connect a 4.12K 0.1% resistor in parallel. At this time, the 	pull-up resistor of TH0-TH1 is 2.2K (Note: The temperature accuracy read out in this way will be far less accurate than that read out by MAX31865).
+
+<img src=img/M8P/M8P_NTC.png width="600" />
+
+### **· BLTouch Wiring**
+
+<img src=img/M8P/M8P_BLTouch.png width="600" />
+
+### **· Auto Shutdown Module(Relay V1.2) Wiring**
+
+<img src=img/M8P/M8P_Auto_S.png width="600" />
+
+### **· Wiring between LCD Screen and EXP1+EXP2**
+
+<img src=img/M8P/M8P_LCD.png width="600" />
+
+### **· RGB Wiring**
+
+<img src=img/M8P/M8P_RGB.png width="600" />
+
+### **· Filament Sensor Wiring**
+
+<img src=img/M8P/M8P_Filament.png width="600" />
+
+### **· 40 Pins GPIO**
+
+<img src=img/M8P/M8P_40_Pin.png width="600" />
+
+### **· DSI/CSI Wiring**
+
+<img src=img/M8P/M8P_DSI.png width="600" />
+
+### **· Proximity Switch Wiring**
+
+​	**Always on (NPN type), no need to short-circuit via a jumper cap, 24V as an example, as shown in the following figure:**
+
+<img src=img/M8P/M8P_Proximity.png width="600" />
+
+​	**Always off (PNP type), need to short-circuit via a jumper cap, 24V as an example, as shown in the following figure:**
+
+<img src=img/M8P/M8P_Proximity1.png width="600" />
+
+### **· Wiring of the 4-wire CNC Fan**
+
+<img src=img/M8P/M8P_4_Wire.png width="600" />
+
+### **· ADXL345 Accelerometer**
+
+​	Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the 	M8P motherboard
+
+<img src=img/M8P/M8P_ADXL345.png width="600" />
+
+```
+[adxl345]
+cs_pin: PC4 # PB15 for V1.0
+spi_bus: spi1
+#spi_software_sclk_pin: PA5
+#spi_software_mosi_pin: PA7
+#spi_software_miso_pin: PA6
+```
+
+## **· Software Configuration**
+
+​	For details, please click: 
+
+​	https://z1996xm.github.io/BIGTREETECH/Software%20Configuration.html
+
+## **· Software Installation**
+
+​	For details, please click:
+
+​	 https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
+
+## **· FAQs**
+
+1.  All unplugging and plugging operations should be performed under the condition of power off, including enabling the eMMC writing.
+2. Pay attention to the heat dissipation of CM4 and CB1. The CM4/CB1 may become quite hot if the running application consumes too many system resources.
+
+## **· Product Purchase Link**

@@ -176,13 +176,13 @@
 
 <img src=img/M5P/M5P_UART_Mode.png width="600" />
 
-#### **· TMC Driver SPI Mode**
+#### **· SPI Mode of TMC Driver** 
 
 ​	e.g.: TMC2130, TMC5160, TMC5161, etc., place jumpers according to the diagram below, microstep and current can be configured in firmware.
 
 <img src=img/M5P/M5P_SPI_Mode.png width="600" />
 
-#### **· TMC Driver DIAG (Sensorless Homing)**
+#### **· DIAG(Sensorless Homing) of TMC Driver** 
 
 ​	When using sensorless homing, place jumpers according to the diagram below, there is no need to cut the DIAG pin off when not being used.
 
@@ -196,15 +196,15 @@
 
 ### **· Install the Core Board via BTB Connection**
 
-​	M5P+CM4: Note the direction, as shown in the figure below:
+​	**M5P+CM4: Note the direction, as shown in the figure below:**
 
 <img src=img/M5P/M5P_CM4.png width="600" />
 
-​	M5P+CB1: Note the direction, as shown in the figure below:
+​	**M5P+CB1: Note the direction, as shown in the figure below:**
 
 <img src=img/M5P/M5P_CB1.png width="600" />
 
-### **· Voltage Selection for CNC Fan**
+### **· Voltage Selection for CNC Fans**
 
 ​	Through the jumper cap, you can set the output voltage to 5V, 12V, or 24V.
 

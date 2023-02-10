@@ -227,35 +227,35 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 
 #### **· UART Mode of TMC Driver**
 
-For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.
+​	For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
 
 <img src=img/M4P/M4P_TMC_UART_Mode.png width="600" />
 
 #### **· SPI Mode of TMC Driver** 
 
-For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.
+​	For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
 
 <img src=img/M4P/M4P_TMC_SPI_Mode.png width="600" />
 
 #### **· DIAG(Sensorless Homing) of TMC Driver** 
 
-As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need to cut the DIAG pin of the driver.
+​	As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need 	to cut the DIAG pin of the driver.
 
 <img src=img/M4P/M4P_TMC_DIAG_Mode.png width="600" />
 
 #### **· Driver Voltage Selection** 
 
-The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power, and the 12/24v voltage is supported.
+​	The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used 	for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power, 	and the 12/24v voltage is supported.
 
 ##### · **Driver independent power supply**
 
-The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.
+​	The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.
 
 <img src=img/M4P/M4P_IPS.png width="600" />
 
 ##### **· Main power supply**
 
-The jumper is inserted into the right side and powered by the main POWER port. the 12/24v voltage is supported.
+​	The jumper is inserted into the right side and powered by the main POWER port. the 12/24v voltage is supported.
 
 <img src=img/M4P/M4P_MPS.png width="600" />
 
@@ -277,13 +277,13 @@ The jumper is inserted into the right side and powered by the main POWER port. t
 
 ### **· BLTouch Wiring**
 
-M4P_BLTouch_Wiring
+​	M4P_BLTouch_Wiring
 
 <img src=img/M4P/M4P_BLTouch_Wiring.png width="600" />
 
 ### **· EXP1+EXP2 and LCD Screen Wiring**
 
-M4P_E1_E2_LCD
+​	M4P_E1_E2_LCD
 
 <img src=img/M4P/M4P_E1_E2_LCD.png width="600" />
 
@@ -301,7 +301,7 @@ M4P_E1_E2_LCD
 
 ### **· ADXL345 Accelerometer**
 
-Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the M4P motherboard
+​	Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the 	M4P motherboard
 
 <img src=img/M4P/M4P_ADXL345.png width="600" />
 
