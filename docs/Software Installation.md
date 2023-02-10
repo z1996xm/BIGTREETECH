@@ -10,8 +10,6 @@ Raspberry_Pi_OS
 
 <img src=img/Raspberry_Pi_OS.png width="600"/>
 
-### <p>BIGTREETECH MANTA M8P is a 32-bit printer motherboard developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd. for Klipper firmware. You can simply plug in the core board to run the Klipper firmware, which greatly simplifies the connection between the motherboard and the Raspberry Pi, and saves a lot of space. Moreover, the BTB connector is designed to install CM4 or other solutions to solve the current expensive problem of CM4.</p>
-
 ​	Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
 ### **· Write OS**
@@ -64,7 +62,7 @@ Raspberry_Pi_OS
 
 2. Push the DIP switch 4 (USB OTG) and 3 (BOOT) to ON to enter BOOT mode.
 
-<img src=img/M4P_USB.png width="600" />
+<img src=img/M4P/M4P_USB.png width="600" />
 
 3. Plug the Type-C into the USB port of the computer(in order to avoid problems caused by the insufficient USB power supply of the computer, it is best to use an external 24V power supply to power the motherboard). Run **sudo ./rpiboot**(Mac/Linux) or rpiboot.exe on Windows, then the eMMC of CM4 will be recognized as a mass storage device by the computer (if rpiboot reports an error at this time, you can try to re-plug the USB).
 

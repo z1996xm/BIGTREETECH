@@ -30,7 +30,7 @@ sudo wget https://datasheets.raspberrypi.com/cmio/dt-blob-disp1-cam1.bin -O /boo
 
 ​	Note: This step can be skipped if you are using a network cable connection.CB1 cannot directly use the Raspberry Pi Imager to set the WiFi name and 	password like CM4. After the OS image writing is completed, the MicroSD card will have a FAT32 partition recognized by the computer, find"system.cfg"
 
-<img src=img/M4P_WIFI1.png width="600"/>
+<img src=img/M4P/M4P_WIFI1.png width="600"/>
 
 
 
@@ -92,7 +92,7 @@ CB1:
 * Clock Reference (8 MHz crystal) ---> 
 * Communication interface (USB (on PA11/PA12)) --->
 
-<img src=img/M4P_Make.png width="600" />
+<img src=img/M4P/M4P_Make.png width="600" />
 
 3. Run **make** to compile firmware，”klipper.bin” file will be generated in **home/pi/kliiper/out** folder when make is finished, download it onto your computer using the ssh application.
 
@@ -108,7 +108,7 @@ CB1:
 ls /dev/serial/by-id/
 ```
 
-<img src=img/M4P_Update_Using_SD.png width="600" />
+<img src=img/M4P/M4P_Update_Using_SD.png width="600" />
 
 #### **· Update using DFU**
 
@@ -120,7 +120,7 @@ make flash FLASH_DEVICE= /dev/serial/by-id/usb-Klipper_stm32g0b1xx_190028000D504
 
 ​	to update firmware **(NOTE: Replace /dev/serial/by-id/xxx with the actual ID found in the previous step)**
 
-<img src=img/M4P_DFU.png width="600" />
+<img src=img/M4P/M4P_DFU.png width="600" />
 
 ​	There will be an error message “dfu-util: Error during download get_status” after update. Just ignore it.
 
@@ -128,14 +128,14 @@ make flash FLASH_DEVICE= /dev/serial/by-id/usb-Klipper_stm32g0b1xx_190028000D504
 
 1. Enter your device IP address into your browser to open the webUI，find the reference config for motherboard in the directory shown below，if there is no such config available, update your klipper source code to the newest version or download from github: https://github.com/bigtreetech/Manta-M4P
 
-<img src=img/M4P_Conf_Klipper1.png width="600" />
+<img src=img/M4P/M4P_Conf_Klipper1.png width="600" />
 
 2. Upload your finished config file into Configuration Files, and rename to “printer.cfg”
 
-<img src=img/M4P_Conf_Klipper2.png width="600" />
+<img src=img/M4P/M4P_Conf_Klipper2.png width="600" />
 
 3. Insert the correct motherboad ID
 
-<img src=img/M4P_Conf_Klipper3.png width="600" />
+<img src=img/M4P/M4P_Conf_Klipper3.png width="600" />
 
 ​	Refer to https://www.klipper3d.org/Overview.html for detailed configuration guide according to your machine type.

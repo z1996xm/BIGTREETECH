@@ -1,8 +1,14 @@
 # CB1
 
-## 1. Brief Introduction
+## **· Introduction**
 
-### 1.1 Main Features
+<p>The BIGTREETECH CB1 is launched to provide a great solution to the insane shortage of Raspberry Pi CM4. <br>It outputs signals to the motherboard via the fast and convenient two 100 pins micro BTB connection header. Moreover, it is onboard 2.4G WiFi.<br></p>
+
+## **· Announcements**
+
+
+
+## **· Main Features**
 
 * CPU: ALLWINNER H616, Quad-core Cortex-A53 @1.5GHz
 * GPU: Mali G31 MP2, Support OpenGL3.2
@@ -12,7 +18,7 @@
 * Support 100M Ethernet + 100M WiFi
 * Having the same BTB header as the Raspberry Pi CM4.
 
-### 1.2 Basic Parameters
+### **· Basic Parameters**
 
 * Product Size: 40mm x 55mm
 * Mounting Size: 33mm x 48mm
@@ -21,19 +27,19 @@
 * Output Voltage: 1.8V±2%/100mA
 * WiFi: 2.4G/802.11 b/g/n
 
-### 1.3 Dimensions
+### **· Dimensions**
 
-<img src=img/CB1_Size.png /><br/>
+<img src=img/CB1_Size.png width="600" />
 
-### 1.4 Schematic
+### **· Schematic**
 
 [BIGTREETECH_CB1_V22_220812_SCH](./doc/BIGTREETECH_CB1_V22_220812_SCH.pdf) 
 
-## 2.0 Peripheral Interface
+## **· Pin Out**
 
-### 2.1 40 pin GPIO
+### **· 40 pin GPIO**
 
-* The 40 pin GPIO on the motherboard when CB1 is used with motherboard like Manta M4P, M5P, M8P, PI4B_Adapter, etc.
+**The 40 pin GPIO on the motherboard when CB1 is used with motherboard like Manta M4P, M5P, M8P, PI4B_Adapter, etc.**
 
 | Pin  | Signal | Description        | Pin  | Signal | Description       |
 | ---- | ------ | ------------------ | ---- | ------ | ----------------- |
@@ -58,7 +64,7 @@
 | 37   | PC15   | GPIO79             | 38   | PH10   | GPIO234, IR_RX    |
 | 39   | GND    |                    | 40   | PC8    | GPIO72            |
 
-### 2.2 **2 * 100 pins**
+### **· 2 * 100 pins**
 
 | A Pin | Signal   | Description     | A Pin | Signal   | Description          |
 | ----- | -------- | --------------- | ----- | -------- | -------------------- |

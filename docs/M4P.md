@@ -247,13 +247,13 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 
 ​	The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used 	for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power, 	and the 12/24v voltage is supported.
 
-##### · **Driver independent power supply**
+· **Driver independent power supply**
 
 ​	The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.
 
 <img src=img/M4P/M4P_IPS.png width="600" />
 
-##### **· Main power supply**
+**· Main power supply**
 
 ​	The jumper is inserted into the right side and powered by the main POWER port. the 12/24v voltage is supported.
 
@@ -261,11 +261,11 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 
 ### **· Install the Core Board via BTB Connection**
 
-​	M4P+CM4：Pay attention to the direction, as shown below.
+​	**M4P+CM4：Pay attention to the direction, as shown below.**
 
 <img src=img/M4P/M4P+CM4.png width="600" />
 
-​	M4P+CB1：Pay attention to the direction, as shown below.
+​	**M4P+CB1：Pay attention to the direction, as shown below.**
 
 <img src=img/M4P/M4P+CB1.png width="600" />
 
