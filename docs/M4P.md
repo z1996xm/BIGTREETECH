@@ -4,7 +4,7 @@
 
 ## **Introduction**
 
-​		BIGTREETECH CB1 is an alternative to Raspberry Pi CM4, which is currently out of stock. BIGTREETECH M4P is a 4-axis motherboard using a CM4 BTB header, which can work with CB1 or CM4 perfectly.
+<p>BIGTREETECH CB1 is an alternative to Raspberry Pi CM4, which is currently out of stock. <br>BIGTREETECH M4P is a 4-axis motherboard using a CM4 BTB header, which can work with CB1 or CM4 perfectly.<br></p>
 
 ## **Announcements**
 
@@ -112,7 +112,11 @@
 
 ## **Hardware Configuration**
 
+**TYPE-C**
 
+After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up, indicating that the power supply is normal. The J8 on the middle of the board is the power selection terminal, it needs to be short circuited only when the type-C USB is used to supply power to the motherboard or the USB is used to supply power externally. The signal of type-C is connected to the SoC, Only used when writing OS image for CM4 eMMC version.
+
+<img src=img/M4P/M4P_TYPE_C.png width="600" />
 
 ## **Hardware Installation**
 
@@ -220,87 +224,82 @@
     <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
 </table>
 
-#### 3.4.2 UART Mode of TMC Driver
+
+#### **· UART Mode of TMC Driver**
 
 For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.
 
 <img src=img/M4P/M4P_TMC_UART_Mode.png width="600" />
 
-#### 3.4.3 SPI Mode of TMC Driver 
+#### **· SPI Mode of TMC Driver** 
 
 For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.
 
 <img src=img/M4P/M4P_TMC_SPI_Mode.png width="600" />
 
-#### 3.4.4 DIAG(Sensorless Homing) of TMC Driver 
+#### **· DIAG(Sensorless Homing) of TMC Driver** 
 
 As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need to cut the DIAG pin of the driver.
 
 <img src=img/M4P/M4P_TMC_DIAG_Mode.png width="600" />
 
-#### 3.4.5 Stepper Driver Voltage Selection
+#### **· Driver Voltage Selection** 
 
 The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power, and the 12/24v voltage is supported.
 
-##### Driver independent power supply
+##### · **Driver independent power supply**
 
 The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.
 
 <img src=img/M4P/M4P_IPS.png width="600" />
 
-##### Main power supply
+##### **· Main power supply**
 
 The jumper is inserted into the right side and powered by the main POWER port. the 12/24v voltage is supported.
 
 <img src=img/M4P/M4P_MPS.png width="600" />
 
-### 3.1 Installing the Core Board
+### **· Install the Core Board via BTB Connection**
 
-M4P+CM4：Pay attention to the direction, as shown below.
+​	M4P+CM4：Pay attention to the direction, as shown below.
 
 <img src=img/M4P/M4P+CM4.png width="600" />
 
-M4P+CB1：Pay attention to the direction, as shown below.
+​	M4P+CB1：Pay attention to the direction, as shown below.
 
 <img src=img/M4P/M4P+CB1.png width="600" />
 
-### 3.2 40 pin GPIO
+### **· 40 pin GPIO**
 
-When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry Pi. When working with CB1, it is a custom IO arrangement, as shown in the figure below, the 'GPIO4' in front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.
+​	When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry Pi. When working with CB1, it is a custom IO 		  	 arrangement, as shown in the figure below, the 'GPIO4' in front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.
 
 <img src=img/M4P/M4P_40_Pin.png width="600" />
 
-### 3.3 TYPE-C
-
-After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up, indicating that the power supply is normal. The J8 on the middle of the board is the power selection terminal, it needs to be short circuited only when the type-C USB is used to supply power to the motherboard or the USB is used to supply power externally. The signal of type-C is connected to the SoC, Only used when writing OS image for CM4 eMMC version.
-
-<img src=img/M4P/M4P_TYPE_C.png width="600" />
-
-### 3.5 BLTouch Wiring
+### **· BLTouch Wiring**
 
 M4P_BLTouch_Wiring
 
 <img src=img/M4P/M4P_BLTouch_Wiring.png width="600" />
 
-### 3.6 EXP1+EXP2 and LCD Screen Wiring
+### **· EXP1+EXP2 and LCD Screen Wiring**
 
 M4P_E1_E2_LCD
 
 <img src=img/M4P/M4P_E1_E2_LCD.png width="600" />
 
-### 3.7 RGB Wiring
+### **· RGB Wiring**
 
 <img src=img/M4P/M4P_RGB_Wiring.png width="600" />
 
-### 3.8 DSI/CSI Wiring
+### **· DSI/CSI Wiring**
 
 <img src=img/M4P/M4P_DSI_CSI_Wiring.png width="600" />
 
-### 3.9 SPI Display Wiring
+### **· SPI Display Wiring**
 
 <img src=img/M4P/M4P_SPI_Display_Wiring.png width="600" />
 
-### 3.10 ADXL345 Accelerometer
+### **· ADXL345 Accelerometer**
 
 Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the M4P motherboard
 
@@ -316,6 +315,23 @@ Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer
     #spi_software_miso_pin: PA6
     ```
 
-## 4. OS Download
 
-For details, please click: https://z1996xm.github.io/BIGTREETECH/Tutorials.html
+
+## **· Software Configuration**
+
+​	For details, please click: 
+
+​	https://z1996xm.github.io/BIGTREETECH/Software%20Configuration.html
+
+## **· Software Installation**
+
+​	For details, please click:
+
+​	 https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
+
+## **· FAQs**
+
+1. All unplugging and plugging operations should be performed under the condition of power off, including enabling the eMMC writing.
+2. Pay attention to the heat dissipation of CM4 and CB1. If the running application consumes too many system resources, the CM4/CB1 will get hot quite seriously.
+
+## **· Product Purchase Link**

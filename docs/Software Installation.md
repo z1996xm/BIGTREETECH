@@ -10,7 +10,7 @@ Raspberry_Pi_OS
 
 <img src=img/Raspberry_Pi_OS.png width="600"/>
 
-### **· Download and Install Raspberry Pi Imager**
+### <p>BIGTREETECH MANTA M8P is a 32-bit printer motherboard developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd. for Klipper firmware. You can simply plug in the core board to run the Klipper firmware, which greatly simplifies the connection between the motherboard and the Raspberry Pi, and saves a lot of space. Moreover, the BTB connector is designed to install CM4 or other solutions to solve the current expensive problem of CM4.</p>
 
 ​	Install the official Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
