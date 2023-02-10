@@ -203,7 +203,7 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 	<tr>
     <td>Driver Chips</td><td>MS3</td><td>MS2</td><td>MS1</td><td>Microsteps</td>
     <tr>
-    <td rowspan="8">ST820 Maximum <br />256 microsteps <br />45V 1.5A</td> 
+    <td rowspan="8">ST820 Maximum 256 microsteps <br />45V 1.5A</td> 
     <td>L</td><td>L</td><td>L</td><td>Full Step</td>
     <tr>
     <td>L</td><td>L</td><td>H</td><td>1/2</td>
@@ -223,6 +223,7 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
     <td><img src=img/M5P/M5P_DRI5.png width="100" /></td>
     <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
 </table>
+
 
 
 #### **· UART Mode of TMC Driver**

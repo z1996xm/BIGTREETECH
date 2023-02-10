@@ -124,7 +124,7 @@ nav:
       - EZ2240.md
       - EZ31865.md
   - Tutorials:
-    - Tutorials.md
+    # - Tutorials.md
     - Software Configuration.md
     - Software Installation.md
 
