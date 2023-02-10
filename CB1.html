@@ -2572,18 +2572,18 @@
 <h4 id="312-wifi-settings">3.1.2 WiFi Settings<a class="headerlink" href="#312-wifi-settings" title="Permanent link">&para;</a></h4>
 <ul>
 <li>After the OS writes to the SD card, there is a FAT32 partition named <code>BOOT</code>, open <code>system.cfg</code> file with <code>Notpad</code>, <code>Notpad++</code> or <code>VSCode</code>.
-  <img src=img/system.png /><br/></li>
+  <img src=img/system.png width="600" /><br/></li>
 <li>Set <code>WIFI_SSID</code> as your actual wifi name and <code>WIFI_PASSWD</code> as your actual wifi password, The space character can be parsed normally without additional escape character.
   For example: <code>WIFI_SSID="CB1 Tester"</code>
-  <img src=img/wifi.png /><br/></li>
+  <img src=img/wifi.png width="600" /><br/></li>
 </ul>
 <h3 id="32-overlays-settings">3.2 Overlays Settings<a class="headerlink" href="#32-overlays-settings" title="Permanent link">&para;</a></h3>
 <ul>
-<li>After the OS writes to the SD card, there is a FAT32 partition named <code>BOOT</code>, open <code>BoardEnv.txt</code> file with <code>Notpad</code>, <code>Notpad++</code> or <code>VSCode</code>. <br/><img src=img/BoardEnv.png /><br/></li>
+<li>After the OS writes to the SD card, there is a FAT32 partition named <code>BOOT</code>, open <code>BoardEnv.txt</code> file with <code>Notpad</code>, <code>Notpad++</code> or <code>VSCode</code>. <br/><img src=img/BoardEnv.png width="600" /><br/></li>
 </ul>
 <ul>
 <li>
-<p>Set as required as shown in the figure below. <br/><img src=img/overlays.png /><br/></p>
+<p>Set as required as shown in the figure below. <br/><img src=img/overlays.png width="600" /><br/></p>
 <ul>
 <li>The default value is <code>console=display</code>, This means that the <code>UART0</code> of CB1 is used as the debugging port by default. We can use <code>MobaXterm</code> to connect to CB1 by UART0 and debug. If klipper wants to use <code>UART0</code> to control the motherboard, we need to set it to <code>console=serial</code>, now klippe can use <code>UART0</code> as <code>/dev/ttyS0</code>.</li>
 </ul>
@@ -2641,17 +2641,17 @@ MCP2515_IRQ=PC9</code></p>
 <h4 id="441-raspberry-pi-imager">4.4.1 Raspberry Pi Imager<a class="headerlink" href="#441-raspberry-pi-imager" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Insert a MicroSD into your computer.</li>
-<li>Choose OS. <br/><img src=img/RPI_Imager_1.png width="500"/><br/></li>
-<li>Select "Use custom", then select the image that you downloaded. <br/><img src=img/RPI_Imager_2.png width="500"/><br/></li>
-<li>Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="500"/><br/></li>
-<li>Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="500"/><br/></li>
+<li>Choose OS. <br/><img src=img/RPI_Imager_1.png width="600"/><br/></li>
+<li>Select "Use custom", then select the image that you downloaded. <br/><img src=img/RPI_Imager_2.png width="600"/><br/></li>
+<li>Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="600"/><br/></li>
+<li>Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="600"/><br/></li>
 </ul>
 <h4 id="442-balenaetcher">4.4.2 balenaEtcher<a class="headerlink" href="#442-balenaetcher" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Insert a MicroSD card to your computer through a card reader.</li>
-<li>Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="500"/><br/></li>
-<li>Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="500"/><br/></li>
-<li>Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="500"/><br/></li>
+<li>Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="600"/><br/></li>
+<li>Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="600"/><br/></li>
+<li>Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="600"/><br/></li>
 </ul>
 <h2 id="50-ssh-connection">5.0 SSH Connection<a class="headerlink" href="#50-ssh-connection" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2659,11 +2659,11 @@ MCP2515_IRQ=PC9</code></p>
 <li>Insert the Micro SD card (installed OS) to motherboard, wait for system to load after power on, aprox. 1-2min. the ACT LED on the motherboard will flash continuously after startup successfully.</li>
 <li>The device will automatically be assigned a IP address after successfully connected to the network</li>
 <li>Find the device IP address in your router page
-  <img src=img/Router.png /><br/> </li>
+  <img src=img/Router.png width="600" /><br/> </li>
 <li>Or use the <a href="https://angryip.org/">https://angryip.org/</a> tool，scan all IP address in the current network organize by names, find the IP named Hurakan, BTT-CB1 like shown below
-  <img src=img/AngryIP.png /><br/> </li>
+  <img src=img/AngryIP.png width="600" /><br/> </li>
 <li>Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and click “OK” (note: your computer and the device needs to be in the same network)
-  <img src=img/MobaXterm_Login.png /><br/> </li>
+  <img src=img/MobaXterm_Login.png width="600" /><br/> </li>
 <li>Input the login name and password to enter the SSH terminal interface<ul>
 <li>login as: biqu</li>
 <li>password: biqu</li>
