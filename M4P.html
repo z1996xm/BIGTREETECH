@@ -1856,21 +1856,21 @@
 </table>
 
 <h4 id="uart-mode-of-tmc-driver"><strong>· UART Mode of TMC Driver</strong><a class="headerlink" href="#uart-mode-of-tmc-driver" title="Permanent link">&para;</a></h4>
-<p>For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
+<p>​   For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and   driver current is set by firmware.</p>
 <p><img src=img/M4P/M4P_TMC_UART_Mode.png width="600" /></p>
 <h4 id="spi-mode-of-tmc-driver"><strong>· SPI Mode of TMC Driver</strong><a class="headerlink" href="#spi-mode-of-tmc-driver" title="Permanent link">&para;</a></h4>
-<p>For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
+<p>​   For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and  driver current is set by firmware.</p>
 <p><img src=img/M4P/M4P_TMC_SPI_Mode.png width="600" /></p>
 <h4 id="diagsensorless-homing-of-tmc-driver"><strong>· DIAG(Sensorless Homing) of TMC Driver</strong><a class="headerlink" href="#diagsensorless-homing-of-tmc-driver" title="Permanent link">&para;</a></h4>
-<p>As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need to cut the DIAG pin of the driver.</p>
+<p>​   As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need     to cut the DIAG pin of the driver.</p>
 <p><img src=img/M4P/M4P_TMC_DIAG_Mode.png width="600" /></p>
 <h4 id="driver-voltage-selection"><strong>· Driver Voltage Selection</strong><a class="headerlink" href="#driver-voltage-selection" title="Permanent link">&para;</a></h4>
-<p>The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power, and the 12/24v voltage is supported.</p>
+<p>​   The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used  for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power,   and the 12/24v voltage is supported.</p>
 <h5 id="driver-independent-power-supply">· <strong>Driver independent power supply</strong><a class="headerlink" href="#driver-independent-power-supply" title="Permanent link">&para;</a></h5>
-<p>The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.</p>
+<p>​   The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.</p>
 <p><img src=img/M4P/M4P_IPS.png width="600" /></p>
 <h5 id="main-power-supply"><strong>· Main power supply</strong><a class="headerlink" href="#main-power-supply" title="Permanent link">&para;</a></h5>
-<p>The jumper is inserted into the right side and powered by the main POWER port. the 12/24v voltage is supported.</p>
+<p>​   The jumper is inserted into the right side and powered by the main POWER port. the 12/24v voltage is supported.</p>
 <p><img src=img/M4P/M4P_MPS.png width="600" /></p>
 <h3 id="install-the-core-board-via-btb-connection"><strong>· Install the Core Board via BTB Connection</strong><a class="headerlink" href="#install-the-core-board-via-btb-connection" title="Permanent link">&para;</a></h3>
 <p>​   M4P+CM4：Pay attention to the direction, as shown below.</p>
@@ -1881,10 +1881,10 @@
 <p>​   When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry Pi. When working with CB1, it is a custom IO              arrangement, as shown in the figure below, the 'GPIO4' in front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.</p>
 <p><img src=img/M4P/M4P_40_Pin.png width="600" /></p>
 <h3 id="bltouch-wiring"><strong>· BLTouch Wiring</strong><a class="headerlink" href="#bltouch-wiring" title="Permanent link">&para;</a></h3>
-<p>M4P_BLTouch_Wiring</p>
+<p>​   M4P_BLTouch_Wiring</p>
 <p><img src=img/M4P/M4P_BLTouch_Wiring.png width="600" /></p>
 <h3 id="exp1exp2-and-lcd-screen-wiring"><strong>· EXP1+EXP2 and LCD Screen Wiring</strong><a class="headerlink" href="#exp1exp2-and-lcd-screen-wiring" title="Permanent link">&para;</a></h3>
-<p>M4P_E1_E2_LCD</p>
+<p>​   M4P_E1_E2_LCD</p>
 <p><img src=img/M4P/M4P_E1_E2_LCD.png width="600" /></p>
 <h3 id="rgb-wiring"><strong>· RGB Wiring</strong><a class="headerlink" href="#rgb-wiring" title="Permanent link">&para;</a></h3>
 <p><img src=img/M4P/M4P_RGB_Wiring.png width="600" /></p>
@@ -1893,7 +1893,7 @@
 <h3 id="spi-display-wiring"><strong>· SPI Display Wiring</strong><a class="headerlink" href="#spi-display-wiring" title="Permanent link">&para;</a></h3>
 <p><img src=img/M4P/M4P_SPI_Display_Wiring.png width="600" /></p>
 <h3 id="adxl345-accelerometer"><strong>· ADXL345 Accelerometer</strong><a class="headerlink" href="#adxl345-accelerometer" title="Permanent link">&para;</a></h3>
-<p>Refer to here: <a href="https://www.klipper3d.org/Measuring_Resonances.html">https://www.klipper3d.org/Measuring_Resonances.html</a>, We can refer to the following wiring and configuration when connecting to the M4P motherboard</p>
+<p>​   Refer to here: <a href="https://www.klipper3d.org/Measuring_Resonances.html">https://www.klipper3d.org/Measuring_Resonances.html</a>, We can refer to the following wiring and configuration when connecting to the   M4P motherboard</p>
 <p><img src=img/M4P/M4P_ADXL345.png width="600" /></p>
 <p>[adxl345]</p>
 <pre><code>```
