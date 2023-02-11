@@ -122,8 +122,8 @@
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/32</td><td></td></tr>
     <tr>
-    <td><img src=img/M5P/M5P_DRI1.png width="130" /></td>
-    <td colspan="5"><img src=img/M5P/M5P_DRI2.png width="200" /></td>
+    <td>Current<br/>R<SUB>ISENSE</SUB>=0.1&#937</td>
+    <td colspan="5">I<SUB>CHOP</SUB> = V<SUB>(xREF)</SUB> / 5 / R<SUB>ISENSE</SUB></td>
     <tr>    
 </table>
 <table>
@@ -141,8 +141,8 @@
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td>
     <tr>
-    <td><img src=img/M5P/M5P_DRI3.png width="110" /></td>
-    <td colspan="5"><img src=img/M5P/M5P_DRI4.png width="200" /></td>  
+    <td>Current<br/>R<SUB>S</SUB>=0.1&#937</td>
+    <td colspan="5">I<SUB>TripMAX</SUB> = V<SUB>REF</SUB> / 8 / R<SUB>S</SUB></td>  
     <tr>    
 </table>
 <table>
@@ -166,9 +166,11 @@
     <tr>
     <td>H</td><td>H</td><td>H</td><td>1/128</td><td>32W1-2 Phase</td></tr>
     <tr>
-    <td><img src=img/M5P/M5P_DRI5.png width="100" /></td>
-    <td colspan="5"><img src=img/M5P/M5P_DRI6.png width="200" /></td>  
+    <td>Current<br/>RF1=0.22&#937</td>
+    <td colspan="5">I<SUB>OUT</SUB> = (V<SUB>REF</SUB> / 5) / RF1</td>  
+    <tr>
 </table>
+
 
 #### **· UART Mode of TMC Driver**
 
