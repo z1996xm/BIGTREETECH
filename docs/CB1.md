@@ -20,7 +20,7 @@
 * Support 100M Ethernet + 100M WiFi
 * Having the same BTB header as the Raspberry Pi CM4.
 
-### **· Basic Parameters**
+## **· Basic Parameters**
 
 * Product Size: 40mm x 55mm
 * Mounting Size: 33mm x 48mm
@@ -29,11 +29,11 @@
 * Output Voltage: 1.8V±2%/100mA
 * WiFi: 2.4G/802.11 b/g/n
 
-### **· Dimensions**
+## **· Dimensions**
 
 <img src=img/CB1_Size.png width="600" />
 
-### **· Schematic**
+## **· Schematic**
 
 [BIGTREETECH_CB1_V22_220812_SCH](./doc/BIGTREETECH_CB1_V22_220812_SCH.pdf) 
 
@@ -174,108 +174,129 @@
 | 197   | GND     |              | 198   | GND       |                   |
 | 199   | HSDA    | HDMI I2C     | 200   | HSCL      | HDMI I2C          |
 
-## 3. OS_Settings
 
-### 3.1 Network Settings
 
-#### 3.1.1 Ethernet
+## **· Software Configuration**
 
-* Plug-and-play with an Ethernet cable, no additional setup required.
+### · Network Settings
 
-#### 3.1.2 WiFi Settings
+#### · Ethernet
 
-* After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `system.cfg` file with `Notpad`, `Notpad++` or `VSCode`.
-  <img src=img/system.png width="600" /><br/>
-* Set `WIFI_SSID` as your actual wifi name and `WIFI_PASSWD` as your actual wifi password, The space character can be parsed normally without additional escape character.
-  For example: `WIFI_SSID="CB1 Tester"`
-  <img src=img/wifi.png width="600" /><br/>
+​	Plug-and-play with an Ethernet cable, no additional setup required.
 
-### 3.2 Overlays Settings
+#### **· WiFi Settings**
 
-* After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png width="600" /><br/>
-  
-* Set as required as shown in the figure below. <br/><img src=img/overlays.png width="600" /><br/>
+​	After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `system.cfg` file with `Notpad`, `Notpad++` or `VSCode`.
+<img src=img/system.png width="600" /><br/>
 
-  * The default value is `console=display`, This means that the `UART0` of CB1 is used as the debugging port by default. We can use `MobaXterm` to connect to CB1 by UART0 and debug. If klipper wants to use `UART0` to control the motherboard, we need to set it to `console=serial`, now klippe can use `UART0` as `/dev/ttyS0`.
+​	Set `WIFI_SSID` as your actual wifi name and `WIFI_PASSWD` as your actual wifi password, The space character can be parsed normally without 				 	additional escape character.
+​	For example: `WIFI_SSID="CB1 Tester"`
+<img src=img/wifi.png width="600" /><br/>
 
-  * CB1 will automatically identify the HDMI resolution, but if your HDMI screen cannot report the resolution through the EDID normally, we can forcibly specify the resolution of CB1 output by uncomment `extraargs=video` and set the actual resolution.<br/>
-    For example:<br/>
-    BTT-HDMI7 resolution = 1024x600: `extraargs=video=HDMI-A-1:1024x600-24@60`<br/>
-    BTT-HDMI5 resolution = 800x480: `extraargs=video=HDMI-A-1:800x480-24@60`<br/>
+### · Overlays Settings
 
-  * Uncomment `overlays=tft35_spi` to enable TFT35 SPI screen.
+​	After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png width="600" /><br/>
 
-  * Uncomment `overlays=mcp2515` to enable MCP2515 spi to canbus module.
+​	Set as required as shown in the figure below. <br/><img src=img/overlays.png width="600" /><br/>
 
-  * Uncomment `overlays=tft35_spi mcp2515` If you want to use both TFT35 SPI screen and MCP2515 spi to canbus module
+The default value is `console=display`, This means that the `UART0` of CB1 is used as the debugging port by default. We can use `MobaXterm` to connect to CB1 by UART0 and debug. If klipper wants to use `UART0` to control the motherboard, we need to set it to `console=serial`, now klippe can use `UART0` as `/dev/ttyS0`.
 
-  * uncomment the following overlays and parameters to release 'spidev1.1' to user space, And 'spidev1.1' cannot be used together with TFT35_SPI and MCP2515.
+CB1 will automatically identify the HDMI resolution, but if your HDMI screen cannot report the resolution through the EDID normally, we can forcibly specify the resolution of CB1 output by uncomment `extraargs=video` and set the actual resolution.<br/>
+For example:<br/>
+BTT-HDMI7 resolution = 1024x600: `extraargs=video=HDMI-A-1:1024x600-24@60`<br/>
+BTT-HDMI5 resolution = 800x480: `extraargs=video=HDMI-A-1:800x480-24@60`<br/>
 
-    ```
-     overlays=spi-spidev
-     param_spidev_spi_bus=1
-     param_spidev_spi_cs=1
-     param_spidev_max_freq=1000000
-    ```
+Uncomment `overlays=tft35_spi` to enable TFT35 SPI screen.
 
-* NOTE: TFT35 SPI and MCP2515 multiplex a group of SPI1
+Uncomment `overlays=mcp2515` to enable MCP2515 spi to canbus module.
 
-  ```
-  SPI1_CLK=PH6
-  SPI1_MISO=PH8
-  SPI1_MOSI=PH7
-  TFT35_SPI_CS=PC7
-  MCP2515_CS=PC11
-  MCP2515_IRQ=PC9
-  ```
+Uncomment `overlays=tft35_spi mcp2515` If you want to use both TFT35 SPI screen and MCP2515 spi to canbus module
 
-## 4. Write_OS
+uncomment the following overlays and parameters to release 'spidev1.1' to user space, And 'spidev1.1' cannot be used together with TFT35_SPI and MCP2515.
 
-### 4.1 Download the OS Image
+```
+ overlays=spi-spidev
+ param_spidev_spi_bus=1
+ param_spidev_spi_cs=1
+ param_spidev_max_freq=1000000
+```
 
-Please download and install the OS image we provided: https://github.com/bigtreetech/CB1/releases
+NOTE: TFT35 SPI and MCP2515 multiplex a group of SPI1
 
-### 4.2 Download and Install Writing Software
+```
+SPI1_CLK=PH6
+SPI1_MISO=PH8
+SPI1_MOSI=PH7
+TFT35_SPI_CS=PC7
+MCP2515_CS=PC11
+MCP2515_IRQ=PC9
+```
 
-* The official Raspberry Pi Imager: https://www.raspberrypi.com/software/
-* balenaEtcher: https://www.balena.io/etcher/
-  <br/>Both of the above software can be used, just choose one to download and install
+### **· SSH Connection**
 
-### 4.3 Format SD card
+Install the ssh application Mobaxterm: https://mobaxterm.mobatek.net/download-home-edition.html
 
-* Normally, you can format the SD card with the tools provided by the computer system. Completely format the SD card with professional SD card format software. https://www.sdcard.org/downloads/formatter/
+Insert the Micro SD card (installed OS) to motherboard, wait for system to load after power on, aprox. 1-2min. the ACT LED on the motherboard will flash continuously after startup successfully.
 
-### 4.4 Write OS
+The device will automatically be assigned a IP address after successfully connected to the network
 
-#### 4.4.1 Raspberry Pi Imager
+Find the device IP address in your router page
+<img src=img/Router.png width="600" /><br/> 
 
-* Insert a MicroSD into your computer.
-* Choose OS. <br/><img src=img/RPI_Imager_1.png width="600"/><br/>
-* Select "Use custom", then select the image that you downloaded. <br/><img src=img/RPI_Imager_2.png width="600"/><br/>
-* Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="600"/><br/>
-* Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="600"/><br/>
+​	Or use the https://angryip.org/ tool，scan all IP address in the current network organize by names, find the IP named Hurakan, BTT-CB1 like shown 	 	below
+<img src=img/AngryIP.png width="600" /><br/> 
 
-#### 4.4.2 balenaEtcher
+​	Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and click “OK” (note: your computer and the device needs to 	be in the same network)
+<img src=img/MobaXterm_Login.png width="600" /><br/> 
 
-* Insert a MicroSD card to your computer through a card reader.
-* Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="600"/><br/>
-* Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/Etcher_2.png width="600"/><br/>
-* Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="600"/><br/>
+​		Input the login name and password to enter the SSH terminal interface
 
-## 5.0 SSH Connection
+* login as: biqu
+* password: biqu
 
-* Install the ssh application Mobaxterm: https://mobaxterm.mobatek.net/download-home-edition.html
-* Insert the Micro SD card (installed OS) to motherboard, wait for system to load after power on, aprox. 1-2min. the ACT LED on the motherboard will flash continuously after startup successfully.
-* The device will automatically be assigned a IP address after successfully connected to the network
-* Find the device IP address in your router page
-  <img src=img/Router.png width="600" /><br/> 
-* Or use the https://angryip.org/ tool，scan all IP address in the current network organize by names, find the IP named Hurakan, BTT-CB1 like shown below
-  <img src=img/AngryIP.png width="600" /><br/> 
-* Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and click “OK” (note: your computer and the device needs to be in the same network)
-  <img src=img/MobaXterm_Login.png width="600" /><br/> 
-* Input the login name and password to enter the SSH terminal interface
-  * login as: biqu
-  * password: biqu
+## **· Software Installation**
+
+1. **Download the OS Image**
+
+​		Please download and install the OS image we provided: https://github.com/bigtreetech/CB1/releases
+
+2. **Download and Install Writing Software**
+
+​		The official Raspberry Pi Imager: https://www.raspberrypi.com/software/
+
+​		balenaEtcher: https://www.balena.io/etcher/<br/>
+
+​		Both of the above software can be used, just choose one to download and install
+
+3. **Format SD card**
+
+​		Normally, you can format the SD card with the tools provided by the computer system. Completely format the SD card with professional SD card 		format software. https://www.sdcard.org/downloads/formatter/
+
+4. **Write OS**
+
+5. **Raspberry Pi Imager**
+
+​		Insert a MicroSD into your computer.
+
+​		Choose OS. <br/><img src=img/RPI_Imager_1.png width="600"/><br/>
+
+Select "Use custom", then select the image that you downloaded. <br/><img src=img/RPI_Imager_2.png width="600"/><br/>
+
+Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise the data will be formatted.) <br/><img src=img/RPI_Imager_3.png width="600"/><br/>
+
+Wait for the writing to finish. <br/><img src=img/RPI_Imager_4.png width="600"/><br/>
+
+6. **balenaEtcher**
+
+​	Insert a MicroSD card to your computer through a card reader.
+
+​	Select the image that you downloaded. <br/><img src=img/Etcher_1.png width="600"/><br/>
+
+​	Select the MicroSD card and click "WRITE" (WRITE the image will format the MicroSD card. Be careful not to select the wrong storage device, otherwise 	the data will be formatted.) <br/><img src=img/Etcher_2.png width="600"/><br/>
+
+​	Wait for the writing to finish. <br/><img src=img/Etcher_3.png width="600"/><br/>
+
+
 
 
 
