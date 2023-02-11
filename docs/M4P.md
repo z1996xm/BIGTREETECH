@@ -323,7 +323,7 @@ https://z1996xm.github.io/BIGTREETECH/Software%20Configuration.html
 
 For details, please click:
 
- https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
+https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
 
 ## **FAQs**
 
