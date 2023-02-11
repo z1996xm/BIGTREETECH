@@ -6,7 +6,7 @@ title: Welcome
 
 ## Here’s BIGTREETECH! For Makers, by makers!
 
-We appreciate all of your support to BIGTREETECH! To offer an excellent experience of creation to every makers,We’re devoted to design and produce high-quality and durable accessories!
+<p>We appreciate all of your support to BIGTREETECH! To offer an excellent experience<br> of creation to every makers,We’re devoted to design and produce high-quality <br>and durable accessories!</p>
 
 ## How to contact
 
