@@ -130,7 +130,7 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 
 ​	**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
 
-<table>
+<table border="1">
 	<tr>
     <td>Driver Chips</td><td>MODE2</td><td>MODE1</td><td>MODE0</td><td>Microsteps</td><td>Excitation Mode</td></tr>
     <tr>
