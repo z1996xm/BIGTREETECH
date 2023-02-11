@@ -2,15 +2,15 @@
 
 [<img src=img/M8P/M8P_Title.png width="600" />](https://z1996xm.github.io/BIGTREETECH/M8P.html)
 
-## **· Introduction**
+## **Introduction**
 
 <p>BIGTREETECH MANTA M8P is a 32-bit printer motherboard developed by the 3D printing team of <br> Shenzhen Big Tree Technology Co., Ltd. for Klipper firmware. You can simply plug in the core<br> board to run the Klipper firmware, which greatly simplifies the connection between the motherboard and <br>the Raspberry Pi, and saves a lot of space. Moreover, the BTB connector is designed to install CM4 or<br> other solutions to solve the current expensive problem of CM4.<br></p>
 
-## **· Announcements**
+## **Announcements**
 
 
 
-## **· Main Features**
+## **Main Features**
 
 - Adopt 32-bit 64MHz ARM Cortex-M0+ series STM32G0B1VET6 as the main control chip;
 - The power chip, TPS5450-5A, supports DC12/24V power input. The output current of the chip is up to 5A, and the peak value can reach 6A, which perfectly supports the power supply of Raspberry Pi; 
@@ -28,7 +28,7 @@
 - The proximity switch interface is reserved, supports NPN and PNP types, (24V, 12V, 5V) voltage selection is available, common voltage selection with VFAN6;
 - Provide the SPI expansion interface to allow Klipper firmware users to connect an external acceleration sensor for acceleration compensation.
 
-## **· Basic Parameters**
+## **Basic Parameters**
 
 - Product Size: 170 x 102.7mm, you can read more details here **BIGTREETECH MANTA M8P V1.0-SIZE-top.pdf**
 - Installation Size: Please read: **BIGTREETECH MANTA M8P V1.0-SIZE-top.pdf**
@@ -54,13 +54,13 @@
 - Support Machine Structure: Cartesian, Delta, Kossel, Ultimaker, CoreXY
 - Recommended Software: Cura, Simplify3D, Pronterface, Repetier-host, Makerware
 
-## **· Dimensions**
+## **Dimensions**
 
 <img src=img/M8P/M8P_Dimensions1.png width="600" />
 
 <img src=img/M8P/M8P_Dimensions2.png width="600" />
 
-## **· Pin Out**
+## **Pin Out**
 
 <img src=img/M8P/M8P_Pin_Out.png width="600" />
 
@@ -70,7 +70,7 @@ Changes in V1.1 include：M6，M7，M8，SPI，MCU-Card，RGB1&RGB2，FAN4，CAN
 
 <img src=img/M8P/M8P_Pin_Out1.png width="600" />
 
-## **· CAD**
+## **CAD**
 
 <img src=img/M8P/M8P_CAD.png width="600" />
 
@@ -90,27 +90,27 @@ The 5V and 12V power output ports are added with E-FUSE protection, which has sh
 
 <img src=img/M8P/M8P_Add_Func3.png width="600" />
 
-## **· Schematic**
+## **Schematic**
 
-## **· Hardware Configuration**
+## **Hardware Configuration**
 
-​	**USB Power Supply**
+**USB Power Supply**
 
-​	After the M8P motherboard is powered on, the D32 red light on the left side of the MCU will light up, indicating that the power supply is normal. The 	VUSB in the middle of the board is the power selection terminal. Only when using USB to supply power to the motherboard or need to supply power through USB, do you need to use the jumper to short it.
+After the M8P motherboard is powered on, the D32 red light on the left side of the MCU will light up, indicating that the power supply is normal. The 	VUSB in the middle of the board is the power selection terminal. Only when using USB to supply power to the motherboard or need to supply power through USB, do you need to use the jumper to short it.
 
 <img src=img/M8P/M8P_USB_PS.png width="600" />
 
-## **· Hardware Installation**
+## **Hardware Installation**
 
-### **· Stepper Driver**
+### **Stepper Driver**
 
-#### **· STEP/DIR (STANDALONE) Mode**
+#### **STEP/DIR (STANDALONE) Mode**
 
-​	For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.
+For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.
 
 <img src=img/M8P/M8P_Dri_Step.png width="600" />
 
-​	**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
+**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
 
 <table border="1">
 	<tr>
@@ -179,97 +179,95 @@ The 5V and 12V power output ports are added with E-FUSE protection, which has sh
     <td colspan="5">I<SUB>peak</SUB> = (V<SUB>REF</SUB> * V<SUB>DD</SUB>) / (5 * R<SUB>S</SUB>)</td></tr>  
 </table>
 
-
-
-​	For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
+For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
 
 <img src=img/M8P/M8P_Dri_Uart_Mode.png width="600" />
 
-#### **· SPI Mode of TMC Driver** 
+#### **SPI Mode of TMC Driver** 
 
-​	For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
+For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
 
 <img src=img/M8P/M8P_Dri_SPI_Mode.png width="600" />
 
-#### **· DIAG(Sensorless Homing) of TMC Driver** 
+#### **DIAG(Sensorless Homing) of TMC Driver** 
 
-​	As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. 
+As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. 
 
 <img src=img/M8P/M8P_Dri_Diag_Mode.png width="600" />
 
-#### **· Driver Voltage Selection** 
+#### **Driver Voltage Selection** 
 
 <img src=img/M8P/M8P_Sel_PS1.png width="600" />
 
 <img src=img/M8P/M8P_Sel_PS1.png width="600" />
 
-### **· Install the Core Board via BTB Connection**
+### **Install the Core Board via BTB Connection**
 
-​	**M8P+CM4: Pay attention to the direction, as shown below.**
+**M8P+CM4: Pay attention to the direction, as shown below.**
 
 <img src=img/M8P/M8P_M8P+CM4.png width="600" />
 
-​	**M8P+CB1: Pay attention to the direction, as shown below.**
+**M8P+CB1: Pay attention to the direction, as shown below.**
 
 <img src=img/M8P/M8P_M8P+CB1.png width="600" />
 
-### **· Voltage Selection for CNC Fans**
+### **Voltage Selection for CNC Fans**
 
-​	Set the output voltage to 5V, 12V, or 24V with a jumper cap. Note: Please confirm the fan's operating voltage before choosing a voltage. Our company 	is not responsible for fan burnout caused by wrong selection.
+Set the output voltage to 5V, 12V, or 24V with a jumper cap. Note: Please confirm the fan's operating voltage before choosing a voltage. Our company 	is not responsible for fan burnout caused by wrong selection.
 
 <img src=img/M8P/M8P_CNC_Fans.png width="600" />
 
-### **· 100K NTC or PT1000 Setting**
+### **100K NTC or PT1000 Setting**
 
-​	When using a 100K NTC thermistor, there is no need to insert the jumper cap, and the pull-up resistance of TH0-TH3 is 4.7K 0.1%. When using PT1000, 	you need to use a jumper cap to connect the two pins in the red box in the figure below and connect a 4.12K 0.1% resistor in parallel. At this time, the 	pull-up resistor of TH0-TH1 is 2.2K (Note: The temperature accuracy read out in this way will be far less accurate than that read out by MAX31865).
+When using a 100K NTC thermistor, there is no need to insert the jumper cap, and the pull-up resistance of TH0-TH3 is 4.7K 0.1%. When using PT1000, 	you need to use a jumper cap to connect the two pins in the red box in the figure below and connect a 4.12K 0.1% resistor in parallel. At this time, the 	pull-up resistor of TH0-TH1 is 2.2K (Note: The temperature accuracy read out in this way will be far less accurate than that read out by MAX31865).
 
 <img src=img/M8P/M8P_NTC.png width="600" />
 
-### **· BLTouch Wiring**
+### **BLTouch Wiring**
 
 <img src=img/M8P/M8P_BLTouch.png width="600" />
 
-### **· Auto Shutdown Module(Relay V1.2) Wiring**
+### **Auto Shutdown Module(Relay V1.2) Wiring**
 
 <img src=img/M8P/M8P_Auto_S.png width="600" />
 
-### **· Wiring between LCD Screen and EXP1+EXP2**
+### **Wiring between LCD Screen and EXP1+EXP2**
 
 <img src=img/M8P/M8P_LCD.png width="600" />
 
-### **· RGB Wiring**
+### **RGB Wiring**
 
 <img src=img/M8P/M8P_RGB.png width="600" />
 
-### **· Filament Sensor Wiring**
+### **Filament Sensor Wiring**
 
 <img src=img/M8P/M8P_Filament.png width="600" />
 
-### **· 40 Pins GPIO**
+### **40 Pins GPIO**
 
 <img src=img/M8P/M8P_40_Pin.png width="600" />
 
-### **· DSI/CSI Wiring**
+### **DSI/CSI Wiring**
 
 <img src=img/M8P/M8P_DSI.png width="600" />
 
-### **· Proximity Switch Wiring**
+### **Proximity Switch Wiring**
 
-​	**Always on (NPN type), no need to short-circuit via a jumper cap, 24V as an example, as shown in the following figure:**
+**Always on (NPN type), no need to short-circuit via a jumper cap, 24V as an example, as shown in the following figure:**
 
 <img src=img/M8P/M8P_Proximity.png width="600" />
 
-​	**Always off (PNP type), need to short-circuit via a jumper cap, 24V as an example, as shown in the following figure:**
+**Always off (PNP type), need to short-circuit via a jumper cap, 24V as an example, as shown in the following figure:**
 
 <img src=img/M8P/M8P_Proximity1.png width="600" />
 
-### **· Wiring of the 4-wire CNC Fan**
+### **Wiring of the 4-wire CNC Fan**
 
 <img src=img/M8P/M8P_4_Wire.png width="600" />
 
-### **· ADXL345 Accelerometer**
+### **ADXL345 Accelerometer**
 
-​	Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the 	M8P motherboard
+Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the 	M8P motherboard
 
 <img src=img/M8P/M8P_ADXL345.png width="600" />
 
@@ -282,21 +280,21 @@ spi_bus: spi1
 #spi_software_miso_pin: PA6
 ```
 
-## **· Software Configuration**
+## **Software Configuration**
 
-​	For details, please click: 
+For details, please click: 
 
-​	https://z1996xm.github.io/BIGTREETECH/Software%20Configuration.html
+https://z1996xm.github.io/BIGTREETECH/Software%20Configuration.html
 
-## **· Software Installation**
+## **Software Installation**
 
-​	For details, please click:
+For details, please click:
 
-​	 https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
+https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
 
-## **· FAQs**
+## **FAQs**
 
 1.  All unplugging and plugging operations should be performed under the condition of power off, including enabling the eMMC writing.
 2. Pay attention to the heat dissipation of CM4 and CB1. The CM4/CB1 may become quite hot if the running application consumes too many system resources.
 
-## **· Product Purchase Link**
+## **Product Purchase Link**

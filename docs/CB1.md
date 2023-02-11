@@ -2,15 +2,15 @@
 
 [<img src=img/CB1.png width="600" />](https://z1996xm.github.io/BIGTREETECH/CB1.html)
 
-## **· Introduction**
+## **Introduction**
 
 <p>The BIGTREETECH CB1 is launched to provide a great solution to the insane shortage of Raspberry Pi CM4. <br>It outputs signals to the motherboard via the fast and convenient two 100 pins micro BTB connection header. Moreover, it is onboard 2.4G WiFi.<br></p>
 
-## **· Announcements**
+## **Announcements**
 
 
 
-## **· Main Features**
+## **Main Features**
 
 * CPU: ALLWINNER H616, Quad-core Cortex-A53 @1.5GHz
 * GPU: Mali G31 MP2, Support OpenGL3.2
@@ -20,7 +20,7 @@
 * Support 100M Ethernet + 100M WiFi
 * Having the same BTB header as the Raspberry Pi CM4.
 
-## **· Basic Parameters**
+## **Basic Parameters**
 
 * Product Size: 40mm x 55mm
 * Mounting Size: 33mm x 48mm
@@ -29,17 +29,17 @@
 * Output Voltage: 1.8V±2%/100mA
 * WiFi: 2.4G/802.11 b/g/n
 
-## **· Dimensions**
+## **Dimensions**
 
 <img src=img/CB1_Size.png width="600" />
 
-## **· Schematic**
+## **Schematic**
 
 [BIGTREETECH_CB1_V22_220812_SCH](./doc/BIGTREETECH_CB1_V22_220812_SCH.pdf) 
 
-## **· Pin Out**
+## **Pin Out**
 
-### **· 40 pin GPIO**
+### **40 pin GPIO**
 
 **The 40 pin GPIO on the motherboard when CB1 is used with motherboard like Manta M4P, M5P, M8P, PI4B_Adapter, etc.**
 
@@ -66,7 +66,7 @@
 | 37   | PC15   | GPIO79             | 38   | PH10   | GPIO234, IR_RX    |
 | 39   | GND    |                    | 40   | PC8    | GPIO72            |
 
-### **· 2 * 100 pins**
+### **2 * 100 pins**
 
 | A Pin | Signal   | Description     | A Pin | Signal   | Description          |
 | ----- | -------- | --------------- | ----- | -------- | -------------------- |
@@ -174,30 +174,28 @@
 | 197   | GND     |              | 198   | GND       |                   |
 | 199   | HSDA    | HDMI I2C     | 200   | HSCL      | HDMI I2C          |
 
+## **Software Configuration**
 
+### Network Settings
 
-## **· Software Configuration**
+#### Ethernet
 
-### · Network Settings
+Plug-and-play with an Ethernet cable, no additional setup required.
 
-#### · Ethernet
+#### **WiFi Settings**
 
-​	Plug-and-play with an Ethernet cable, no additional setup required.
-
-#### **· WiFi Settings**
-
-​	After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `system.cfg` file with `Notpad`, `Notpad++` or `VSCode`.
+After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `system.cfg` file with `Notpad`, `Notpad++` or `VSCode`.
 <img src=img/system.png width="600" /><br/>
 
-​	Set `WIFI_SSID` as your actual wifi name and `WIFI_PASSWD` as your actual wifi password, The space character can be parsed normally without 				 	additional escape character.
-​	For example: `WIFI_SSID="CB1 Tester"`
+Set `WIFI_SSID` as your actual wifi name and `WIFI_PASSWD` as your actual wifi password, The space character can be parsed normally without 				 	additional escape character.
+For example: `WIFI_SSID="CB1 Tester"`
 <img src=img/wifi.png width="600" /><br/>
 
-### · Overlays Settings
+### Overlays Settings
 
-​	After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png width="600" /><br/>
+After the OS writes to the SD card, there is a FAT32 partition named `BOOT`, open `BoardEnv.txt` file with `Notpad`, `Notpad++` or `VSCode`. <br/><img src=img/BoardEnv.png width="600" /><br/>
 
-​	Set as required as shown in the figure below. <br/><img src=img/overlays.png width="600" /><br/>
+Set as required as shown in the figure below. <br/><img src=img/overlays.png width="600" /><br/>
 
 The default value is `console=display`, This means that the `UART0` of CB1 is used as the debugging port by default. We can use `MobaXterm` to connect to CB1 by UART0 and debug. If klipper wants to use `UART0` to control the motherboard, we need to set it to `console=serial`, now klippe can use `UART0` as `/dev/ttyS0`.
 
@@ -232,7 +230,7 @@ MCP2515_CS=PC11
 MCP2515_IRQ=PC9
 ```
 
-### **· SSH Connection**
+### **SSH Connection**
 
 Install the ssh application Mobaxterm: https://mobaxterm.mobatek.net/download-home-edition.html
 
@@ -243,18 +241,18 @@ The device will automatically be assigned a IP address after successfully connec
 Find the device IP address in your router page
 <img src=img/Router.png width="600" /><br/> 
 
-​	Or use the https://angryip.org/ tool，scan all IP address in the current network organize by names, find the IP named Hurakan, BTT-CB1 like shown 	 	below
+Or use the https://angryip.org/ tool，scan all IP address in the current network organize by names, find the IP named Hurakan, BTT-CB1 like shown 	 	below
 <img src=img/AngryIP.png width="600" /><br/> 
 
-​	Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and click “OK” (note: your computer and the device needs to 	be in the same network)
+Open Mobaxtermand click “Session”, and click “SSH”，inset the device IP into Remote host and click “OK” (note: your computer and the device needs to be in the same network)
 <img src=img/MobaXterm_Login.png width="600" /><br/> 
 
-​		Input the login name and password to enter the SSH terminal interface
+Input the login name and password to enter the SSH terminal interface
 
 * login as: biqu
 * password: biqu
 
-## **· Software Installation**
+## **Software Installation**
 
 1. **Download the OS Image**
 
