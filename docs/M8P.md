@@ -112,35 +112,34 @@ The 5V and 12V power output ports are added with E-FUSE protection, which has sh
 
 ​	**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
 
-<table>
+<table border="1">
 	<tr>
-    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td>	 </tr>
+    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td></tr>
     <tr>
     <td rowspan="5">A4988 16 microstep max 35V 2A</td>
-    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td></tr>
     <tr>
-    <td>H</td><td>L</td><td>L</td><td>1/2</td><td>1-2 Phase</td>
+    <td>H</td><td>L</td><td>L</td><td>1/2</td><td>1-2 Phase</td></tr>
     <tr>
-    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td></tr>
     <tr>
-    <td>H</td><td>H</td><td>L</td><td>1/8</td><td>2W1-2 Phase</td>
+    <td>H</td><td>H</td><td>L</td><td>1/8</td><td>2W1-2 Phase</td></tr>
     <tr>
-    <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td>
+    <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td></tr>
     <tr>
     <td>Current<br/>R<SUB>S</SUB>=0.1&#937</td>
-    <td colspan="5">I<SUB>TripMAX</SUB> = V<SUB>REF</SUB> / 8 / R<SUB>S</SUB></td>  
-    <tr>    
+    <td colspan="5">I<SUB>TripMAX</SUB> = V<SUB>REF</SUB> / 8 / R<SUB>S</SUB></td></tr>   
 </table>
-<table>
+<table border="1">
 	<tr>
-    <td>Driver Chips</td><td>MD3</td><td>MD2</td><td>MD1</td><td>Microsteps</td><td>Excitation Mode</td></td>
+    <td>Driver Chips</td><td>MD3</td><td>MD2</td><td>MD1</td><td>Microsteps</td><td>Excitation Mode</td></tr>
     <tr>
     <td rowspan="8">LV8729 Maximum 128 microsteps<br /> 36V 1.8A</td> 
-    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td></tr>
     <tr>
-    <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td>
+    <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td></tr>
     <tr>
-    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td></tr>
     <tr>
     <td>L</td><td>H</td><td>H</td><td>1/8</td><td>2W1-2 Phase</td></tr>
     <tr>
@@ -153,37 +152,34 @@ The 5V and 12V power output ports are added with E-FUSE protection, which has sh
     <td>H</td><td>H</td><td>H</td><td>1/128</td><td>32W1-2 Phase</td></tr>
     <tr>
     <td>Current<br/>RF1=0.22&#937</td>
-    <td colspan="5">I<SUB>OUT</SUB> = (V<SUB>REF</SUB> / 5) / RF1</td>  
-    <tr>
+    <td colspan="5">I<SUB>OUT</SUB> = (V<SUB>REF</SUB> / 5) / RF1</td></tr>  
 </table>
-<table>
+<table border="1">
 	<tr>
-    <td>Driver Chips</td><td>MS3</td><td>MS2</td><td>MS1</td><td>Microsteps</td>
+    <td>Driver Chips</td><td>MS3</td><td>MS2</td><td>MS1</td><td>Microsteps</td></tr>
     <tr>
     <td rowspan="8">ST820 Maximum <br />256 microsteps <br />45V 1.5A</td> 
-    <td>L</td><td>L</td><td>L</td><td>Full Step</td>
+    <td>L</td><td>L</td><td>L</td><td>Full Step</td></tr>
     <tr>
-    <td>L</td><td>L</td><td>H</td><td>1/2</td>
+    <td>L</td><td>L</td><td>H</td><td>1/2</td></tr>
     <tr>
-    <td>L</td><td>H</td><td>L</td><td>1/4</td>
+    <td>L</td><td>H</td><td>L</td><td>1/4</td></tr>
     <tr>
-    <td>L</td><td>H</td><td>H</td><td>1/8</td>
+    <td>L</td><td>H</td><td>H</td><td>1/8</td></tr>
     <tr>
-    <td>H</td><td>L</td><td>L</td><td>1/16</td>
+    <td>H</td><td>L</td><td>L</td><td>1/16</td></tr>
     <tr>
-    <td>H</td><td>L</td><td>H</td><td>1/32</td>
+    <td>H</td><td>L</td><td>H</td><td>1/32</td></tr>
     <tr>
-    <td>H</td><td>H</td><td>L</td><td>1/64</td>
+    <td>H</td><td>H</td><td>L</td><td>1/64</td></tr>
     <tr>
-    <td>H</td><td>H</td><td>H</td><td>1/128</td>
+    <td>H</td><td>H</td><td>H</td><td>1/128</td></tr>
     <tr>
     <td>Current<br/>R<SUB>S</SUB>=0.15&#937</td>
-    <td colspan="5">I<SUB>peak</SUB> = (V<SUB>REF</SUB> * V<SUB>DD</SUB>) / (5 * R<SUB>S</SUB>)</td> 
-    <tr>    
+    <td colspan="5">I<SUB>peak</SUB> = (V<SUB>REF</SUB> * V<SUB>DD</SUB>) / (5 * R<SUB>S</SUB>)</td></tr>  
 </table>
 
 
-#### **· UART Mode of TMC Driver**
 
 ​	For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and 	driver current is set by firmware.
 
