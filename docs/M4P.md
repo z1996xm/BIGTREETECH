@@ -134,7 +134,7 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 	<tr>
     <td>Driver Chips</td><td>MODE2</td><td>MODE1</td><td>MODE0</td><td>Microsteps</td><td>Excitation Mode</td></tr>
     <tr>
-    <td rowspan="8">DRV8825 Maximum 32 microsteps<br/>8.2V-45V 2.5A at 24V T=25℃</td>
+    <th rowspan="8">DRV8825 Maximum 32 microsteps<br/>8.2V-45V 2.5A at 24V T=25℃</th>
     <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td></tr>
     <tr>
     <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td></tr>
@@ -220,6 +220,7 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
     <td>Current<br/>R<SUB>S</SUB>=0.15&#937</td>
     <td colspan="5">I<SUB>peak</SUB> = (V<SUB>REF</SUB> * V<SUB>DD</SUB>) / (5 * R<SUB>S</SUB>)</td></tr>     
 </table>
+
 
 
 
