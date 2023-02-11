@@ -158,7 +158,7 @@ After the M4P is powered on, the red LED1 on the lower right side of the motherb
 </table>
 <table>
 	<tr>
-    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td>	 </tr>
+    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td></tr>
     <tr>
     <td rowspan="5">A4988 16 microstep max 35V 2A</td>
     <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td>
