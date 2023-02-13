@@ -114,7 +114,7 @@
 
 **TYPE-C**
 
-<p>After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up,<br> indicating that the power supply is normal. The J8 on the middle of the board is the power selection<br> terminal, it needs to be short circuited only when the type-C USB is used to supply power to the<br> motherboard or the USB is used to supply power externally. The signal of type-C is connected to<br> the SoC, Only used when writing OS image for CM4 eMMC version.</p>
+<p>After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up, indicating that the power supply is normal. The J8 on the middle of the board is the power selection terminal, it needs to be short circuited only when the type-C USB is used to supply power to the<br> motherboard or the USB is used to supply power externally. The signal of type-C is connected to the SoC, Only used when writing OS image for CM4 eMMC version.</p>
 
 <img src=img/M4P/M4P_TYPE_C.png width="600" />
 
@@ -124,7 +124,7 @@
 
 #### **Normal STEP/DIR(STANDALONE) Mode**
 
-<p>For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according<br> to the driver subdivision table.</p>
+<p>For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.</p>
 
 <img src=img/M4P/M4P_Stepper_Driver.png width="600" />
 
@@ -223,25 +223,25 @@
 
 #### **UART Mode of TMC Driver**
 
-<p>For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position<br> of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
+<p>For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
 
 <img src=img/M4P/M4P_TMC_UART_Mode.png width="600" />
 
 #### **SPI Mode of TMC Driver** 
 
-<p>For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position<br> of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
+<p>For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
 
 <img src=img/M4P/M4P_TMC_SPI_Mode.png width="600" />
 
 #### **DIAG(Sensorless Homing) of TMC Driver** 
 
-<p>As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave<br> it unplugged when it is not used. There is no need 	to cut the DIAG pin of the driver.</p>
+<p>As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need 	to cut the DIAG pin of the driver.</p>
 
 <img src=img/M4P/M4P_TMC_DIAG_Mode.png width="600" />
 
 #### **Driver Voltage Selection** 
 
-<p>The power supply of each driver can be set by the jumper. When the jumper is inserted into the left<br> side, the independent MOTOR POWER port is used for driver power, and the supported voltage up<br> to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power,<br> and the 12/24v voltage is supported.</p>
+<p>The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power, and the 12/24v voltage is supported.</p>
 
 **Driver independent power supply**
 
@@ -267,7 +267,7 @@ The jumper is inserted into the right side and powered by the main POWER port. t
 
 ### **40 pin GPIO**
 
-<p>When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry<br> Pi. When working with CB1, it is a custom IO arrangement, as shown in the figure below, the 'GPIO4' in<br> front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.</p>
+<p>When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry Pi. When working with CB1, it is a custom IO arrangement, as shown in the figure below, the 'GPIO4' in front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.</p>
 
 <img src=img/M4P/M4P_40_Pin.png width="600" />
 
@@ -297,7 +297,7 @@ M4P_E1_E2_LCD
 
 ### **ADXL345 Accelerometer**
 
-<p>Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following<br> wiring and configuration when connecting to the M4P motherboard</p>
+<p>Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the M4P motherboard</p>
 
 <img src=img/M4P/M4P_ADXL345.png width="600" />
 
@@ -327,7 +327,7 @@ https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
 
 ## **FAQs**
 
-1. <p>All unplugging and plugging operations should be performed under the condition of power off,<br> including enabling the eMMC writing.<p>
-2. <p>Pay attention to the heat dissipation of CM4 and CB1. If the running application consumes too<br> many system resources, the CM4/CB1 will get hot quite seriously.<p>
+1. <p>All unplugging and plugging operations should be performed under the condition of power off, including enabling the eMMC writing.<p>
+2. <p>Pay attention to the heat dissipation of CM4 and CB1. If the running application consumes too many system resources, the CM4/CB1 will get hot quite seriously.<p>
 
 ## **Product Purchase Link**
