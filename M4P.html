@@ -1699,13 +1699,13 @@
 <p><img src=img/M4P/M4P_Pin_Out.png width="600" /></p>
 <h2 id="hardware-configuration"><strong>Hardware Configuration</strong><a class="headerlink" href="#hardware-configuration" title="Permanent link">&para;</a></h2>
 <p><strong>TYPE-C</strong></p>
-<p>After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up,<br> indicating that the power supply is normal. The J8 on the middle of the board is the power selection<br> terminal, it needs to be short circuited only when the type-C USB is used to supply power to the<br> motherboard or the USB is used to supply power externally. The signal of type-C is connected to<br> the SoC, Only used when writing OS image for CM4 eMMC version.</p>
+<p>After the M4P is powered on, the red LED1 on the lower right side of the motherboard will light up, indicating that the power supply is normal. The J8 on the middle of the board is the power selection terminal, it needs to be short circuited only when the type-C USB is used to supply power to the<br> motherboard or the USB is used to supply power externally. The signal of type-C is connected to the SoC, Only used when writing OS image for CM4 eMMC version.</p>
 
 <p><img src=img/M4P/M4P_TYPE_C.png width="600" /></p>
 <h2 id="hardware-installation"><strong>Hardware Installation</strong><a class="headerlink" href="#hardware-installation" title="Permanent link">&para;</a></h2>
 <h3 id="stepper-driver"><strong>Stepper Driver</strong><a class="headerlink" href="#stepper-driver" title="Permanent link">&para;</a></h3>
 <h4 id="normal-stepdirstandalone-mode"><strong>Normal STEP/DIR(STANDALONE) Mode</strong><a class="headerlink" href="#normal-stepdirstandalone-mode" title="Permanent link">&para;</a></h4>
-<p>For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according<br> to the driver subdivision table.</p>
+<p>For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2 according to the driver subdivision table.</p>
 
 <p><img src=img/M4P/M4P_Stepper_Driver.png width="600" /></p>
 <p><strong>Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.</strong></p>
@@ -1801,19 +1801,19 @@
 </table>
 
 <h4 id="uart-mode-of-tmc-driver"><strong>UART Mode of TMC Driver</strong><a class="headerlink" href="#uart-mode-of-tmc-driver" title="Permanent link">&para;</a></h4>
-<p>For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position<br> of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
+<p>For example, TMC2208, TMC2209, TMC2225... Use a jumper cap for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
 
 <p><img src=img/M4P/M4P_TMC_UART_Mode.png width="600" /></p>
 <h4 id="spi-mode-of-tmc-driver"><strong>SPI Mode of TMC Driver</strong><a class="headerlink" href="#spi-mode-of-tmc-driver" title="Permanent link">&para;</a></h4>
-<p>For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position<br> of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
+<p>For example, TMC2130, TMC5160, TMC5161... Use 4 jumper caps for each to connect the position of the red box in the figure, and the subdivision and driver current is set by firmware.</p>
 
 <p><img src=img/M4P/M4P_TMC_SPI_Mode.png width="600" /></p>
 <h4 id="diagsensorless-homing-of-tmc-driver"><strong>DIAG(Sensorless Homing) of TMC Driver</strong><a class="headerlink" href="#diagsensorless-homing-of-tmc-driver" title="Permanent link">&para;</a></h4>
-<p>As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave<br> it unplugged when it is not used. There is no need  to cut the DIAG pin of the driver.</p>
+<p>As shown in the figure, plug the jumper cap when using the Sensorless Homing function, and leave it unplugged when it is not used. There is no need  to cut the DIAG pin of the driver.</p>
 
 <p><img src=img/M4P/M4P_TMC_DIAG_Mode.png width="600" /></p>
 <h4 id="driver-voltage-selection"><strong>Driver Voltage Selection</strong><a class="headerlink" href="#driver-voltage-selection" title="Permanent link">&para;</a></h4>
-<p>The power supply of each driver can be set by the jumper. When the jumper is inserted into the left<br> side, the independent MOTOR POWER port is used for driver power, and the supported voltage up<br> to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power,<br> and the 12/24v voltage is supported.</p>
+<p>The power supply of each driver can be set by the jumper. When the jumper is inserted into the left side, the independent MOTOR POWER port is used for driver power, and the supported voltage up to 56V. When the jumper is inserted into the right side, the main POWER port is used for driver power, and the 12/24v voltage is supported.</p>
 
 <p><strong>Driver independent power supply</strong></p>
 <p>The jumper is inserted into the left side and powered by the MOTOR POWER port. the supported voltage up to 56V.</p>
@@ -1827,7 +1827,7 @@
 <p><strong>M4P+CB1：Pay attention to the direction, as shown below.</strong></p>
 <p><img src=img/M4P/M4P+CB1.png width="600" /></p>
 <h3 id="40-pin-gpio"><strong>40 pin GPIO</strong><a class="headerlink" href="#40-pin-gpio" title="Permanent link">&para;</a></h3>
-<p>When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry<br> Pi. When working with CB1, it is a custom IO arrangement, as shown in the figure below, the 'GPIO4' in<br> front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.</p>
+<p>When working with CM4, the pin arrangement of 40 Pin GPIO is exactly the same as that of Raspberry Pi. When working with CB1, it is a custom IO arrangement, as shown in the figure below, the 'GPIO4' in front of '_' is the IO of CM4, and the latter 'PC7' is the IO of CB1.</p>
 
 <p><img src=img/M4P/M4P_40_Pin.png width="600" /></p>
 <h3 id="bltouch-wiring"><strong>BLTouch Wiring</strong><a class="headerlink" href="#bltouch-wiring" title="Permanent link">&para;</a></h3>
@@ -1843,7 +1843,7 @@
 <h3 id="spi-display-wiring"><strong>SPI Display Wiring</strong><a class="headerlink" href="#spi-display-wiring" title="Permanent link">&para;</a></h3>
 <p><img src=img/M4P/M4P_SPI_Display_Wiring.png width="600" /></p>
 <h3 id="adxl345-accelerometer"><strong>ADXL345 Accelerometer</strong><a class="headerlink" href="#adxl345-accelerometer" title="Permanent link">&para;</a></h3>
-<p>Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following<br> wiring and configuration when connecting to the M4P motherboard</p>
+<p>Refer to here: https://www.klipper3d.org/Measuring_Resonances.html, We can refer to the following wiring and configuration when connecting to the M4P motherboard</p>
 
 <p><img src=img/M4P/M4P_ADXL345.png width="600" /></p>
 <p>[adxl345]</p>
@@ -1863,8 +1863,8 @@ spi_bus: spi1
 <p><a href="https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html">https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html</a></p>
 <h2 id="faqs"><strong>FAQs</strong><a class="headerlink" href="#faqs" title="Permanent link">&para;</a></h2>
 <ol>
-<li><p>All unplugging and plugging operations should be performed under the condition of power off,<br> including enabling the eMMC writing.<p></li>
-<li><p>Pay attention to the heat dissipation of CM4 and CB1. If the running application consumes too<br> many system resources, the CM4/CB1 will get hot quite seriously.<p></li>
+<li><p>All unplugging and plugging operations should be performed under the condition of power off, including enabling the eMMC writing.<p></li>
+<li><p>Pay attention to the heat dissipation of CM4 and CB1. If the running application consumes too many system resources, the CM4/CB1 will get hot quite seriously.<p></li>
 </ol>
 <h2 id="product-purchase-link"><strong>Product Purchase Link</strong><a class="headerlink" href="#product-purchase-link" title="Permanent link">&para;</a></h2>
 
