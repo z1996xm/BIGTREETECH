@@ -840,9 +840,101 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          TMC2208
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="TMC2208.html" class="md-nav__link md-nav__link--active">
         TMC2208
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-parameters" class="md-nav__link">
+    Basic Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-configuration" class="md-nav__link">
+    Hardware Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-mode-and-potentiometer-description" class="md-nav__link">
+    Working mode and potentiometer description
+  </a>
+  
+    <nav class="md-nav" aria-label="Working mode and potentiometer description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stepdir-mode" class="md-nav__link">
+    STEP/DIR mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uart-mode" class="md-nav__link">
+    UART mode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attention" class="md-nav__link">
+    Attention :
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1103,6 +1195,82 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-parameters" class="md-nav__link">
+    Basic Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-configuration" class="md-nav__link">
+    Hardware Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-mode-and-potentiometer-description" class="md-nav__link">
+    Working mode and potentiometer description
+  </a>
+  
+    <nav class="md-nav" aria-label="Working mode and potentiometer description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stepdir-mode" class="md-nav__link">
+    STEP/DIR mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uart-mode" class="md-nav__link">
+    UART mode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attention" class="md-nav__link">
+    Attention :
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1119,7 +1287,77 @@
 
 
 <h1 id="tmc2208">TMC2208<a class="headerlink" href="#tmc2208" title="Permanent link">&para;</a></h1>
-<p>It's empty now</p>
+<p><img src=img/TMC2208/TMC2208_Title.png width="600"/></p>
+<h2 id="basic-parameters"><strong>Basic Parameters</strong><a class="headerlink" href="#basic-parameters" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>power tube built-in drive current 1.2A ,peak current 2A</strong></li>
+<li><strong>256 microsteps per fullstep</strong></li>
+<li><strong>interpolation from lower input resolutions</strong></li>
+<li><strong>stealthChop2 - for quiet positioning</strong></li>
+<li><strong>spreadCycle - for high speed and high dynamics</strong></li>
+<li><strong>Low RDSon LS 280mΩ &amp; HS 290mΩ (typ. at 25°C)</strong></li>
+<li><strong>Voltage Range 12V/24VDC</strong></li>
+<li><strong>Single Wire UART for advanced configuration options</strong></li>
+<li><strong>Integrated Pulse Generator for standalone motion</strong></li>
+</ul>
+<h2 id="dimensions"><strong>Dimensions</strong><a class="headerlink" href="#dimensions" title="Permanent link">&para;</a></h2>
+<p><img src=img/TMC2208/TMC2208_Dimension1.png width="600"/></p>
+<p><img src=img/TMC2208/TMC2208_Dimension2.png width="600"/></p>
+<h2 id="hardware-configuration"><strong>Hardware Configuration</strong><a class="headerlink" href="#hardware-configuration" title="Permanent link">&para;</a></h2>
+<h3 id="working-mode-and-potentiometer-description"><strong>Working mode and potentiometer description</strong><a class="headerlink" href="#working-mode-and-potentiometer-description" title="Permanent link">&para;</a></h3>
+<h4 id="stepdir-mode"><strong>STEP/DIR mode</strong><a class="headerlink" href="#stepdir-mode" title="Permanent link">&para;</a></h4>
+<p><img src=img/TMC2208/TMC2208_Pin.png width="600"/></p>
+<p>Choice of working mode：MS1、MS2：</p>
+<p><img src=img/TMC2208/TMC2208_Step1.png width="600"/></p>
+<p>Working Current Reference:</p>
+<p><img src=img/TMC2208/TMC2208_Step2.png width="600"/></p>
+<h4 id="uart-mode"><strong>UART mode</strong><a class="headerlink" href="#uart-mode" title="Permanent link">&para;</a></h4>
+<p>Note: TMC2208 v3.0 has two modes from our factory : step / dir and UART mode.</p>
+<p>Customers can choose according to your own needs.</p>
+<p>The user who purchases the step / dir mode driver shall perform the following hardware operations on the driver module<br> before wiring (the user who purchases the UART mode driver does not need any welding operations): </p>
+
+<p>Weld J2 as shown in the purple area, and put the driver in UART mode</p>
+<p><img src=img/TMC2208/TMC2208_UART.png width="600"/></p>
+<p><strong>The benefits of UART mode:</strong></p>
+<p>1.Motor current can be set arbitrarily by firmware.</p>
+<p>2.Micro-steps can be set arbitrarily by firmware (up to 256 actual micro-steps);</p>
+<p>3.The actual and interpolated microsteps can be combined to achieve maximum </p>
+<p>torque.</p>
+<p>4.Firmware can dynamically switch stepper motors between stealthChop2 and </p>
+<p>spreadCycle modes through UART.</p>
+<p>5.When the motor is not moving, the standby current of the motor can be reduced </p>
+<p>dynamically (through UART).</p>
+<p><img src=img/TMC2208/TMC2208_Connection.png width="600"/></p>
+<p><strong>Potentiometer regulation instructions:</strong></p>
+<p>Clockwise Rotating Potentiometer - Reduces Vref, thereby reducing drive current; Counterclockwise rotating<br> potentiometer - Increase Vref, thereby increasing the driving current. </p>
+
+<p>The accurate voltage of Vref can only be measured when the main board is supplied with 12V or 24V voltage.</p>
+<p>The range of Vref value: default value: 1V (+0.2); MAX: 2V; MIN: 0V;Rotating potentiometer must not use too<br> much force to prevent irreversible damage to the potentiometer; when the counter-clockwise rotation reaches<br> the maximum, if it continues to rotate, it will become the minimum; similarly, when the clockwise rotation<br> reaches the minimum, if it continues to rotate, it will become the maximum.</p>
+
+<p><img src=img/TMC2208/TMC2208_Range.png width="600"/></p>
+<h2 id="software-configuration"><strong>Software Configuration</strong><a class="headerlink" href="#software-configuration" title="Permanent link">&para;</a></h2>
+<p>For example，(Marlin-2.0)BIGTREETECH SKR V1.3 ：</p>
+<p><strong>Configuration.h files</strong> </p>
+<p><img src=img/TMC2208/TMC2208_Config_h.png width="600"/></p>
+<p>TMC2208 - means you want to control SilentStepStick through UART.</p>
+<p>TMC2208_STANDALONE - does not use UART control but STEP/DIR .</p>
+<p>TMC2208 SilentStepStick，In other words plug and play.</p>
+<p><strong>Configuration_adv.h files</strong> </p>
+<p><img src=img/TMC2208/TMC2208_Configadv_h.png width="600"/></p>
+<p><strong>Pins_BIGTREE_SKR_V1.3.h file</strong></p>
+<p><img src=img/TMC2208/TMC2208_Pins.png width="600"/></p>
+<p>After the firmware is changed, burned the firmware and check whether the driver is correctly installed is detected.</p>
+<p><img src=img/TMC2208/TMC2208_Table.png width="600"/></p>
+<h2 id="attention"><strong>Attention :</strong><a class="headerlink" href="#attention" title="Permanent link">&para;</a></h2>
+<p>1. When hardware chooses UART working mode, cautiously use soldering iron to prevent scalding hands. After treatment, <br>carefully observe whether there is residual tin slag in the module. It must be cleaned up to prevent short circuit burning<br> of the module.</p>
+
+<p>2.Pay attention to the line sequence and IO port when wiring. If the wrong line is connected, the drive will not work.</p>
+
+<p>3.When inserting drive into the main board, pay attention to see the direction of drive, can not insert backward, to prevent <br>drive from burning.</p>
+
+<p>4.Make sure to do a good job in heat dissipation (heat sink + heat dissipation fan) before driving to prevent abnormal <br>operation of the drive.</p>
+
+<p>If you encounter problems in use, welcome to contact us, we will be answer to you ASAP . If you have any good<br> comments or suggestions on our products, please tell us , we will carefully consider your comments or Suggestions.<br> Thank you for choosing BIGTREETECH products, thank you!</p>
 
               
             </article>
