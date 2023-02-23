@@ -6,7 +6,7 @@
 
 ## **Introduction**
 
-<p>BIGTREETECH HDMI7 V1.0 is a universal 7-inch HDMI display screen developed by the 3D printing team of<br> Shenzhen Big Tree Technology Co., Ltd.<br></p>
+<p>BIGTREETECH HDMI7 V1.0 is a universal 7-inch HDMI display screen developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd.</p>
 
 ## **Main Features**
 
@@ -40,9 +40,9 @@ You can read more details here: **BTT HDMI7_V1.0_SIZE**
 
 ### **Connecting to the Display Output Device**
 
-<p>1. Use the Type C data cable to connect the HDMI7 to the display output device (compatible with Raspberry Pi/PC/other<br> devices that support HDMI display output). When connecting to the PC, the PC will automatically load the driver under<br> normal circumstances. After the driver is loaded, the touch device can be recognized.<br></p>
+<p>1. Use the Type C data cable to connect the HDMI7 to the display output device (compatible with Raspberry Pi/PC/other devices that support HDMI display output). When connecting to the PC, the PC will automatically load the driver under normal circumstances. After the driver is loaded, the touch device can be recognized.</p>
 
-<p>2. Use the HDMI cable to connect HDMI7 to the display output device. Usually, after connecting the HDMI cable, the LCD<br> can be displayed normally within 5 seconds.<br></p>
+<p>2. Use the HDMI cable to connect HDMI7 to the display output device. Usually, after connecting the HDMI cable, the LCD can be displayed normally within 5 seconds.</p>
 
 ### **Audio Out**
 
@@ -52,7 +52,7 @@ Plug the 3.5mm earphone/speaker into the AUDIO interface to realize audio output
 
 ### **Screen Brightness Adjustment**
 
-<p>BIGTREETECH HDMI7 V1.0 supports brightness adjustment, you can increase the brightness via the Ks1 button, and decrease<br> the brightness via the Ks3 button.<br></p>
+<p>BIGTREETECH HDMI7 V1.0 supports brightness adjustment, you can increase the brightness via the Ks1 button, and decrease the brightness via the Ks3 button.<br></p>
 
 <img src=img/HDMI7/HDMI7_Brightness.png width="600"/>
 
