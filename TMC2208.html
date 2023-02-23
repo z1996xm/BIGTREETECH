@@ -1314,7 +1314,7 @@
 <h4 id="uart-mode"><strong>UART mode</strong><a class="headerlink" href="#uart-mode" title="Permanent link">&para;</a></h4>
 <p>Note: TMC2208 v3.0 has two modes from our factory : step / dir and UART mode.</p>
 <p>Customers can choose according to your own needs.</p>
-<p>The user who purchases the step / dir mode driver shall perform the following hardware operations on the driver module<br> before wiring (the user who purchases the UART mode driver does not need any welding operations): </p>
+<p>The user who purchases the step / dir mode driver shall perform the following hardware operations on the driver module before wiring (the user who purchases the UART mode driver does not need any welding operations): </p>
 
 <p>Weld J2 as shown in the purple area, and put the driver in UART mode</p>
 <p><img src=img/TMC2208/TMC2208_UART.png width="600"/></p>
@@ -1323,16 +1323,14 @@
 <p>2.Micro-steps can be set arbitrarily by firmware (up to 256 actual micro-steps);</p>
 <p>3.The actual and interpolated microsteps can be combined to achieve maximum </p>
 <p>torque.</p>
-<p>4.Firmware can dynamically switch stepper motors between stealthChop2 and </p>
-<p>spreadCycle modes through UART.</p>
-<p>5.When the motor is not moving, the standby current of the motor can be reduced </p>
-<p>dynamically (through UART).</p>
+<p>4.Firmware can dynamically switch stepper motors between stealthChop2 and spreadCycle modes through UART.</p>
+<p>5.When the motor is not moving, the standby current of the motor can be reduced dynamically (through UART).</p>
 <p><img src=img/TMC2208/TMC2208_Connection.png width="600"/></p>
 <p><strong>Potentiometer regulation instructions:</strong></p>
-<p>Clockwise Rotating Potentiometer - Reduces Vref, thereby reducing drive current; Counterclockwise rotating<br> potentiometer - Increase Vref, thereby increasing the driving current. </p>
+<p>Clockwise Rotating Potentiometer - Reduces Vref, thereby reducing drive current; Counterclockwise rotating potentiometer - Increase Vref, thereby increasing the driving current. </p>
 
 <p>The accurate voltage of Vref can only be measured when the main board is supplied with 12V or 24V voltage.</p>
-<p>The range of Vref value: default value: 1V (+0.2); MAX: 2V; MIN: 0V;Rotating potentiometer must not use too<br> much force to prevent irreversible damage to the potentiometer; when the counter-clockwise rotation reaches<br> the maximum, if it continues to rotate, it will become the minimum; similarly, when the clockwise rotation<br> reaches the minimum, if it continues to rotate, it will become the maximum.</p>
+<p>The range of Vref value: default value: 1V (+0.2); MAX: 2V; MIN: 0V;Rotating potentiometer must not use too much force to prevent irreversible damage to the potentiometer; when the counter-clockwise rotation reaches the maximum, if it continues to rotate, it will become the minimum; similarly, when the clockwise rotation reaches the minimum, if it continues to rotate, it will become the maximum.</p>
 
 <p><img src=img/TMC2208/TMC2208_Range.png width="600"/></p>
 <h2 id="software-configuration"><strong>Software Configuration</strong><a class="headerlink" href="#software-configuration" title="Permanent link">&para;</a></h2>
@@ -1349,15 +1347,15 @@
 <p>After the firmware is changed, burned the firmware and check whether the driver is correctly installed is detected.</p>
 <p><img src=img/TMC2208/TMC2208_Table.png width="600"/></p>
 <h2 id="attention"><strong>Attention :</strong><a class="headerlink" href="#attention" title="Permanent link">&para;</a></h2>
-<p>1. When hardware chooses UART working mode, cautiously use soldering iron to prevent scalding hands. After treatment, <br>carefully observe whether there is residual tin slag in the module. It must be cleaned up to prevent short circuit burning<br> of the module.</p>
+<p>1. When hardware chooses UART working mode, cautiously use soldering iron to prevent scalding hands. After treatment, carefully observe whether there is residual tin slag in the module. It must be cleaned up to prevent short circuit burning of the module.</p>
 
 <p>2.Pay attention to the line sequence and IO port when wiring. If the wrong line is connected, the drive will not work.</p>
 
-<p>3.When inserting drive into the main board, pay attention to see the direction of drive, can not insert backward, to prevent <br>drive from burning.</p>
+<p>3.When inserting drive into the main board, pay attention to see the direction of drive, can not insert backward, to prevent drive from burning.</p>
 
-<p>4.Make sure to do a good job in heat dissipation (heat sink + heat dissipation fan) before driving to prevent abnormal <br>operation of the drive.</p>
+<p>4.Make sure to do a good job in heat dissipation (heat sink + heat dissipation fan) before driving to prevent abnormal operation of the drive.</p>
 
-<p>If you encounter problems in use, welcome to contact us, we will be answer to you ASAP . If you have any good<br> comments or suggestions on our products, please tell us , we will carefully consider your comments or Suggestions.<br> Thank you for choosing BIGTREETECH products, thank you!</p>
+<p>If you encounter problems in use, welcome to contact us, we will be answer to you ASAP . If you have any good comments or suggestions on our products, please tell us , we will carefully consider your comments or Suggestions. Thank you for choosing BIGTREETECH products, thank you!</p>
 
               
             </article>
