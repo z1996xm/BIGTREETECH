@@ -113,6 +113,7 @@ nav:
       - TMC5160.md
       - TMC2209.md
       - TMC2208.md
+      - Tutorials.md
     - EZ Series:
       - EZ2130.md
       - EZ2208.md
@@ -124,7 +125,6 @@ nav:
       - EZ2240.md
       - EZ31865.md
   - Tutorials:
-    # - Tutorials.md
     - Software Configuration.md
     - Software Installation.md
 
