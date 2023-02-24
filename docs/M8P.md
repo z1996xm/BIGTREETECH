@@ -4,7 +4,7 @@
 
 ## **Introduction**
 
-<p>BIGTREETECH MANTA M8P is a 32-bit printer motherboard developed by the 3D printing team of <br> Shenzhen Big Tree Technology Co., Ltd. for Klipper firmware. You can simply plug in the core<br> board to run the Klipper firmware, which greatly simplifies the connection between the motherboard and <br>the Raspberry Pi, and saves a lot of space. Moreover, the BTB connector is designed to install CM4 or<br> other solutions to solve the current expensive problem of CM4.<br></p>
+<p>BIGTREETECH MANTA M8P is a 32-bit printer motherboard developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd. for Klipper firmware. You can simply plug in the core board to run the Klipper firmware, which greatly simplifies the connection between the motherboard and the Raspberry Pi, and saves a lot of space. Moreover, the BTB connector is designed to install CM4 or other solutions to solve the current expensive problem of CM4.</p>
 
 ## **Announcements**
 
@@ -110,7 +110,9 @@ For example, A4988, DRV8825, LV8729, ST820...use the jumper cap to short MS0-MS2
 
 <img src=img/M8P/M8P_Dri_Step.png width="600" />
 
-**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**
+
+
+<font  color="red">**Note: If using A4988or DRV8825, RST and SLP must be shorted with jumper caps for normal operation.**</font>
 
 <table border="1">
 	<tr>

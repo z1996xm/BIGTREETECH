@@ -4,7 +4,7 @@
 
 ## **Introduction**
 
-BIGTREETECH MANTA M5P is a 32-bit motherboard developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd. for Klipper 		      	running. It can run Klipper with a core board, which greatly eliminates the mass wiring between the motherboard and Raspberry Pi, and also greatly 	    saves space in the chassis. The BTB headers are designed on MANTA M5P, so that customers can choose to use CM4 or other solutions, thus solving 	 the insane shortage of Raspberry Pi CM4.
+BIGTREETECH MANTA M5P is a 32-bit motherboard developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd. for Klipper running. It can run Klipper with a core board, which greatly eliminates the mass wiring between the motherboard and Raspberry Pi, and also greatly  saves space in the chassis. The BTB headers are designed on MANTA M5P, so that customers can choose to use CM4 or other solutions, thus solving the insane shortage of Raspberry Pi CM4.
 
 ## **Announcements**
 
@@ -98,7 +98,7 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
 
 <img src=img/M5P/M5P_STEP_Mode.png width="600" />
 
-Note: RST and SLP must be shorted by jumpers for A4988 or DRV8825. 
+**<font  color="red">Note: RST and SLP must be shorted by jumpers for A4988 or DRV8825. </font>**
 
 <table border="1">
 	<tr>
@@ -205,7 +205,7 @@ When using sensorless homing, place jumpers according to the diagram below, ther
 
 Through the jumper cap, you can set the output voltage to 5V, 12V, or 24V.
 
-Note: We are not responsible for fan burnout caused by incorrect voltage selection. 
+**<font  color="red">Note: We are not responsible for fan burnout caused by incorrect voltage selection. </font>**
 
 Please confirm the voltage the fan supports before selecting the voltage.
 
