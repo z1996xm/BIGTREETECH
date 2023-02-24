@@ -172,6 +172,8 @@ Connecting jumpers between the lower two rows will set the middle pin (MS) to 3.
 
 <font  color="red">***Note that if you use an A4988 or a DRV8825 driver, you must connect RST and SLP.***</font>
 
+For details, please click: https://z1996xm.github.io/BIGTREETECH/Tutorials.html
+
 #### **UART MODE**
 
 When using a driver in UART mode, connect the jumpers beneath that driver as show in the image below.

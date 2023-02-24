@@ -100,72 +100,8 @@ e.g.: A4988, DRV8825, LV8729, ST820, etc., connect jumpers(MS0-MS2) according to
 
 **<font  color="red">Note: RST and SLP must be shorted by jumpers for A4988 or DRV8825. </font>**
 
-<table border="1">
-	<tr>
-    <td>Driver Chips</td><td>MODE2</td><td>MODE1</td><td>MODE0</td><td>Microsteps</td><td>Excitation Mode</td></tr>
-    <tr>
-    <td rowspan="8">DRV8825 Maximum 32 microsteps<br/>8.2V-45V 2.5A at 24V T=25℃</td>
-    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td></tr>
-    <tr>
-    <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td></tr>
-    <tr>
-    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td></tr>
-    <tr>
-    <td>L</td><td>H</td><td>H</td><td>1/8</td><td></td></tr>
-    <tr>
-    <td>H</td><td>L</td><td>L</td><td>1/16</td><td></td></tr>
-    <tr>
-    <td>H</td><td>L</td><td>H</td><td>1/32</td><td></td></tr>
-    <tr>
-    <td>H</td><td>H</td><td>L</td><td>1/32</td><td></td></tr>
-    <tr>
-    <td>H</td><td>H</td><td>H</td><td>1/32</td><td></td></tr>
-    <tr>
-    <td>Current<br/>R<SUB>ISENSE</SUB>=0.1&#937</td>
-    <td colspan="5">I<SUB>CHOP</SUB> = V<SUB>(xREF)</SUB> / 5 / R<SUB>ISENSE</SUB></td></tr> 
-</table>
-<table border="1">
-	<tr>
-    <td>Driver Chips</td><td>MS1</td><td>MS2</td><td>MS3</td><td>Microsteps</td><td>Excitation Mode</td></tr>
-    <tr>
-    <td rowspan="5">A4988 16 microstep max 35V 2A</td>
-    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td></tr>
-    <tr>
-    <td>H</td><td>L</td><td>L</td><td>1/2</td><td>1-2 Phase</td></tr>
-    <tr>
-    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td></tr>
-    <tr>
-    <td>H</td><td>H</td><td>L</td><td>1/8</td><td>2W1-2 Phase</td></tr>
-    <tr>
-    <td>H</td><td>H</td><td>H</td><td>1/16</td><td>4W1-2 Phase</td></tr>
-    <tr>
-    <td>Current<br/>R<SUB>S</SUB>=0.1&#937</td>
-    <td colspan="5">I<SUB>TripMAX</SUB> = V<SUB>REF</SUB> / 8 / R<SUB>S</SUB></td></tr>    
-</table>
-<table border="1">
-	<tr>
-    <td>Driver Chips</td><td>MD3</td><td>MD2</td><td>MD1</td><td>Microsteps</td><td>Excitation Mode</td></tr>
-    <tr>
-    <td rowspan="8">LV8729 Maximum 128 microsteps<br /> 36V 1.8A</td> 
-    <td>L</td><td>L</td><td>L</td><td>Full Step</td><td>2 Phase</td></tr>
-    <tr>
-    <td>L</td><td>L</td><td>H</td><td>1/2</td><td>1-2 Phase</td></tr>
-    <tr>
-    <td>L</td><td>H</td><td>L</td><td>1/4</td><td>W1-2 Phase</td></tr>
-    <tr>
-    <td>L</td><td>H</td><td>H</td><td>1/8</td><td>2W1-2 Phase</td></tr>
-    <tr>
-    <td>H</td><td>L</td><td>L</td><td>1/16</td><td>4W1-2 Phase</td></tr>
-    <tr>
-    <td>H</td><td>L</td><td>H</td><td>1/32</td><td>8W1-2 Phase</td></tr>
-    <tr>
-    <td>H</td><td>H</td><td>L</td><td>1/64</td><td>16W1-2 Phase</td></tr>
-    <tr>
-    <td>H</td><td>H</td><td>H</td><td>1/128</td><td>32W1-2 Phase</td></tr>
-    <tr>
-    <td>Current<br/>RF1=0.22&#937</td>
-    <td colspan="5">I<SUB>OUT</SUB> = (V<SUB>REF</SUB> / 5) / RF1</td></tr>  
-</table>
+For details, please click: https://z1996xm.github.io/BIGTREETECH/Tutorials.html
+
 
 #### **UART Mode of TMC Driver**
 
