@@ -100,7 +100,7 @@ If you do not connect this jumper then you must provide the board with power via
 
 When using the BIGTREETECH Relay V1.2 module, the wiring can be performed as shown in the figure below. 
 
-<img src=img/Octopus/Octopus_Auto_p.png width="600"/>
+<img src=img/Octopus/Octopus_Auto.png width="600"/>
 
 
 
@@ -169,3 +169,108 @@ Connecting jumpers between the upper two rows will set the middle pin (MS) to 0V
 Connecting jumpers between the lower two rows will set the middle pin (MS) to 3.3V except for the jumpers in the first column where it will connect SLP and RST.
 
 <font  color="red">***Note that if you are using drivers in step/dir mode that use a microstepping factor other than 16 then you cannot use any other drivers in SPI mode since the pins that are required to set the microstepping to anything other than 16 are also shared with SPI.***</font>
+
+<font  color="red">***Note that if you use an A4988 or a DRV8825 driver, you must connect RST and SLP.***</font>
+
+#### **UART MODE**
+
+When using a driver in UART mode, connect the jumpers beneath that driver as show in the image below.
+
+<img src=img/Octopus/Octopus_DRI3.png width="600"/>
+
+#### **SPI MODE**
+
+When using a driver in SPI mode, connect the jumpers beneath that driver as shown in the image below.
+
+<img src=img/Octopus/Octopus_DRI4.png width="600"/>
+
+### **MOTHERBOARD JUMPER SETTINGS**
+
+#### **FAN AND PROXIMITY SWITCH SETTINGS**
+
+The Octopus features 6 PWM fan outputs and two “always on” fan outputs. There is also a dedicated pin header for a proximity sensor. These headers are shown in the image below.
+
+<font  color="red">***Note: The polarity of the fan ports was erroneously swapped on the silkscreen on the underside of some early boards. To be sure of the correct polarity, 
+please consult the PINS.pdf document or see the images below.***</font>
+
+<img src=img/Octopus/Octopus_DRI5.png width="600"/>
+
+All of the fan outputs and the proximity sensor input can individually have the voltage supplied by their pin header selected by configuring the jumpers associated with each header.
+
+<img src=img/Octopus/Octopus_DRI6.png width="600"/>
+
+Configure the jumpers as below to select 12V.
+
+<img src=img/Octopus/Octopus_DRI7.png width="600"/>
+
+Configure the jumpers as below for 5V.
+
+<img src=img/Octopus/Octopus_DRI8.png width="600"/>
+
+
+
+<font  color="red">***Note: Since the jumpers carry a voltage rail directly from one of the regulators or from the input, if you short the jumpers in any way other than the shown connections, you will likely cause damage to the motherboard. When connecting the fan, make sure that you connect the positive terminal to the 
+positive output as shown in the images.***</font>
+
+#### **STALLGUARD JUMPER SETTINGS**
+
+The “diag” jumpers which are used to connect the diagnostic output pin to the endstop inputs for drivers which support the stallguard feature (TMC2209/TMC2226) can be found in the location shown in the image below.
+
+The exact diag numbering can be found by looking at the pins file or the silkscreen beneath the board.
+
+<img src=img/Octopus/Octopus_DRI9.png width="600"/>
+
+### **SPECIAL NOTE ON EXPANSION INTERFACES**
+
+<font  color="red">***Expansion interfaces are provided for SPI, UART and I2C. In the very first production run of the Octopus the silkscreen on the underside of the PCB had two pins that were mislabeled on the SPI3 interface and two on the Raspberry Pi UART interface. To be sure that you are connecting your peripheral correctly, please refer to the PINS.pdf document if using the SPI or UART interface.***</font>
+
+## Software Installation
+
+### COMMUNICATING WITH THE MOTHERBOARD
+
+After connecting the motherboard to a computer via a USB cable, the driver will be automatically installed (windows, linux and macos). Upon installation of the driver the motherboard should automatically enumerate as a virtual serial device which can be used for data transfer. If it fails to do so, you can visit our GitHub website: https://github.com/bigtreetech?tab=repositories and find the corresponding repository to download the driver.
+
+If you would like to confirm that the driver has been installed correctly you can access the device manager in windows and look for a virtual com port when the motherboard is plugged in. In the image below the motherboard has been assigned COM7 however your operating system may assign it any available COM port number. Other operating systems will list serial ports in a different manner.
+
+<img src=img/Octopus/Octopus_Soft1.png width="600"/>
+
+### **MOTHERBOARD FIRMWARE SUPPORT**
+
+You can find a pre-compiled version of Marlin for the Octopus by visiting https://github.com/bigtreetech?tab=repositories and looking for the Octopus repository. Alternately you can compile your own version using VScode. Covering how to compile firmware using VSCode is beyond the scope of this manual however there is an abundance of information online which explains how to set up VSCode on your machine and how to configure Marlin thereafter. Good places to start are provided for your convenience in the links below:
+
+• https://marlinfw.org/docs/basics/install_platformio_vscode.html
+
+• https://www.youtube.com/watch?v=eq_ygvHF29I
+
+Once you have either compiled your own version of Marlin or downloaded a pre-compiled version, you can install it by following the steps below:
+
+1. Make sure that the firmware binary is named “firmware.bin”. Any other name will be rejected by the bootloader.
+2. Use an SD card that has been formatted using the SD formatter tool here: https://www.sdcard.org/downloads/formatter/
+3. Copy the firmware binary file to the SD card.
+4. Insert the SD card into the motherboard and reset it.
+5. Remove the SD card and check that the file has changed name to “FIRMWARE.CUR”. This will confirm that the firmware was successfully installed.
+
+If you are using Klipper then please ensure that you have the following settings enabled in order to download the firmware to the board while preserving the factory bootloader:
+
+<img src=img/Octopus/Octopus_Soft2.png width="600"/>
+
+## **PRECAUTIONS**
+
+The precautions listed in this section should not be overlooked. They have been included as reminders to prevent damage to your motherboard.
+
+1. Never work on the motherboard with power applied.
+2. Always double check all jumpers and wiring before applying power. Improper jumpers or wiring can cause damage to the motherboard and possibly even peripherals that it interfaces with.
+3. The motherboard can power heated beds up to 300W. If you are using a bed that operates at a higher power then you will need to use an external MOSFET.
+4. Always consult the PIN.pdf diagram when making jumper connections or wiring changes. Assuming a connection order may result in damage to the motherboard.
+5. It is recommended to update the firmware using SD card. Using DFU (direct programming via the USB port) will overwrite the bootloader meaning that you will no longer have the option to update via SD card.
+6. The stock Octopus does not come with a INA826AIDR amplifier chip. If you want to use the PT100 interface, you need to purchase a INA826AIDR chip (SOP-8 Package) separately and solder the chip into the correct position as shown below.
+
+<img src=img/Octopus/Octopus_Soft3.png width="600"/>
+
+7. The silkscreen on the first production run of the octopus had incorrectly labeled pins on the connectors listed below. To be sure that you are wiring on the correct pins please use the PINS.pdf document when using any of these connectors. The silkscreen has been corrected and all subsequent Octopus boards will reflect the correct mapping.
+
+   a. Fans
+
+   b. SPI3
+
+   c. Raspberry pi UART.
