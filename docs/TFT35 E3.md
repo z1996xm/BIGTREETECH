@@ -1,3 +1,3 @@
-# TFT 35 E3
+# TFT35 E3
 
 It's empty now

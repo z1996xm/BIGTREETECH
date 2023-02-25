@@ -1,4 +1,4 @@
-# TFT 35 SPI
+# TFT35 SPI
 
 ## **Introduction**
 

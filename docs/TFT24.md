@@ -1,3 +1,3 @@
-# TFT 24
+# TFT24
 
 It's empty now
