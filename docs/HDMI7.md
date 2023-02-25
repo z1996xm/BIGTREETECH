@@ -32,7 +32,7 @@
 
 You can read more details here: **BTT HDMI7_V1.0_SIZE**
 
-## **CAD**
+## **Interface Diagram**
 
 <img src=img/HDMI7/HDMI7_Interface.png width="600"/>
 

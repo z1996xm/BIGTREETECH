@@ -66,7 +66,7 @@ Changes in V1.1 include：M6，M7，M8，SPI，MCU-Card，RGB1&RGB2，FAN4，CAN
 
 <img src=img/M8P/M8P_Pin_Out1.png width="600" />
 
-## **CAD**
+## **Interface Diagram**
 
 <img src=img/M8P/M8P_CAD.png width="600" />
 
@@ -85,8 +85,6 @@ The 5V and 12V power output ports are added with E-FUSE protection, which has sh
 **M8P V1.1-Bot：**
 
 <img src=img/M8P/M8P_Add_Func3.png width="600" />
-
-## **Schematic**
 
 ## **Hardware Configuration**
 

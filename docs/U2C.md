@@ -22,21 +22,7 @@ CAN bus has many advantages in the field of industrial control, so our company h
 
 <img src=img/U2C/U2C_Dimension.png width="600"/>
 
-## **CAD**
-
-### **Product Display**
-
-<img src=img/U2C/U2C_Display1.png width="600"/>
-
-<img src=img/U2C/U2C_Display2.png width="600"/>
-
-<img src=img/U2C/U2C_Display3.png width="600"/>
-
-<img src=img/U2C/U2C_Display4.png width="600"/>
-
-<img src=img/U2C/U2C_Display5.png width="600"/>
-
-### **Interface Description**
+## **Interface Diagram**
 
 <img src=img/U2C/U2C_CAD.png width="600"/>
 
@@ -53,6 +39,18 @@ Power: Power Supply.
 ## **Pinout**
 
 <img src=img/U2C/U2C_Pinout.png width="600"/>
+
+## **Product Display**
+
+<img src=img/U2C/U2C_Display1.png width="600"/>
+
+<img src=img/U2C/U2C_Display2.png width="600"/>
+
+<img src=img/U2C/U2C_Display3.png width="600"/>
+
+<img src=img/U2C/U2C_Display4.png width="600"/>
+
+<img src=img/U2C/U2C_Display5.png width="600"/>
 
 ## **Hardware Configuration**
 

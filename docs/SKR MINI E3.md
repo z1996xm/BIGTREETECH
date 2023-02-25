@@ -38,7 +38,7 @@ BTT SKR MINI E3 V3.0 is a motherboard designed for Ender3, which launched by the
 
 <img src=img/SKR_MINI_E3/SKR_MINI_E3_Dimension.png width="600" />
 
-## **CAD**
+## **Interface Diagram**
 
 <img src=img/SKR_MINI_E3/SKR_MINI_E3_CAD.png width="600" />
 

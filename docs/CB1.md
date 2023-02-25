@@ -6,10 +6,6 @@
 
 <p>The BIGTREETECH CB1 is launched to provide a great solution to the insane shortage of Raspberry Pi CM4. <br>It outputs signals to the motherboard via the fast and convenient two 100 pins micro BTB connection header. Moreover, it is onboard 2.4G WiFi.<br></p>
 
-## **Announcements**
-
-
-
 ## **Main Features**
 
 * CPU: ALLWINNER H616, Quad-core Cortex-A53 @1.5GHz

@@ -94,7 +94,7 @@
 
 <img src=img/M4P/M4P_Size.png width="600"/>
 
-## **CAD**
+## **Interface Diagram**
 
 <img src=img/M4P/M4P_Interface_Diagram.png width="600" />
 

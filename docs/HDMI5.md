@@ -31,7 +31,7 @@
 
 ***You can read more details here: *\*BTT HDMI5_V1.0_SIZE\**** 
 
-## **CAD**
+## **Interface Diagram**
 
 <img src=img/HDMI5/HDMI5_Interface.png width="600"/>
 
