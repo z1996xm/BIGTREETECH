@@ -65,7 +65,7 @@ When the motherboard is powered on:
 
 As shown, connect the corresponding axes with the jump caps to choose Sensorless homing function.
 
-**<font  color="red">NOTE: If you choose this function, you cannot use external ENDSTOP! </font>**
+**<font  color="red">*NOTE: If you choose this function, you cannot use external ENDSTOP!* </font>**
 
 ### **5V power supply for BLtouch, TFT, RGB interfaces**
 
@@ -83,7 +83,7 @@ As shown, connect the corresponding axes with the jump caps to choose Sensorless
 
 Connect the fan by FAN2 to realize the whole machine cooling.
 
-**<font  color="red">Pleast note that the operating voltage is the same with the input power supply voltage to avoid damage. </font>**
+**<font  color="red">*Pleast note that the operating voltage is the same with the input power supply voltage to avoid damage.* </font>**
 
 ### **Connection to BIGTREETECH Relay V1.2**
 
@@ -125,7 +125,7 @@ The package contains the fifirmware for testing (Ender3), which can be used dire
 
 ​		Copy fifirmware.bin fifile to the root directory of SD card
 
-​		**<font  color="red">NOTE: Do not change fifile name! </font>**
+​		**<font  color="red">*NOTE: Do not change fifile name!* </font>**
 
 ​		Insert the SD card into the slot, re-power on or reset, the update will complete after 10S, And you should see the status LED blinking red during the 		update..
 

@@ -6,10 +6,6 @@
 
 <p>BIGTREETECH MANTA M8P is a 32-bit printer motherboard developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd. for Klipper firmware. You can simply plug in the core board to run the Klipper firmware, which greatly simplifies the connection between the motherboard and the Raspberry Pi, and saves a lot of space. Moreover, the BTB connector is designed to install CM4 or other solutions to solve the current expensive problem of CM4.</p>
 
-## **Announcements**
-
-
-
 ## **Main Features**
 
 - Adopt 32-bit 64MHz ARM Cortex-M0+ series STM32G0B1VET6 as the main control chip;

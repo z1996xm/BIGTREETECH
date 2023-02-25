@@ -6,10 +6,6 @@
 
 <p>BIGTREETECH CB1 is an alternative to Raspberry Pi CM4, which is currently out of stock. <br>BIGTREETECH M4P is a 4-axis motherboard using a CM4 BTB header, which can work with CB1 or CM4 perfectly.<br></p>
 
-## **Announcements**
-
-
-
 ## **Main Features**
 
 - DSI1, CSI1 interface (for CM4)
@@ -101,10 +97,6 @@
 ## **CAD**
 
 <img src=img/M4P/M4P_Interface_Diagram.png width="600" />
-
-## **Schematic**
-
-
 
 ## **Pin Out**
 

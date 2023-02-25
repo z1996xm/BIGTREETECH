@@ -6,10 +6,6 @@
 
 BIGTREETECH MANTA M5P is a 32-bit motherboard developed by the 3D printing team of Shenzhen Big Tree Technology Co., Ltd. for Klipper running. It can run Klipper with a core board, which greatly eliminates the mass wiring between the motherboard and Raspberry Pi, and also greatly  saves space in the chassis. The BTB headers are designed on MANTA M5P, so that customers can choose to use CM4 or other solutions, thus solving the insane shortage of Raspberry Pi CM4.
 
-## **Announcements**
-
-
-
 ## **Main Features**
 
 - 32bit 64MHz ARM Cortex-M0+ series STM32G0B1RET6 MCU.
@@ -71,10 +67,6 @@ BIGTREETECH MANTA M5P is a 32-bit motherboard developed by the 3D printing team 
 ## **CAD**
 
 <img src=img/M5P/M5P_Diagram.png width="600" />
-
-## **Schematic**
-
-
 
 ## **Pin Out**
 
