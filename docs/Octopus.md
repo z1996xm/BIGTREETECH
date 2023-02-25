@@ -1,6 +1,6 @@
 # Octopus
 
-<img src=img/Octopus/Octopus_Title.png width="800"/>
+<img src=img/Octopus/Octopus_Title.png width="600"/>
 
 ## **Introduction**
 
