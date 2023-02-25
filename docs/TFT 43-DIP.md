@@ -24,7 +24,7 @@ dtparam=rotate=0
 
 ## Touch function
 
-Copy [`gt911_btt_tft43_dip.dtbo`](./gt911_btt_tft43_dip.dtbo) file to `/boot/overlays` path. (We can copy the file to the boot path of the SD card on the computer, or execute the following command on the ssh of the Raspberry Pi to download it directly)
+Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file to `/boot/overlays` path. (We can copy the file to the boot path of the SD card on the computer, or execute the following command on the ssh of the Raspberry Pi to download it directly)
 
 ```
 sudo wget https://raw.githubusercontent.com/bigtreetech/TFT43-DIP/master/gt911_btt_tft43_dip.dtbo -O /boot/overlays/gt911_btt_tft43_dip.dtbo
@@ -43,7 +43,7 @@ dtparam=rotate_0
 
 ### Normal display
 
-* Copy [`gt911_btt_tft43_dip.dtbo`](./gt911_btt_tft43_dip.dtbo) file
+* Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file
 
 * Add the following configuration to the `[all]` section of the `/boot/config.txt` file
 
@@ -61,7 +61,7 @@ dtparam=rotate_0
 
 ### Rotate 90 degrees display
 
-* Copy [`gt911_btt_tft43_dip.dtbo`](./gt911_btt_tft43_dip.dtbo) file
+* Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file
 
 * Add the following configuration to the `[all]` section of the `/boot/config.txt` file
 
