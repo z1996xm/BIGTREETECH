@@ -638,9 +638,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          TFT 43-DIP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="TFT%2043-DIP.html" class="md-nav__link md-nav__link--active">
         TFT 43-DIP
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display-function" class="md-nav__link">
+    Display function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#touch-function" class="md-nav__link">
+    Touch function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-example" class="md-nav__link">
+    For example
+  </a>
+  
+    <nav class="md-nav" aria-label="For example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-display" class="md-nav__link">
+    Normal display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotate-90-degrees-display" class="md-nav__link">
+    Rotate 90 degrees display
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1115,6 +1187,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display-function" class="md-nav__link">
+    Display function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#touch-function" class="md-nav__link">
+    Touch function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-example" class="md-nav__link">
+    For example
+  </a>
+  
+    <nav class="md-nav" aria-label="For example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-display" class="md-nav__link">
+    Normal display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotate-90-degrees-display" class="md-nav__link">
+    Rotate 90 degrees display
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1131,7 +1259,73 @@
 
 
 <h1 id="tft-43-dip">TFT 43-DIP<a class="headerlink" href="#tft-43-dip" title="Permanent link">&para;</a></h1>
-<p>It's empty now</p>
+<p>TFT43-DIP is an display for the Raspberry Pi with capacitive touchscreen.</p>
+<h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The Raspberry Pi OS after <code>2022-04-04</code> has a built-in DPI driver, so we only need a simple configuration in <code>/boot/config.txt</code> file to use this screen.</li>
+<li>The OS of <code>2022-09-22</code> displays that the 180 degree rotation function is abnormal, please do not use it.</li>
+</ul>
+<h2 id="display-function">Display function<a class="headerlink" href="#display-function" title="Permanent link">&para;</a></h2>
+<p>Add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file. (Generally, it can be added to the bottom of the <code>/boot/config.txt</code> file)</p>
+<div class="highlight"><pre><span></span><code>dtoverlay=vc4-kms-dpi-generic
+dtparam=rgb666-padhi,clock-frequency=32000000
+dtparam=hactive=800,hfp=16,hsync=1,hbp=46
+dtparam=vactive=480,vfp=7,vsync=3,vbp=23
+dtparam=backlight-gpio=19
+dtparam=rotate=0
+</code></pre></div>
+
+<p><code>rotate</code> = Display rotation, The values that can be set include <code>0</code>, <code>90</code>, <code>180</code>, <code>270</code>. The default value is <code>0</code></p>
+<h2 id="touch-function">Touch function<a class="headerlink" href="#touch-function" title="Permanent link">&para;</a></h2>
+<p>Copy <a href="./gt911_btt_tft43_dip.dtbo"><code>gt911_btt_tft43_dip.dtbo</code></a> file to <code>/boot/overlays</code> path. (We can copy the file to the boot path of the SD card on the computer, or execute the following command on the ssh of the Raspberry Pi to download it directly)</p>
+<div class="highlight"><pre><span></span><code>sudo wget https://raw.githubusercontent.com/bigtreetech/TFT43-DIP/master/gt911_btt_tft43_dip.dtbo -O /boot/overlays/gt911_btt_tft43_dip.dtbo
+</code></pre></div>
+
+<p>And add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file.</p>
+<div class="highlight"><pre><span></span><code>dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate_0
+</code></pre></div>
+
+<p><code>rotate_*</code>= Touch rotation, This <code>dtparam</code> can be set to <code>rotate_0</code>, <code>rotate_90</code>, <code>rotate_180</code>, <code>rotate_270</code>. Corresponding to display rotation.</p>
+<h2 id="for-example">For example<a class="headerlink" href="#for-example" title="Permanent link">&para;</a></h2>
+<h3 id="normal-display">Normal display<a class="headerlink" href="#normal-display" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Copy <a href="./gt911_btt_tft43_dip.dtbo"><code>gt911_btt_tft43_dip.dtbo</code></a> file</li>
+</ul>
+<ul>
+<li>
+<p>Add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file</p>
+<p>```
+dtoverlay=vc4-kms-dpi-generic
+dtparam=rgb666-padhi,clock-frequency=32000000
+dtparam=hactive=800,hfp=16,hsync=1,hbp=46
+dtparam=vactive=480,vfp=7,vsync=3,vbp=23
+dtparam=backlight-gpio=19
+dtparam=rotate=0</p>
+<p>dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate_0
+```</p>
+</li>
+</ul>
+<h3 id="rotate-90-degrees-display">Rotate 90 degrees display<a class="headerlink" href="#rotate-90-degrees-display" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Copy <a href="./gt911_btt_tft43_dip.dtbo"><code>gt911_btt_tft43_dip.dtbo</code></a> file</li>
+</ul>
+<ul>
+<li>
+<p>Add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file</p>
+<p>```
+dtoverlay=vc4-kms-dpi-generic
+dtparam=rgb666-padhi,clock-frequency=32000000
+dtparam=hactive=800,hfp=16,hsync=1,hbp=46
+dtparam=vactive=480,vfp=7,vsync=3,vbp=23
+dtparam=backlight-gpio=19
+dtparam=rotate=90</p>
+<p>dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate_90
+```</p>
+</li>
+</ul>
 
               
             </article>
