@@ -79,7 +79,7 @@ The image below is a snippet taken from the PINS.pdf document. For better viewab
 ## **Hardware Configuration**
 
 <font  color="red">***Note: The octopus-pro packs a ton of features which necessitates many components and connectors. Given the component and connector density it was not possible to include the silk screen for connector labels on the top. We recommend that you snap a picture of the bottom of the board before starting 
-the installation so that you have a label reference on hand. If you forget to do so then you can always make use of the PINS.pdf file available on our <a href="https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro">github repo</a>.***</font>
+the installation so that you have a label reference on hand. If you forget to do so then you can always make use of the PINS.pdf file available on our [github repo](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro).***</font>
 
 ### **POWER WIRING**
 
@@ -275,7 +275,7 @@ If you would like to confirm that the driver has been installed correctly you ca
 
 ### **MOTHERBOARD FIRMWARE SUPPORT**
 
-Marlin, Klipper and RRF (429 variant) all support the Octopus Pro. You can compile and configure you firmware variant of choice according to the methods specified by the developers of that firmware. In time, configuration files for different firmware distributions will be made available on the <a href="https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro">octopus-pro github</a>. Covering how to compile firmware using VSCode is beyond the scope of this manual however there is an abundance of information online which explains how to set up VSCode on your machine and how to configure Marlin thereafter. Good places to start are provided for your convenience in the links below:
+Marlin, Klipper and RRF (429 variant) all support the Octopus Pro. You can compile and configure you firmware variant of choice according to the methods specified by the developers of that firmware. In time, configuration files for different firmware distributions will be made available on the [octopus-pro github](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro). Covering how to compile firmware using VSCode is beyond the scope of this manual however there is an abundance of information online which explains how to set up VSCode on your machine and how to configure Marlin thereafter. Good places to start are provided for your convenience in the links below:
 
 • https://marlinfw.org/docs/basics/install_platformio_vscode.html
 

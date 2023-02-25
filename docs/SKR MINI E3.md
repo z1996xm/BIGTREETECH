@@ -69,11 +69,11 @@ As shown, connect the corresponding axes with the jump caps to choose Sensorless
 
 ### **5V power supply for BLtouch, TFT, RGB interfaces**
 
-<img src=img/SKR_MINI_E3/SKR_MINI_E3_POWER.png width="600" />
+<img src=img/SKR_MINI_E3/SKR_MINI_E3_Power.png width="600" />
 
 1、 To use the onboard 5V PSU, short the pins shown in the above image using a jumper
 
-<img src=img/SKR_MINI_E3/SKR_MINI_E3_POWER1.png width="600" />
+<img src=img/SKR_MINI_E3/SKR_MINI_E3_Power1.png width="600" />
 
 2、To use an external BIGTREETECH DCDC5V V1.0 module, short the pins shown in the above image using a jumper.
 
@@ -115,23 +115,25 @@ The same USB interface can be used to communicate with a Raspberry pi or any oth
 
 The package contains the fifirmware for testing (Ender3), which can be used directly or changed according to your needs.
 
-- How to get the fifirmware
+**How to get the fifirmware**
 
-​		Contact our customer service or technical support; 
+- Contact our customer service or technical support; 
 
-​		Login to our website to download: https://github.com/bigtreetech
+- Login to our website to download: https://github.com/bigtreetech
 
-- Motherboard fifirmware update
 
-​		Copy fifirmware.bin fifile to the root directory of SD card
+**Motherboard fifirmware update**
 
-​		**<font  color="red">*NOTE: Do not change fifile name!* </font>**
+- Copy fifirmware.bin fifile to the root directory of SD card
 
-​		Insert the SD card into the slot, re-power on or reset, the update will complete after 10S, And you should see the status LED blinking red during the 		update..
+- **<font  color="red">*NOTE: Do not change fifile name!* </font>**
+- Insert the SD card into the slot, re-power on or reset, the update will complete after 10S, And you should see the status LED blinking red during the update..
 
-- Please refer to the BTT SKR MINI E3 V3.0-PIN.pdf
 
-​		for motherboard fifirmware DIY.
+**Please refer to the BTT SKR MINI E3 V3.0-PIN.pdf**
+
+- for motherboard fifirmware DIY.
+
 
 ## **PRECAUTIONS**
 
