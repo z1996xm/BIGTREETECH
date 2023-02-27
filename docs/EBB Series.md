@@ -1,4 +1,4 @@
-# EBB_Series
+# EBB Series
 
 ## **Compile Firmware**
 
@@ -60,7 +60,7 @@ version).
 
 <img src=img/EBB36CAN/G0B1/EBB_G0B1_Make.png width="600"/>
 
-<font  color="red">***Note: Only after https://github.com/Klipper3d/klipper/pull/5488 is merged into the main branch of Klipper, will the official firmware support the CAN bus function of STM32G0B1. If you use CANBus communication, you can use the firmware_canbus.bin compiled by us on our GitHub, or use our source code to compile it yourself: https://github.com/bigtreetech/klipper/tree/stm32g0b1-canbus***</font>
+<font  color="red">***Note: Only after https://github.com/Klipper3d/klipper/pull/5488 is merged into the main branch of Klipper, will the official firmware support the CAN bus function of STM32G0B1. If you use CANBus communication, you can use the firmware_canbus.bin compiled by us on our GitHub, or use our source code to compile it yourself: https://github.com/bigtreetech/klipper/tree/stm32g0b1-canbus*** </font>
 
 2.When the configuration is completed, type 'q' to exit the configuration interface. Select "Yes" when asked whether to save the configuration
 
@@ -76,11 +76,11 @@ Update firmware via Raspberry Pi (You can also update via STM32CubeProgrammer so
 
 1.Press on the Boot button, then click on the Reset button to enter DFU mode.
 
-Verison:EBB36 V1.0
+<font  color="red">**Verison:EBB36 V1.0**</font>
 
   <img src=img/EBB36CAN/072/EBB_072_Update1.png width="600"/>  
 
-Verison:EBB42 V1.0
+<font  color="red">**Verison:EBB42 V1.0**</font>
 
   <img src=img/EBB42CAN/072/EBB42_072_Update1.png width="600"/>  
 
@@ -130,7 +130,13 @@ Upgrade with STM32CubeProgrammer
 
 2.Press and hold the Boot button, then click the RST button to enter DFU mode.
 
+<font  color="red">**Verison:EBB36 V1.1**</font>
+
 <img src=img/EBB36CAN/G0B1/EBB_G0B1_Update4.png width="600"/>
+
+<font  color="red">**Verison:EBB42 V1.1**</font>
+
+<img src=img/EBB42CAN/G0B1/EBB42_G0B1_Update1.png width="600"/>
 
 3.Click the "Refresh" button in the STM32CubeProgrammer until the Port changes from "No DFU d..." to "USB1", then click "Connect" to connect the chip.
 
@@ -224,20 +230,45 @@ hardware is powered on and wired correctly, then run the following command:
 1.Enter the IP access of Raspberry Pi in the browser of the computer, and download the reference configuration of the motherboard from the file path 
 shown in the figure below. If you cannot find this file, please update the Klipper firmware source code to the latest version, or download it from GitHub: https://github.com/bigtreetech/EBB
 
-<img src=img/EBB36CAN/072/EBB_072_Klipper1.png width="600"/>
+<img src=img/EBB36CAN/072/EBB_072_klipper1.png width="600"/>
 
 2.Upload the motherboard's configuration files to the Configuration Files.
 
-<img src=img/EBB36CAN/072/EBB_072_Klipper2.png width="600"/>
+<img src=img/EBB36CAN/072/EBB_072_klipper2.png width="600"/>
 
 3.Add the motherboard's configuration to the file "printer.cfg".
 
  `[include sample-bigtreetech-ebb-canbus-v1.1.cfg]`
 
-<img src=img/EBB36CAN/072/EBB_072_Klipper3.png width="600"/>
+<img src=img/EBB36CAN/072/EBB_072_klipper3.png width="600"/>
 
 4.Revise the ID number of the configuration files as the actual ID of the motherboard (USB serial or CANBus).
 
-<img src=img/EBB36CAN/072/EBB_072_Klipper4.png width="600"/>
+<img src=img/EBB36CAN/072/EBB_072_klipper4.png width="600"/>
 
 5.Configure the specific functions of the module as instructed below: https://www.klipper3d.org/Overview.html
+
+## **PRECAUTIONS**
+
+- When the TH0 interface doesn't work with PT1000, you can't plug a jump cap on it, otherwise 100K NTC won't work.
+- When using CAN communication, you need to see whether it is used as a terminal. If it is, you must plug a jumper cap on the 120R position.
+- When DIY crimping, wire according to the silkscreen, and DIY according to the Pin and Schematic diagrams so as to avoid the power line from being reversely connected or connected to the CAN signal, which will get the module burned.
+- If there's no external power supply during programming via USB port, you need to short the VUSB by jumper cap so as to supply the module with working voltage.
+- The load current of the heater cartridge and the fan interfaces shall not exceed the maximum withstand current to prevent the MOS tube from being burned out.
+- <font  color="red">**Please pay attention to the precautions in 4.2 Firmware Update to avoid keeping MCU in DFU mode for a long time when the main power supply and hotend are connected.**</font>
+
+## **FAQ**
+
+**Q: What's the maximum current for the heater cartridge and fan interface?**
+
+A: The maximum output current of the heater cartridge interface: 5A.
+
+The maximum output current of the fan interface: 1A.
+
+The total current for the heater cartridge, driver and fan needs to be less than 9A.
+
+
+
+**Q: Cannot update firmware via USB port?**
+
+A: You need to make sure that the jump cap is plugged on VUSB, and the indicator light on the board is on.
