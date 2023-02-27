@@ -91,11 +91,11 @@ Version without 31865: No need to plug a jumper cap when using a 100K NTC thermi
 
 Version:V1.0
 
-<img src=img/EBB36CAN/072/EBB_072_Pt100.png width="600"/>
+<img src=img/EBB36CAN/072/EBB_072_PT100.png width="600"/>
 
 Version:V1.1
 
-<img src=img/EBB36CAN/G0B1/EBB_G0B1_Pt100.png width="600"/>
+<img src=img/EBB36CAN/G0B1/EBB_G0B1_PT100.png width="600"/>
 
 Version with 31865: Select PT100/PT1000 by DIP switch, two-line or four-wire:
 
@@ -130,6 +130,8 @@ Version:V1.1
 Version:V1.0
 
 <img src=img/EBB36CAN/072/EBB_072_BLTouch.png width="600"/>
+
+Version:V1.1
 
 <img src=img/EBB36CAN/G0B1/EBB_G0B1_BLTouch.png width="600"/>
 
