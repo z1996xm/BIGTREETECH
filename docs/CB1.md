@@ -33,7 +33,7 @@
 
 [BIGTREETECH_CB1_V22_220812_SCH](./doc/BIGTREETECH_CB1_V22_220812_SCH.pdf) 
 
-## **Pin Out**
+## **PinOut**
 
 ### **40 pin GPIO**
 

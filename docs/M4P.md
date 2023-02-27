@@ -98,7 +98,7 @@
 
 <img src=img/M4P/M4P_Interface_Diagram.png width="600" />
 
-## **Pin Out**
+## **PinOut**
 
 <img src=img/M4P/M4P_Pin_Out.png width="600" />
 
@@ -214,8 +214,6 @@ M4P_E1_E2_LCD
     #spi_software_mosi_pin: PA7
     #spi_software_miso_pin: PA6
     ```
-
-
 
 ## **Software Configuration**
 
