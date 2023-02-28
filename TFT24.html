@@ -680,9 +680,82 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          TFT24
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="TFT24.html" class="md-nav__link md-nav__link--active">
         TFT24
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    Main Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-parameters" class="md-nav__link">
+    Basic Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface-diagram" class="md-nav__link">
+    Interface Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#precautions" class="md-nav__link">
+    PRECAUTIONS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1129,6 +1202,63 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    Main Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-parameters" class="md-nav__link">
+    Basic Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface-diagram" class="md-nav__link">
+    Interface Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#precautions" class="md-nav__link">
+    PRECAUTIONS
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1145,7 +1275,50 @@
 
 
 <h1 id="tft24">TFT24<a class="headerlink" href="#tft24" title="Permanent link">&para;</a></h1>
-<p>It's empty now</p>
+<p><img src=img/TFT24/TFT24_Title.png width="600" /></p>
+<h2 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>BIGTREETECH TFT24-V1.1 is a small volume ultra-clear 3D printer display board. It can work in two modes. The board is launched by the 3D printing team of Shenzhen BIGTREETechnology co., LTD. This board can replace LCD12864 for use.</p>
+<h2 id="main-features"><strong>Main Features</strong><a class="headerlink" href="#main-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li>ARM Cortex-M3 series STM32F105RCT6 chip with 32-bit CPU 72MHz;</li>
+<li>Upgrade the firmware by SD card. It is easy and convenient to operate.</li>
+<li>his display board has higher compatibility. Users can select two work modes, they are UART serial port screen mode and 12864 screen mode.</li>
+<li>Serial port screen mode supports two printing modes: SD card and U disk.</li>
+</ul>
+<h2 id="basic-parameters"><strong>Basic Parameters</strong><a class="headerlink" href="#basic-parameters" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Appearance size: 105*46mm</li>
+<li>Installation size: detail information in TFT24-V1.1-SI</li>
+<li>Microprocessor：STM32F105RCT6</li>
+<li>Power Input：DC5V</li>
+</ul>
+<p><font  color="red"><strong><em>NOTE: After the board is powered on, the red power indicator light D3 will light up, indicating that the power supply is normal. The red light D1 is SD 
+card detection indicator. D1 often shines on when SD card is inserted, and the light goes out when the SD card is pulled out.</em></strong></font></p>
+<h2 id="dimensions"><strong>Dimensions</strong><a class="headerlink" href="#dimensions" title="Permanent link">&para;</a></h2>
+<p><img src=img/TFT24/TFT24_Diagram.png width="600" /></p>
+<h2 id="interface-diagram"><strong>Interface Diagram</strong><a class="headerlink" href="#interface-diagram" title="Permanent link">&para;</a></h2>
+<p><img src=img/TFT24/TFT24_Interface.png width="600" /></p>
+<p>1) When using 12864 screen mode, connect the port EXP1 and EXP2 to the motherboard. There is no touch function in this mode.
+2) When using serial port screen mode, connect with TFT or aux-2 on the motherboard via RS232. In this mode, there is touch function.
+3) The two modes correspond to two different firmwares, please connect wires according to the mode type of the flashed firmware.</p>
+<h2 id="software-configuration"><strong>Software Configuration</strong><a class="headerlink" href="#software-configuration" title="Permanent link">&para;</a></h2>
+<p><font  color="red"><strong><em>Factory board will be equipped with test firmware, it can be used directly. User can also change the firmware according to their own need.</em></strong></font></p>
+<p>​   1.Ways to obtain the firmware of motherboard</p>
+<p>​   Get it from customer service or technical staff</p>
+<p>​   Log in the open source website of our company to download: <a href="https://github.com/bigtreetech">https://github.com/bigtreetech</a></p>
+<ol>
+<li>Firmware update
+    Firmware file name：<p><strong><code>&amp;nbsp</code></strong><font  color="red"><strong>BIGTREE_TFT24_12864_(version code).bin</strong></font></p>
+<p><strong><code>&amp;nbsp</code></strong><font  color="red"><strong>BIGTREE_TFT24_Serial_(version code).bin</strong></font>  <br />
+  First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed. </p>
+</li>
+</ol>
+<p>​   3.For DIY board firmware, please refer to the file TFT24-V1.1-PIN.</p>
+<h2 id="precautions"><strong>PRECAUTIONS</strong><a class="headerlink" href="#precautions" title="Permanent link">&para;</a></h2>
+<ol>
+<li>The name of the firmware file in the SD card cannot be changed. (including capital and small letters)</li>
+<li>Wiring process must be under the precondition of power outages.Users must check the correct connection of the circuit and the correct insertion of the drive before turning on electricity.Pay attention to the wiring sequence and do not insert the wire inversely. Please refer to PIN file for detailed line order.</li>
+</ol>
 
               
             </article>
