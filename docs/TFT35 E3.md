@@ -62,7 +62,7 @@ power supply;**</font>
 
 2. Firmware update
 
-   &nbsp;Firmware file name：：
+   &nbsp;Firmware file name：
 
    &nbsp;<font  color="red">***BIGTREE_TFT35_V3.0. (version number).bin***</font>
 

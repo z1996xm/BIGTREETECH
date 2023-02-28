@@ -56,7 +56,7 @@ TFT35 V3.0 is a medium size, dual-mode, ultra-clear 3D printer display. It is an
 
 2. **Firmware update method:**
 
-   &nbsp;Firmware file name： BIGTREE_TFT35_V3.0.(version number).bin
+   &nbsp;Firmware file name：BIGTREE_TFT35_V3.0.(version number).bin
 
    &nbsp;Fonts & icons folder name: TFT35
 
