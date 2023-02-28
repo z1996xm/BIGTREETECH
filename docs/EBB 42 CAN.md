@@ -151,3 +151,9 @@ Version:V1.0
 Version:V1.1
 
 <img src=img/EBB42CAN/G0B1/EBB42_G0B1_RGB.png width="600"/>
+
+## **Software Configuration**
+
+For details, please click: 
+
+https://z1996xm.github.io/BIGTREETECH/EBB%20Series.html

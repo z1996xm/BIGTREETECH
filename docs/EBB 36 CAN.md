@@ -157,7 +157,7 @@ Version:V1.1
 
 ## **Software Configuration**
 
-### **Compile Firmware**
+For details, please click: 
 
-
+https://z1996xm.github.io/BIGTREETECH/EBB%20Series.html
 
