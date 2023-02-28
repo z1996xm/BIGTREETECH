@@ -27,11 +27,12 @@ BIGTREETECH TFT35-E3 V3.0 is a medium size, dual-mode,ultra-clear 3D printing ma
 - Power Input：DC 5V
 - SD card logic voltage：3.3V and 5V（Such as: support MEGA2560 main control chip motherboard, higher compatibility)
 
-<font  color="red">***NOTE: After the board is powered on：
-Red light D6 is the power indicator: the red light is on, indicating normal
-power supply;
-Green light D3 is SD card detection indicator: D3 is always on when the SD 
-card inserted, and then off when SD card pulled out.***</font>
+<font  color="red">***NOTE: After the board is powered on：***</font>
+
+<font  color="red">**Red light D6 is the power indicator: the red light is on, indicating normal
+power supply;**</font>
+
+<font  color="red">***Green light D3 is SD card detection indicator: D3 is always on when the SD card inserted, and then off when SD card pulled out.***</font>
 
 ## **Dimensions**
 

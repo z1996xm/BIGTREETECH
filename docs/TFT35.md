@@ -50,19 +50,20 @@ TFT35 V3.0 is a medium size, dual-mode, ultra-clear 3D printer display. It is an
 
 ## **Software Configuration**
 
-The screen will be shipped with a test firmware, it can be used directly. The firmware is customizable according to your needs.
+<font  color="red">***The screen will be shipped with a test firmware, it can be used directly. The firmware is customizable according to your needs.***</font>
 
-You can find the needed firmware files on our Github page: http://github.com/bigtreetech
+1. You can find the needed firmware files on our Github page: http://github.com/bigtreetech
 
-**Firmware update method:**
+2. **Firmware update method:**
 
-Firmware file name： BIGTREE_TFT35_V3.0.(version number).bin
+   &nbsp;Firmware file name： BIGTREE_TFT35_V3.0.(version number).bin
 
-Fonts & icons folder name: TFT35
+   &nbsp;Fonts & icons folder name: TFT35
 
-First copy the above firmware and TFT35 folder to SD root directory, and then insert the card into the SD card slot of the board. Next, boot the board 	&nbsp;&nbsp;or press the reset key, then wait for firmware, fonts and icons update is completed.
+   &nbsp;First copy the above firmware and TFT35 folder to SD root directory, and then insert the card into the SD card slot of the board. Next, boot the board or press the reset key, then wait for firmware, fonts and icons update is completed.
 
-For customizable firmware, please refer to the file TFT35-V3.0-PIN.
+3. For customizable firmware, please refer to the file TFT35-V3.0-PIN.
+
 
 ## **PRECAUTIONS**
 
