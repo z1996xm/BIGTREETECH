@@ -31,9 +31,9 @@ card detection indicator. D1 often shines on when SD card is inserted, and the l
 
 <img src=img/TFT24/TFT24_Interface.png width="600" />
 
-1) When using 12864 screen mode, connect the port EXP1 and EXP2 to the motherboard. There is no touch function in this mode.
-2) When using serial port screen mode, connect with TFT or aux-2 on the motherboard via RS232. In this mode, there is touch function.
-3) The two modes correspond to two different firmwares, please connect wires according to the mode type of the flashed firmware.
+- When using 12864 screen mode, connect the port EXP1 and EXP2 to the motherboard. There is no touch function in this mode.
+- When using serial port screen mode, connect with TFT or aux-2 on the motherboard via RS232. In this mode, there is touch function.
+- The two modes correspond to two different firmwares, please connect wires according to the mode type of the flashed firmware.
 
 ## **Software Configuration**
 
@@ -41,17 +41,16 @@ card detection indicator. D1 often shines on when SD card is inserted, and the l
 
 ​	1.Ways to obtain the firmware of motherboard
 
-​	Get it from customer service or technical staff
+​	&nbsp;&nbsp;&nbsp;Get it from customer service or technical staff
 
-​	Log in the open source website of our company to download: https://github.com/bigtreetech
+​	&nbsp;&nbsp;&nbsp;Log in the open source website of our company to download: https://github.com/bigtreetech
 
 2. Firmware update
 	Firmware file name：
 	
 	&nbsp;<font  color="red">**BIGTREE_TFT24_12864_(version code).bin**</font>
 
-	&nbsp;<font  color="red">**BIGTREE_TFT24_Serial_(version code).bin**</font>	
-	First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed. 
+	&nbsp;<font  color="red">**BIGTREE_TFT24_Serial_(version code).bin**</font>	&#x000A;First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed. 
 
 ​	3.For DIY board firmware, please refer to the file TFT24-V1.1-PIN.
 

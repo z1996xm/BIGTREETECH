@@ -53,13 +53,8 @@ card inserted, and then off when SD card pulled out.***</font>
 
 <font  color="red">***Factory board will be equipped with test firmware, it can be used directly.It can also be upgraded according to our company's open source website.***</font>
 
-1. Ways to obtain the firmware of motherboard
-&nbsp;&nbsp;&nbsp;Get it from customer service or technical staff；
-&nbsp;&nbsp;&nbsp;Log in the open source website of our company to download ：https://github.com/bigtreetech
-2. Firmware update
-Firmware file name：：
-&nbsp;&nbsp;&nbsp;<font  color="red">***BIGTREE_TFT35_V3.0. (version number).bin***</font>
-First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed.；
+1. Ways to obtain the firmware of motherboard&#x000A;&nbsp;&nbsp;&nbsp;Get it from customer service or technical staff；&#x000A;&nbsp;&nbsp;&nbsp;Log in the open source website of our company to download ：https://github.com/bigtreetech
+2. Firmware update&#x000A;Firmware file name：：&#x000A;&nbsp;&nbsp;&nbsp;<font  color="red">***BIGTREE_TFT35_V3.0. (version number).bin***</font>&#x000A;First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed.；
 3. For DIY board firmware, please refer to the file TFT35-E3 V3.0PIN.
 
 ## **PRECAUTIONS**
