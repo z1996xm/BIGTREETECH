@@ -1303,43 +1303,32 @@ dtparam=rotate_0
 <p><code>rotate_*</code>= Touch rotation, This <code>dtparam</code> can be set to <code>rotate_0</code>, <code>rotate_90</code>, <code>rotate_180</code>, <code>rotate_270</code>. Corresponding to display rotation.</p>
 <h2 id="for-example">For example<a class="headerlink" href="#for-example" title="Permanent link">&para;</a></h2>
 <h3 id="normal-display">Normal display<a class="headerlink" href="#normal-display" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Copy <code>gt911_btt_tft43_dip.dtbo</code>(./gt911_btt_tft43_dip.dtbo) file</li>
-</ul>
-<ul>
-<li>
+<p>Copy <code>gt911_btt_tft43_dip.dtbo</code>(./gt911_btt_tft43_dip.dtbo) file</p>
 <p>Add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file</p>
-<p>```
-dtoverlay=vc4-kms-dpi-generic
+<div class="highlight"><pre><span></span><code>dtoverlay=vc4-kms-dpi-generic
 dtparam=rgb666-padhi,clock-frequency=32000000
 dtparam=hactive=800,hfp=16,hsync=1,hbp=46
 dtparam=vactive=480,vfp=7,vsync=3,vbp=23
 dtparam=backlight-gpio=19
-dtparam=rotate=0</p>
-<p>dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate=0
+
+dtoverlay=gt911_btt_tft43_dip
 dtparam=rotate_0
-```</p>
-</li>
-</ul>
+</code></pre></div>
+
 <h3 id="rotate-90-degrees-display">Rotate 90 degrees display<a class="headerlink" href="#rotate-90-degrees-display" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Copy <code>gt911_btt_tft43_dip.dtbo</code>(./gt911_btt_tft43_dip.dtbo) file</li>
-</ul>
-<ul>
-<li>
+<p>Copy <code>gt911_btt_tft43_dip.dtbo</code>(./gt911_btt_tft43_dip.dtbo) file</p>
 <p>Add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file</p>
-<p>```
-dtoverlay=vc4-kms-dpi-generic
+<div class="highlight"><pre><span></span><code>dtoverlay=vc4-kms-dpi-generic
 dtparam=rgb666-padhi,clock-frequency=32000000
 dtparam=hactive=800,hfp=16,hsync=1,hbp=46
 dtparam=vactive=480,vfp=7,vsync=3,vbp=23
 dtparam=backlight-gpio=19
-dtparam=rotate=90</p>
-<p>dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate=90
+
+dtoverlay=gt911_btt_tft43_dip
 dtparam=rotate_90
-```</p>
-</li>
-</ul>
+</code></pre></div>
 
               
             </article>
