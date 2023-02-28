@@ -43,36 +43,39 @@ dtparam=rotate_0
 
 ### Normal display
 
-* Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file
+Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file
 
-* Add the following configuration to the `[all]` section of the `/boot/config.txt` file
+Add the following configuration to the `[all]` section of the `/boot/config.txt` file
 
-  ```
-  dtoverlay=vc4-kms-dpi-generic
-  dtparam=rgb666-padhi,clock-frequency=32000000
-  dtparam=hactive=800,hfp=16,hsync=1,hbp=46
-  dtparam=vactive=480,vfp=7,vsync=3,vbp=23
-  dtparam=backlight-gpio=19
-  dtparam=rotate=0
-  
-  dtoverlay=gt911_btt_tft43_dip
-  dtparam=rotate_0
-  ```
+```
+dtoverlay=vc4-kms-dpi-generic
+dtparam=rgb666-padhi,clock-frequency=32000000
+dtparam=hactive=800,hfp=16,hsync=1,hbp=46
+dtparam=vactive=480,vfp=7,vsync=3,vbp=23
+dtparam=backlight-gpio=19
+dtparam=rotate=0
+
+dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate_0
+```
+
+
 
 ### Rotate 90 degrees display
 
-* Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file
+Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file
 
-* Add the following configuration to the `[all]` section of the `/boot/config.txt` file
+Add the following configuration to the `[all]` section of the `/boot/config.txt` file
 
-  ```
-  dtoverlay=vc4-kms-dpi-generic
-  dtparam=rgb666-padhi,clock-frequency=32000000
-  dtparam=hactive=800,hfp=16,hsync=1,hbp=46
-  dtparam=vactive=480,vfp=7,vsync=3,vbp=23
-  dtparam=backlight-gpio=19
-  dtparam=rotate=90
-  
-  dtoverlay=gt911_btt_tft43_dip
-  dtparam=rotate_90
-  ```
+```
+dtoverlay=vc4-kms-dpi-generic
+dtparam=rgb666-padhi,clock-frequency=32000000
+dtparam=hactive=800,hfp=16,hsync=1,hbp=46
+dtparam=vactive=480,vfp=7,vsync=3,vbp=23
+dtparam=backlight-gpio=19
+dtparam=rotate=90
+
+dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate_90
+```
+

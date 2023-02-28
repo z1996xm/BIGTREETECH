@@ -260,19 +260,19 @@ If you are using Klipper then please ensure that you have the following settings
 
 The precautions listed in this section should not be overlooked. They have been included as reminders to prevent damage to your motherboard.
 
-1. Never work on the motherboard with power applied.
-2. Always double check all jumpers and wiring before applying power. Improper jumpers or wiring can cause damage to the motherboard and possibly even peripherals that it interfaces with.
-3. The motherboard can power heated beds up to 300W. If you are using a bed that operates at a higher power then you will need to use an external MOSFET.
-4. Always consult the PIN.pdf diagram when making jumper connections or wiring changes. Assuming a connection order may result in damage to the motherboard.
-5. It is recommended to update the firmware using SD card. Using DFU (direct programming via the USB port) will overwrite the bootloader meaning that you will no longer have the option to update via SD card.
-6. The stock Octopus does not come with a INA826AIDR amplifier chip. If you want to use the PT100 interface, you need to purchase a INA826AIDR chip (SOP-8 Package) separately and solder the chip into the correct position as shown below.
+- Never work on the motherboard with power applied.
+- Always double check all jumpers and wiring before applying power. Improper jumpers or wiring can cause damage to the motherboard and possibly even peripherals that it interfaces with.
+- The motherboard can power heated beds up to 300W. If you are using a bed that operates at a higher power then you will need to use an external MOSFET.
+- Always consult the PIN.pdf diagram when making jumper connections or wiring changes. Assuming a connection order may result in damage to the motherboard.
+- It is recommended to update the firmware using SD card. Using DFU (direct programming via the USB port) will overwrite the bootloader meaning that you will no longer have the option to update via SD card.
+- The stock Octopus does not come with a INA826AIDR amplifier chip. If you want to use the PT100 interface, you need to purchase a INA826AIDR chip (SOP-8 Package) separately and solder the chip into the correct position as shown below.
 
 <img src=img/Octopus/Octopus_Soft3.png width="600"/>
 
-7. The silkscreen on the first production run of the octopus had incorrectly labeled pins on the connectors listed below. To be sure that you are wiring on the correct pins please use the PINS.pdf document when using any of these connectors. The silkscreen has been corrected and all subsequent Octopus boards will reflect the correct mapping.
+- The silkscreen on the first production run of the octopus had incorrectly labeled pins on the connectors listed below. To be sure that you are wiring on the correct pins please use the PINS.pdf document when using any of these connectors. The silkscreen has been corrected and all subsequent Octopus boards will reflect the correct mapping.
 
-   a. Fans
+  a. Fans
 
-   b. SPI3
+  b. SPI3
 
-   c. Raspberry pi UART.
+  c. Raspberry pi UART.

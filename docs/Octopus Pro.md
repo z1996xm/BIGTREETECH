@@ -304,10 +304,10 @@ The 429 variant of the board makes use of a different frequency crystal oscillat
 
 The precautions listed in this section should not be overlooked. They have been included as reminders to prevent damage to your motherboard.
 
-1. Never work on the motherboard with power applied.
-2. Always double check all jumpers and wiring before applying power. Improper jumpers or wiring can cause damage to the motherboard and possibly even peripherals that it interfaces with.
-3. The motherboard can power heated beds up to 300W. If you are using a bed that operates at a higher power then you will need to use an external MOSFET. Do not connect a voltage source greater than 28V to this input.
-4. Never short circuit the 3.3V, 5V, 12V or 24V supplies to each other. Doing so will let out some smoke and BTT will not be able to put it back for you.
-5. You cannot power external devices using the USB-C interface. It is designed for data only.
-6. Always consult the PIN.pdf diagram when making jumper connections or wiring changes. Assuming a connection order may result in damage to the motherboard.
-7. It is recommended to update the firmware using SD card. Using DFU (direct programming via the USB port) will overwrite the bootloader meaning that you will no longer have the option to update via SD card unless you reflash the bootloader.
+- Never work on the motherboard with power applied.
+- Always double check all jumpers and wiring before applying power. Improper jumpers or wiring can cause damage to the motherboard and possibly even peripherals that it interfaces with.
+- The motherboard can power heated beds up to 300W. If you are using a bed that operates at a higher power then you will need to use an external MOSFET. Do not connect a voltage source greater than 28V to this input.
+- Never short circuit the 3.3V, 5V, 12V or 24V supplies to each other. Doing so will let out some smoke and BTT will not be able to put it back for you.
+- You cannot power external devices using the USB-C interface. It is designed for data only.
+- Always consult the PIN.pdf diagram when making jumper connections or wiring changes. Assuming a connection order may result in damage to the motherboard.
+- It is recommended to update the firmware using SD card. Using DFU (direct programming via the USB port) will overwrite the bootloader meaning that you will no longer have the option to update via SD card unless you reflash the bootloader.
