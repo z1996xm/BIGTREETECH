@@ -56,13 +56,13 @@ You can find the needed firmware files on our Github page: http://github.com/big
 
 **Firmware update method:**
 
-Firmware file name： BIGTREE_TFT35_V3.0.(version number).bin
+​	&nbsp;&nbsp;Firmware file name： BIGTREE_TFT35_V3.0.(version number).bin
 
-Fonts & icons folder name: TFT35
+​	&nbsp;&nbsp;Fonts & icons folder name: TFT35
 
-First copy the above firmware and TFT35 folder to SD root directory, and then insert the card into the SD card slot of the board. Next, boot the board or press the reset key, then wait for firmware, fonts and icons update is completed.
+​	&nbsp;&nbsp;First copy the above firmware and TFT35 folder to SD root directory, and then insert the card into the SD card slot of the board. Next, boot the board 	&nbsp;&nbsp;or press the reset key, then wait for firmware, fonts and icons update is completed.
 
-For customizable firmware, please refer to the file TFT35-V3.0-PIN.
+​	&nbsp;&nbsp;For customizable firmware, please refer to the file TFT35-V3.0-PIN.
 
 ## **PRECAUTIONS**
 

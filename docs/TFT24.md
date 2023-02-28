@@ -50,7 +50,9 @@ card detection indicator. D1 often shines on when SD card is inserted, and the l
 	
 	&nbsp;<font  color="red">**BIGTREE_TFT24_12864_(version code).bin**</font>
 
-	&nbsp;<font  color="red">**BIGTREE_TFT24_Serial_(version code).bin**</font>	&#x000A;First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed. 
+	&nbsp;<font  color="red">**BIGTREE_TFT24_Serial_(version code).bin**</font>
+	
+	First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed. 
 
 ​	3.For DIY board firmware, please refer to the file TFT24-V1.1-PIN.
 
