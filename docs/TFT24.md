@@ -39,21 +39,24 @@ card detection indicator. D1 often shines on when SD card is inserted, and the l
 
 <font  color="red">***Factory board will be equipped with test firmware, it can be used directly. User can also change the firmware according to their own need.***</font>
 
-​	1.Ways to obtain the firmware of motherboard
+1. Ways to obtain the firmware of motherboard
 
-​	&nbsp;&nbsp;&nbsp;Get it from customer service or technical staff
+   ​	&nbsp;&nbsp;&nbsp;Get it from customer service or technical staff
 
-​	&nbsp;&nbsp;&nbsp;Log in the open source website of our company to download: https://github.com/bigtreetech
+   ​	&nbsp;&nbsp;&nbsp;Log in the open source website of our company to download: https://github.com/bigtreetech
 
-2. Firmware update&#x000A;&nbsp;Firmware file name：
-	
-	&nbsp;<font  color="red">**BIGTREE_TFT24_12864_(version code).bin**</font>
-	
-	&nbsp;<font  color="red">**BIGTREE_TFT24_Serial_(version code).bin**</font>
-	
-	First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed. 
+2. Firmware update
 
-​	3.For DIY board firmware, please refer to the file TFT24-V1.1-PIN.
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firmware file name：
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font  color="red">**BIGTREE_TFT24_12864_(version code).bin**</font>
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font  color="red">**BIGTREE_TFT24_Serial_(version code).bin**</font>
+
+   <p>First copy the above firmware to SD root directory, and then insert the card into the SD card slot of the board. Next please re-power the board or press the reset key, and wait for about 10 seconds before the update is completed. </p>
+
+3. For DIY board firmware, please refer to the file TFT24-V1.1-PIN.
+
 
 ## **PRECAUTIONS**
 
