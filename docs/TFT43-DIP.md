@@ -1,13 +1,19 @@
 # TFT43-DIP
 
+<img src=img/TFT43-DIP/TFT43_DIP_Title.png width="600" />
+
+## **Introduction**
+
 TFT43-DIP is an display for the Raspberry Pi with capacitive touchscreen.
 
-## Note
+## **Software Configuration**
+
+### Note
 
 * The Raspberry Pi OS after `2022-04-04` has a built-in DPI driver, so we only need a simple configuration in `/boot/config.txt` file to use this screen.
 * The OS of `2022-09-22` displays that the 180 degree rotation function is abnormal, please do not use it.
 
-## Display function
+### Display function
 
 Add the following configuration to the `[all]` section of the `/boot/config.txt` file. (Generally, it can be added to the bottom of the `/boot/config.txt` file)
 
@@ -22,7 +28,7 @@ dtparam=rotate=0
 
 `rotate` = Display rotation, The values that can be set include `0`, `90`, `180`, `270`. The default value is `0`
 
-## Touch function
+### Touch function
 
 Copy `gt911_btt_tft43_dip.dtbo`(./gt911_btt_tft43_dip.dtbo) file to `/boot/overlays` path. (We can copy the file to the boot path of the SD card on the computer, or execute the following command on the ssh of the Raspberry Pi to download it directly)
 
@@ -39,7 +45,7 @@ dtparam=rotate_0
 
 `rotate_*`= Touch rotation, This `dtparam` can be set to `rotate_0`, `rotate_90`, `rotate_180`, `rotate_270`. Corresponding to display rotation.
 
-## For example
+### For example
 
 ### Normal display
 
