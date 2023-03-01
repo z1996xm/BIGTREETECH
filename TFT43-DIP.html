@@ -663,33 +663,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#note" class="md-nav__link">
     Note
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#display-function" class="md-nav__link">
     Display function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#touch-function" class="md-nav__link">
     Touch function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#for-example" class="md-nav__link">
     For example
   </a>
   
-    <nav class="md-nav" aria-label="For example">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#normal-display" class="md-nav__link">
@@ -1208,33 +1222,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#note" class="md-nav__link">
     Note
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#display-function" class="md-nav__link">
     Display function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#touch-function" class="md-nav__link">
     Touch function
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#for-example" class="md-nav__link">
     For example
   </a>
   
-    <nav class="md-nav" aria-label="For example">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#normal-display" class="md-nav__link">
@@ -1273,13 +1301,16 @@
 
 
 <h1 id="tft43-dip">TFT43-DIP<a class="headerlink" href="#tft43-dip" title="Permanent link">&para;</a></h1>
+<p><img src=img/TFT43-DIP/TFT43_DIP_Title.png width="600" /></p>
+<h2 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>TFT43-DIP is an display for the Raspberry Pi with capacitive touchscreen.</p>
-<h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h2>
+<h2 id="software-configuration"><strong>Software Configuration</strong><a class="headerlink" href="#software-configuration" title="Permanent link">&para;</a></h2>
+<h3 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The Raspberry Pi OS after <code>2022-04-04</code> has a built-in DPI driver, so we only need a simple configuration in <code>/boot/config.txt</code> file to use this screen.</li>
 <li>The OS of <code>2022-09-22</code> displays that the 180 degree rotation function is abnormal, please do not use it.</li>
 </ul>
-<h2 id="display-function">Display function<a class="headerlink" href="#display-function" title="Permanent link">&para;</a></h2>
+<h3 id="display-function">Display function<a class="headerlink" href="#display-function" title="Permanent link">&para;</a></h3>
 <p>Add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file. (Generally, it can be added to the bottom of the <code>/boot/config.txt</code> file)</p>
 <div class="highlight"><pre><span></span><code>dtoverlay=vc4-kms-dpi-generic
 dtparam=rgb666-padhi,clock-frequency=32000000
@@ -1290,7 +1321,7 @@ dtparam=rotate=0
 </code></pre></div>
 
 <p><code>rotate</code> = Display rotation, The values that can be set include <code>0</code>, <code>90</code>, <code>180</code>, <code>270</code>. The default value is <code>0</code></p>
-<h2 id="touch-function">Touch function<a class="headerlink" href="#touch-function" title="Permanent link">&para;</a></h2>
+<h3 id="touch-function">Touch function<a class="headerlink" href="#touch-function" title="Permanent link">&para;</a></h3>
 <p>Copy <code>gt911_btt_tft43_dip.dtbo</code>(./gt911_btt_tft43_dip.dtbo) file to <code>/boot/overlays</code> path. (We can copy the file to the boot path of the SD card on the computer, or execute the following command on the ssh of the Raspberry Pi to download it directly)</p>
 <div class="highlight"><pre><span></span><code>sudo wget https://raw.githubusercontent.com/bigtreetech/TFT43-DIP/master/gt911_btt_tft43_dip.dtbo -O /boot/overlays/gt911_btt_tft43_dip.dtbo
 </code></pre></div>
@@ -1301,7 +1332,7 @@ dtparam=rotate_0
 </code></pre></div>
 
 <p><code>rotate_*</code>= Touch rotation, This <code>dtparam</code> can be set to <code>rotate_0</code>, <code>rotate_90</code>, <code>rotate_180</code>, <code>rotate_270</code>. Corresponding to display rotation.</p>
-<h2 id="for-example">For example<a class="headerlink" href="#for-example" title="Permanent link">&para;</a></h2>
+<h3 id="for-example">For example<a class="headerlink" href="#for-example" title="Permanent link">&para;</a></h3>
 <h3 id="normal-display">Normal display<a class="headerlink" href="#normal-display" title="Permanent link">&para;</a></h3>
 <p>Copy <code>gt911_btt_tft43_dip.dtbo</code>(./gt911_btt_tft43_dip.dtbo) file</p>
 <p>Add the following configuration to the <code>[all]</code> section of the <code>/boot/config.txt</code> file</p>
