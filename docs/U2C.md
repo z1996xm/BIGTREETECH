@@ -117,6 +117,5 @@ Found canbus_uuid=0e0d81e4210c
 
 ## **Precautions**
 
-1. 12/24V and GND should be connected correctly.
-
-2. When using CAN communication, you need to see which CAN node is used as a terminal. If using a terminal, you must plug the jumper cap at the 120R position.
+- 12/24V and GND should be connected correctly.
+- When using CAN communication, you need to see which CAN node is used as a terminal. If using a terminal, you must plug the jumper cap at the 120R position.

@@ -229,7 +229,7 @@ https://z1996xm.github.io/BIGTREETECH/Software%20Installation.html
 
 ## **FAQs**
 
-1. <p>All unplugging and plugging operations should be performed under the condition of power off, including enabling the eMMC writing.<p>
-2. <p>Pay attention to the heat dissipation of CM4 and CB1. If the running application consumes too many system resources, the CM4/CB1 will get hot quite seriously.<p>
+- All unplugging and plugging operations should be performed under the condition of power off, including enabling the eMMC writing.
+- Pay attention to the heat dissipation of CM4 and CB1. If the running application consumes too many system resources, the CM4/CB1 will get hot quite seriously.
 
 ## **Product Purchase Link**
