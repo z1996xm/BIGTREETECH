@@ -943,9 +943,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          EZ2226
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="EZ2226.html" class="md-nav__link md-nav__link--active">
         EZ2226
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    Main Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface-diagram" class="md-nav__link">
+    Interface Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1131,6 +1190,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    Main Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dimensions" class="md-nav__link">
+    Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface-diagram" class="md-nav__link">
+    Interface Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-configuration" class="md-nav__link">
+    Software Configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1147,7 +1249,58 @@
 
 
 <h1 id="ez2226">EZ2226<a class="headerlink" href="#ez2226" title="Permanent link">&para;</a></h1>
-<p>It's empty now</p>
+<p><img src=img/EZ2226/EZ2226_Title.png width="600"/></p>
+<h2 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The TMC2226 is an ultra-silent motor driver IC for two phase stepper motors. TRINAMICs sophisticated StealthChop2 chopper ensures noiseless operation, maximum efficiency and best motor torque. Its fast current regulation and optional combination with SpreadCycle allow highly dynamic motion while adding. StallGuard for sensorless homing. The integrated power MOSFETs handle motor currents up to 2A RMS with protection and diagnostic features for robust and reliable operation. A simple to use UART interface opens up tuning and control options. Store application tuning to OTP memory. Industries’ most advanced STEP/DIR stepper motor driver familyupgrades designs to noiseless and most precise operation for cost-effective and highly competitive solutions.</p>
+<h2 id="main-features"><strong>Main Features</strong><a class="headerlink" href="#main-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>2-phase</strong> stepper motors up to 2.8A coil current (peak), 2A RMS</li>
+<li><strong>STEP/DIR Interface</strong> with 8, 16, 32 or 64 microstep pin setting</li>
+<li><strong>Smooth Running</strong> 256 microsteps by <strong>MicroPlyer™</strong> interpolation </li>
+<li><strong>StealthChop2™</strong> silent motor operation</li>
+<li><strong>SpreadCycle™</strong> highly dynamic motor control chopper</li>
+<li><strong>StallGuard4™</strong> load and stall detection for StealthChop</li>
+<li><strong>CoolStep™</strong> current control for energy savings up to 75%</li>
+<li><strong>Low RDSon, Low Heat-Up</strong> LS 170mΩ &amp; HS 170mΩ (typ. at 25°C)</li>
+<li><strong>Voltage Range</strong> 4.75… 29V DC</li>
+<li><strong>Low Power Standby</strong> to fit standby energy regulations</li>
+<li><strong>Internal Sense Resistor</strong> option (no sense resistors required)</li>
+<li><strong>Passive Braking</strong>, Freewheeling, and automatic power down</li>
+<li><strong>Single Wire UART</strong> <strong>&amp; OTP</strong> for advanced configuration options</li>
+<li><strong>Integrated Pulse Generator</strong> for standalone motion</li>
+<li><strong>Full Protection &amp; Diagnostics</strong></li>
+<li><strong>Thermally optimized HTSSOP package</strong> for optical inspection</li>
+</ul>
+<h2 id="dimensions"><strong>Dimensions</strong><a class="headerlink" href="#dimensions" title="Permanent link">&para;</a></h2>
+<p><img src=img/EZ2208/EZ2208_Diagram.png width="600"/></p>
+<h2 id="interface-diagram"><strong>Interface Diagram</strong><a class="headerlink" href="#interface-diagram" title="Permanent link">&para;</a></h2>
+<p>The direction of installing the EZ version driver to the new header is shown in the image below:</p>
+<p><img src=img/EZ5160Pro/EZ5160Pro_Interface3.png width="600"/></p>
+<table border="1">
+    <tr>
+    <td>J1</td><td>Function</td><td>J2</td><td>Function</td></tr>
+    <tr>
+    <td>1</td><td>(EN)Enable</td><td>1</td><td>(VM)Motor Supply Voltage</td></tr>
+    <tr>
+    <td>2</td><td>(SDI/CFG1)Data</td><td>2<td>(GND)GND</td></tr>
+    <tr>
+    <td>3</td><td>(SCK/CFG2)Clock</td><td>3</td><td>(B2) B Phase</td></tr>
+    <tr>
+    <td>4</td><td>(CSN/CFG3) Chip Select</td><td>4</td><td>(B1) B Phase</td></tr>
+    <tr>
+    <td>5</td><td>(SDO/CFG0) Data</td><td>5</td><td>(A1) A Phase</td></tr>
+    <tr>
+    <td>6</td><td>(DIAG) Locked-Rotor Detection</td><td>6</td><td>(A2) A Phase</td></tr>
+    <tr>
+    <td>7</td><td>(STEP) Pulse Input</td><td>7</td><td>(VIO) Logic Voltage</td></tr>
+    <tr>
+    <td>8</td><td>(DIR) Direction Input</td><td>8</td><td>(GND) GND</td></tr>
+    <tr>
+</table>
+
+<h2 id="software-configuration"><strong>Software Configuration</strong><a class="headerlink" href="#software-configuration" title="Permanent link">&para;</a></h2>
+<p>For details, please click: </p>
+<p><a href="https://z1996xm.github.io/BIGTREETECH/TMC2208.html#software-configuration">https://z1996xm.github.io/BIGTREETECH/TMC2208.html#software-configuration</a></p>
 
               
             </article>
