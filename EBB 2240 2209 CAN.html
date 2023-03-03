@@ -1611,7 +1611,7 @@
 <p>PT100/PT1000 2-wire connection diagram PT100/PT1000 4-wire connection diagram</p>
 <p><img src=img/EBB2240_2209/EBB2240_PT1000_Connection.png width="600"/></p>
 <h3 id="bltouch-wiring"><strong>BLTouch Wiring</strong><a class="headerlink" href="#bltouch-wiring" title="Permanent link">&para;</a></h3>
-<p><img src=img/EBB2240_2209/EBB2240_Bltouch.png width="600"/></p>
+<p><img src=img/EBB2240_2209/EBB2240_BLtouch.png width="600"/></p>
 <h3 id="proximity-switch-connection"><strong>Proximity Switch Connection</strong><a class="headerlink" href="#proximity-switch-connection" title="Permanent link">&para;</a></h3>
 <p><strong>1.The wiring diagram of proximity switch is shown as follows</strong></p>
 <p><img src=img/EBB2240_2209/EBB2240_Proximity.png width="600"/></p>
@@ -1717,18 +1717,17 @@
 <p>Refer to the instructions here to download CanBoot project : <a href="https://github.com/Arksine/CanBoot">https://github.com/Arksine/CanBoot</a></p>
 <p>3.1 Enter <code>cd~</code> to jump to the home directory, and enter <code>git clone</code> <a href="https://github.com/Arksine/CanBoot">https://github.com/Arksine/CanBoot</a> Download the CanBoot project, enter <code>cd CanBoot</code> to jump to the CanBoot directory.</p>
 <p>3.2 Enter <code>make menuconfig</code> and configure according to the following figure</p>
-<p><strong>Micro-controller Architecture (STMicroelectronics STM32)  ---&gt;</strong>
-<strong>Processor model (STM32G0B1)  ---&gt;</strong>
-<strong>Build CanBoot deployment application (Do not build)  ---&gt;</strong>
-<strong>Clock Reference (8 MHz crystal)  ---&gt;</strong>
-<strong>Communication interface (CAN bus (on PB0/PB1))  ---&gt;</strong>
-<strong>Application start offset (8KiB offset)  ---&gt;</strong>
-<strong>(1000000) CAN bus speed</strong>
-<strong>()  GPIO pins to set on bootloader entry</strong>
-<strong>[<em>] Support bootloader entry on rapid double click of reset button
-[ ] Enable bootloader entry on button (or gpio) state
-[</em>] Enable Status LED</strong>
-<strong>(PA13)  Status LED GPIO Pin</strong></p>
+<p><strong>Micro-controller Architecture (STMicroelectronics STM32)  ---&gt;</strong></p>
+<p><strong>Processor model (STM32G0B1)  ---&gt;</strong></p>
+<p><strong>Build CanBoot deployment application (Do not build)  ---&gt;</strong></p>
+<p><strong>Clock Reference (8 MHz crystal)  ---&gt;</strong></p>
+<p><strong>Communication interface (CAN bus (on PB0/PB1))  ---&gt;</strong></p>
+<p><strong>Application start offset (8KiB offset)  ---&gt;</strong></p>
+<p><strong>(1000000) CAN bus speed</strong></p>
+<p><strong>()  GPIO pins to set on bootloader entry</strong></p>
+<p><strong>[] Support bootloader entry on rapid double click of reset button</strong>[ ] Enable bootloader entry on button (or gpio) state</p>
+<p><strong>[] Enable Status LED</strong></p>
+<p><strong>(PA13)  Status LED GPIO Pin</strong></p>
 <p><img src=img/EBB2240_2209/EBB2240_Software12.png width="600"/></p>
 <p>3.3 Enter <code>make</code> to compile firmware. When <code>make</code> is completed, the required 'canboot. bin' firmware will be generated in the <code>home/pi/kliiper/out</code> folder of raspberry pie. It can be downloaded directly to the computer on the left side of ssh software.</p>
 <p><img src=img/EBB2240_2209/EBB2240_Software13.png width="600"/></p>
