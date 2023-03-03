@@ -1433,7 +1433,7 @@ hardware is powered on and wired correctly, then run the following command:</p>
 <p><code>Found canbus_uuid=0e0d81e4210c</code></p>
 <p>4.If Klipper operates normally and is connected to the device, then it won’t report canbus_uuid, which is also normal.</p>
 <h3 id="use-with-bigtreetech-rpi-can-hat-module"><strong>Use with BIGTREETECH RPI-CAN HAT Module</strong><a class="headerlink" href="#use-with-bigtreetech-rpi-can-hat-module" title="Permanent link">&para;</a></h3>
-<p><img src=img/EBB36CAN/072/EBB_072_CANBus2.png width="600"/></p>
+<p><img src=img/EBB36CAN/072/EBB_CANBus2.png width="600"/></p>
 <p>1.Type and run the following command  <code>sudo nano /boot/config.txt</code>, and added below contents on file config.txt. </p>
 <p><code>dtparam=spi=on</code></p>
 <p><code>dtoverlay=mcp2515-</code></p>
@@ -1443,7 +1443,7 @@ hardware is powered on and wired correctly, then run the following command:</p>
 <p><code>[ 8.680446] CAN device driver interface</code></p>
 <p><code>[ 8.697558] mcp251x spi0.0 can0: MCP2515 successfully initialized.</code></p>
 <p><code>[ 9.482332] IPv6: ADDRCONF(NETDEV_CHANGE): can0: link becomes ready</code></p>
-<p><img src=img/EBB36CAN/072/EBB_072_CANBus3.png width="600"/></p>
+<p><img src=img/EBB36CAN/072/EBB_CANBus3.png width="600"/></p>
 <p>3.Type  <code>sudo nano /etc/network/interfaces.d/can0</code> on the ssh terminal and runthe command.</p>
 <p><code>auto can0</code></p>
 <p><code>iface can0 can static</code></p>
