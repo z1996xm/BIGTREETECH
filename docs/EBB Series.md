@@ -178,7 +178,7 @@ hardware is powered on and wired correctly, then run the following command:
 
 ### **Use with BIGTREETECH RPI-CAN HAT Module**
 
-<img src=img/EBB36CAN/072/EBB_072_CANBus2.png width="600"/>
+<img src=img/EBB36CAN/072/EBB_CANBus2.png width="600"/>
 
 1.Type and run the following command  `sudo nano /boot/config.txt`, and added below contents on file config.txt. 
 
@@ -198,7 +198,7 @@ After modification, save `(Ctrl + S)`and exist`(Ctrl + X)`, type sudo reboot to 
 
  `[ 9.482332] IPv6: ADDRCONF(NETDEV_CHANGE): can0: link becomes ready`
 
-<img src=img/EBB36CAN/072/EBB_072_CANBus3.png width="600"/>
+<img src=img/EBB36CAN/072/EBB_CANBus3.png width="600"/>
 
 3.Type  `sudo nano /etc/network/interfaces.d/can0` on the ssh terminal and runthe command.
 
