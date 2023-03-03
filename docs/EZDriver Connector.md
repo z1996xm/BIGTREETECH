@@ -16,4 +16,3 @@ EZDriver Connector is the adapter board of the main board and EZdriver.
 
 [download](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/prints/calibrate_size.stl)
 
-[pdf](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/download/Octopus_V1.0.pdf)
