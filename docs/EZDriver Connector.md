@@ -13,5 +13,3 @@ EZDriver Connector is the adapter board of the main board and EZdriver.
 ## **PinOut**
 
 <img src=img/EZDriver_Connector/EZDriver_Connector_Pin.png width="600"/>
-
-test111
