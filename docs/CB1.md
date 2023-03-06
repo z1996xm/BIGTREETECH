@@ -31,7 +31,7 @@
 
 ## **Schematic**
 
-[BIGTREETECH_CB1_V22_220812_SCH](./doc/BIGTREETECH_CB1_V22_220812_SCH.pdf) 
+[BIGTREETECH_CB1_V22_220812_SCH](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/download/BIGTREETECH_CB1_V22_220812_SCH.pdf)
 
 ## **PinOut**
 
