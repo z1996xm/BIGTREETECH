@@ -18,7 +18,7 @@
 ## **Basic Parameters**
 
 - Product Dimension: 121 x 76mm
-- Mounting Size: 121 x 76mm, you can read more details here: **BTT HDMI5_V1.0_SIZE**
+- Mounting Size: 121 x 76mm. For further details please read: **Dimensions**
 - Power Input: DC 5V
 - Logic Voltage: DC 3.3V
 - Screen Size: 5-inch IPS Display

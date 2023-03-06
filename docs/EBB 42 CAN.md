@@ -25,7 +25,7 @@ BIGTREETECH EBB42 CAN V1.0/V1.1 is a nozzle adapter board specially designed for
 
 ## **Basic Parameters**
 
-- External Dimensions: 40mm x 40mm. For further details please read:**BIGTREETECH EBB42 CAN V1.0-SIZE.pdf/BIGTREETECH EBB42 CAN V1.0-SIZE.pdf**
+- External Dimensions: 40mm x 40mm. For further details please read: **Dimensions**
 - Installation Dimensions: Hole spacing 31mm x 31mm, M3 screw hole x 4
 - Microprocessor: ARM Cortex-M0 STM32F072C8T6 48MHz
 - Input Voltage: DC12V-DC24V 9A

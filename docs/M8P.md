@@ -26,8 +26,7 @@
 
 ## **Basic Parameters**
 
-- Product Size: 170 x 102.7mm, you can read more details here **BIGTREETECH MANTA M8P V1.0-SIZE-top.pdf**
-- Installation Size: Please read: **BIGTREETECH MANTA M8P V1.0-SIZE-top.pdf**
+- Product Size: 170 x 102.7mm.  For further details please read: **Dimensions**
 - Microprocessor: ARM Cortex-M0+ STM32G0B1VET6 64MHz
 - Drive Input Voltage: VIN（12V/24V） Or HV(≤56V) 
 - Motherboard Input Voltage: VIN=DC12V or DC24V

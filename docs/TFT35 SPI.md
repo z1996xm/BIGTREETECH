@@ -13,7 +13,7 @@ BIGTREETECH TFT35 SPI V2.1 is a medium-size and clear 3D printer display develop
 ## **Basic Parameters**
 
 - Product Dimensions: 98 x 56mm 
-- Mounting Dimensions: 98 x 56mm, you can read more details here: **BIGTREETECH TFT35 SPI V2.1_SIZE**
+- Mounting Dimensions: 98 x 56mm.  For further details please read: **Dimensions**
 - Input Voltage: DC 5V
 - Logic Voltage: DC 3.3V 
 - Screen Size: 3.5-inch

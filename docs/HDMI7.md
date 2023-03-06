@@ -19,7 +19,7 @@
 ## **Basic Parameters**
 
 - Product Dimension: 100 x 165mm
-- Mounting Size: 100 x 165mm, you can read more details here: BTT HDMI7_V1.0_SIZE
+- Mounting Size: 100 x 165mm. For further details please read: **Dimensions**
 - Power Input: DC 5V
 - Logic Voltage: DC 3.3V
 - Screen Size: 7-inch IPS Display
