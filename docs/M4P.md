@@ -98,7 +98,7 @@
 
 <img src=img/M4P/M4P_Interface_Diagram.png width="600" />
 
-## **PinOut**
+## **Pinout**
 
 <img src=img/M4P/M4P_Pin_Out.png width="600" />
 

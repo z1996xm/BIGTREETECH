@@ -68,7 +68,7 @@ BIGTREETECH MANTA M5P is a 32-bit motherboard developed by the 3D printing team 
 
 <img src=img/M5P/M5P_Diagram.png width="600" />
 
-## **PinOut**
+## **Pinout**
 
 <img src=img/M5P/M5P_Pinout.png width="600" />
 

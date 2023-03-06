@@ -54,7 +54,7 @@ Version:V1.1
 
 <img src=img/EBB42CAN/G0B1/EBB42_G0B1_Diagram.png width="600"/>
 
-## **PinOut**
+## **Pinout**
 
 Version:V1.0
 

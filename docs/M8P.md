@@ -55,7 +55,7 @@
 
 <img src=img/M8P/M8P_Dimensions2.png width="600" />
 
-## **PinOut**
+## **Pinout**
 
 <img src=img/M8P/M8P_Pin_Out.png width="600" />
 

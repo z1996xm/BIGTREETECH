@@ -29,7 +29,7 @@ BIGTREETECH TFT35 SPI V2.1 is a medium-size and clear 3D printer display develop
 
 <img src=img/TFT35_SPI/TFT35_SPI_Interface.png width="600" />
 
-## **Pin Out**
+## **Pinout**
 
 <img src=img/TFT35_SPI/TFT35_SPI_Pinout.png width="600" />
 
