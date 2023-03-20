@@ -2,24 +2,35 @@
 
 [<img src=img/CB1.png width="600" />](https://z1996xm.github.io/BIGTREETECH/CB1.html)
 
-
-
-<div class="mainPro-img">
-    <img class="qqq" src="img/CB1.png" alt="" style="width： 100%;" >
-</div>
-
-```perl
-.qqq{
-    transition: all 0.2s linear;
-}
-```
-
-```css
-.qqq:hover{
-    transform: scale(1.5);
-    transition: all 0.2s linear;
-}
-```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>图片放大</title>
+    </head>
+    <body>
+        <div style=" width:300px; height:300px;margin-left:auto; 
+        margin-right:auto; overflow:hidden; margin-top:100px;">
+        <img id="img" onmouseover="bigger()" onmouseout="smaller()" 
+        src="img/CB1.png" 
+        style="cursor:pointer;width:300px;height:300px; 
+        transition:all 1s ease-out 0s; perspective-origin:bottom;"/>
+        <script type="text/javascript">
+        var img = document.getElementById('img');
+        function bigger(){
+        img.style.width = '400px';
+        img.style.height = '400px';
+        img.style.marginTop = "-50px";
+        img.style.marginLeft = "-50px";
+        }
+        function smaller(){
+        img.style.width = '300px';
+        img.style.height = '300px';
+        img.style.marginTop = "0px";
+        img.style.marginLeft = "0px";
+        }
+        </script>
+    </body>
+</html>
 
 ## **Introduction**
 
