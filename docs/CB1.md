@@ -43,8 +43,7 @@
 * WiFi: 2.4G/802.11 b/g/n
 
 ## **Dimensions**
-
-<img src=img/CB1_Size.png width="600" />
+[<img src=img/CB1_Size.png width="600" />](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1_Size.png)
 
 ## **Schematic**
 
