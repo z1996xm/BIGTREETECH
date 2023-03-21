@@ -1,9 +1,16 @@
 # CB1
-<link href="docs/_biqumkdocs/css/zoom.css" rel="stylesheet">
+<!-- <link href="docs/_biqumkdocs/css/zoom.css" rel="stylesheet">
 <script src="room/zoom.js"></script>
 <script src="room/transition.js"></script>
-<img src="img/CB1.png" data-action="zoom">
+<img src="img/CB1.png" data-action="zoom"> -->
 
+
+<!-- <metaname="viewport" content="width=device-width, initial-scale=1">
+<scripttype="text/javascript">
+  $(".content img").addClass('img-responsive');
+</script> -->
+
+<img alt=CB1 src="img/CB1.png" class=”img-responsive”>
 
 [<img src=img/CB1.png width="600" />](https://z1996xm.github.io/BIGTREETECH/CB1.html)
 
