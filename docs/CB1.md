@@ -10,7 +10,11 @@
   $(".content img").addClass('img-responsive');
 </script> -->
 
-<img alt=CB1 src="img/CB1.png" class=”img-responsive”>
+<link rel="stylesheet" type="text/css" href="room/zoom.css">
+<script src="room/jquery.min.js"></script>
+<script src="room/zoom.min.js"></script>
+<script src="room/transition.js"></script>
+<img src="img/CB1.png" data-action="zoom">
 
 [<img src=img/CB1.png width="600" />](https://z1996xm.github.io/BIGTREETECH/CB1.html)
 
