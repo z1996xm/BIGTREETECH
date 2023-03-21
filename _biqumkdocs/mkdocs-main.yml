@@ -64,8 +64,8 @@ theme:
       - search.share
   language: en
 extra_css:
-  # - _biqumkdocs/css/extra.css
-  - _biqumkdocs/css/zoom.css
+  - _biqumkdocs/css/extra.css
+  # - _biqumkdocs/css/zoom.css
 # Site usage statistics
 # extra:
 #   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#site-search-tracking
