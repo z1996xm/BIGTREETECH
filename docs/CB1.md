@@ -1,36 +1,12 @@
 # CB1
+<link href="docs/_biqumkdocs/css/zoom.css" rel="stylesheet">
+<script src="room/zoom.js"></script>
+<script src="room/transition.js"></script>
+<img src="img/CB1.png" data-action="zoom">
+
 
 [<img src=img/CB1.png width="600" />](https://z1996xm.github.io/BIGTREETECH/CB1.html)
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>图片放大</title>
-    </head>
-    <body>
-        <div style=" width:300px; height:300px;margin-left:auto; 
-        margin-right:auto; overflow:hidden; margin-top:100px;">
-        <img id="img" onmouseover="bigger()" onmouseout="smaller()" 
-        src="img/CB1.png" 
-        style="cursor:pointer;width:300px;height:300px; 
-        transition:all 1s ease-out 0s; perspective-origin:bottom;"/>
-        <script type="text/javascript">
-        var img = document.getElementById('img');
-        function bigger(){
-        img.style.width = '400px';
-        img.style.height = '400px';
-        img.style.marginTop = "-50px";
-        img.style.marginLeft = "-50px";
-        }
-        function smaller(){
-        img.style.width = '300px';
-        img.style.height = '300px';
-        img.style.marginTop = "0px";
-        img.style.marginLeft = "0px";
-        }
-        </script>
-    </body>
-</html>
 
 ## **Introduction**
 
