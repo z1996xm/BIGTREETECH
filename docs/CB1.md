@@ -10,14 +10,15 @@
   $(".content img").addClass('img-responsive');
 </script> -->
 
-<link rel="stylesheet" type="text/css" href="room/zoom.css">
+<!-- <link rel="stylesheet" type="text/css" href="room/zoom.css">
 <script src="room/jquery.min.js"></script>
 <script src="room/zoom.min.js"></script>
 <script src="room/transition.js"></script>
-<img src="img/CB1.png" data-action="zoom">
+<img src="img/CB1.png" data-action="zoom"> -->
 
 [<img src=img/CB1.png width="600" />](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png?_blank )
 
+[<img src=img/CB1.png width="600" />](https://raw.githubusercontent.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png?_blank )
 
 <a href= (https://raw.githubusercontent.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png) target ="_blank"><img src=img/CB1.png/></a>
 
