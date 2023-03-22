@@ -20,6 +20,9 @@
 
 <a href="[图片地址](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png)" target="_blank"><img src=img/CB1.png/></a>
 
+<a href="https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png"><img src=img/CB1.png/></a>
+
+
 ## **Introduction**
 
 <p>The BIGTREETECH CB1 is launched to provide a great solution to the insane shortage of Raspberry Pi CM4. <br>It outputs signals to the motherboard via the fast and convenient two 100 pins micro BTB connection header. Moreover, it is onboard 2.4G WiFi.<br></p>
