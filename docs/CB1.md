@@ -18,9 +18,10 @@
 
 [<img src=img/CB1.png width="600" />](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png)
 
-<a href="[图片地址](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png)" target="_blank"><img src=img/CB1.png/></a>
+<a href="[图片地址](https://raw.githubusercontent.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png)" target="_blank"><img src=img/CB1.png/></a>
 
-<a href="https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png"><img src=img/CB1.png/></a>
+<a href="https://raw.githubusercontent.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png" target="_blank"><img src=img/CB1.png/></a>
+
 
 
 ## **Introduction**
