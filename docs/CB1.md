@@ -20,7 +20,7 @@
 
 
 <html>
-<a href="https://raw.githubusercontent.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png" target="_blank"><img src=img/CB1.png/></a>
+<a href= https://raw.githubusercontent.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png target ="_blank"><img src=img/CB1.png/></a>
 </html>
 
 
