@@ -20,7 +20,7 @@
 
 [<img src=img/CB1.png width="600" />](https://raw.githubusercontent.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png?_blank )
  -->
-<img src=img/CB1.png width="600" data-url="raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png" onclick="openModal(this)" />
+<img src=img/CB1.png width="600" onclick="openModal('raw.githack.com/z1996xm/BIGTREETECH/main/docs/img/CB1.png')" />
 <div id="modalBox" class="ns-modal">
     <div id="modalImg" class="ns-modal-img"></div>
 </div>
@@ -29,8 +29,7 @@
 .ns-modal-img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 80%;height: 80%;background: #fff;background-size: contain;background-repeat: no-repeat;background-position: center;}
 </style>
 <script>
-function openModal(e) {
-    var url = e.getAttribute("data-url");
+function openModal(url) {
     var modal = document.getElementById('modalBox');
     var modalImg = document.getElementById('modalImg');
     modal.style.display = 'block';
