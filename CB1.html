@@ -1455,11 +1455,11 @@
 </style>
 <script>
 function openModal(e) {
-    console.log(e);
+    var url = e.getAttribute("data-url");
     var modal = document.getElementById('modalBox');
     var modalImg = document.getElementById('modalImg');
     modal.style.display = 'block';
-    modalImg.style.backgroundImage = 'url(' + url + ')';
+    modalImg.style.backgroundImage = 'url(https://' + url + ')';
     modal.onclick = function() {
         modal.style.display = 'none';
     }
