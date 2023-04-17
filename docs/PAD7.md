@@ -8,19 +8,20 @@ The BIGTREETECH Pad 7, a product of Shenzhen Big Tree Technology Co., Ltd., is a
 
 ## **Main Features**
 
-The 7-inch IPS touch screen offers a wider field of view, high level of detail, and a comfortable user experience
+- The 7-inch IPS touch screen offers a wider field of view, high level of detail, and a comfortable user experience
 
-Features a built-in speaker, which allows you to adjust the volume with the volume buttons
+- Features a built-in speaker, which allows you to adjust the volume with the volume buttons
 
-Having a 3.5mm headphone jack, which enables you to connect headphones or external speakers
+- Having a 3.5mm headphone jack, which enables you to connect headphones or external speakers
 
-The touch experience is enhanced with vibration feedback
+- The touch experience is enhanced with vibration feedback
 
-The built-in light sensor adjusts the backlight brightness automatically based on the available light
+- The built-in light sensor adjusts the backlight brightness automatically based on the available light
 
-Incorporates the GT911 high-performance touch chip, which supports 5-point touch
+- Incorporates the GT911 high-performance touch chip, which supports 5-point touch
 
-The bracket attaches securely to the back of the Pad 7 during storage and folding, thanks to the built-in magnets
+- The bracket attaches securely to the back of the Pad 7 during storage and folding, thanks to the built-in magnets
+
 
 ## **Basic Parameters**
 
@@ -60,7 +61,7 @@ The bracket attaches securely to the back of the Pad 7 during storage and foldin
 - CAN: CAN peripheral interface (MCP2515 SPI-CAN).
 - SPI: SPI peripheral interface (can connect to ADXL345 accelerometer module).
 
-<font  color="red">***Note: It is not possible to use the CAN interface and the ADXL345 accelerometer SPI interface simultaneously due to the MCP2515 SPI to CAN conversion.***</font>
+<font  color="red">**Note: It is not possible to use the CAN interface and the ADXL345 accelerometer SPI interface simultaneously due to the MCP2515 SPI to CAN conversion.**</font>
 
 ## **Hardware assembly**
 
@@ -74,19 +75,19 @@ The bracket attaches securely to the back of the Pad 7 during storage and foldin
 
 2.Use a 1.5 mm hex key to remove the two M2.5 x 3 flat head countersunk screws in a counterclockwise direction.
 
-<font  color="red">**&nbsp;Slide the bottom cover upwards using your fingers. **</font>
+<font  color="red">**Slide the bottom cover upwards using your fingers. **</font>
 
 <img src=img/PAD7/PAD7_CB1_1.png width="600" />
 
 3.Use a 2.0 mm hex key to remove the four M2.5 x 10 socket head cap screws in a counterclockwise direction.
 
-<font  color="red">**&nbsp;&nbsp;Remove the heatsink. **</font>
+<font  color="red">**Remove the heatsink. **</font>
 
 <img src=img/PAD7/PAD7_CB1_2.png width="600" />
 
 4.Use tweezers to gently lift the antenna connector highlighted in 1 to disconnect it from CB1.
 
-<font  color="red">**&nbsp;&nbsp;Then remove CB1. **</font>
+<font  color="red">**Then remove CB1. **</font>
 
 <img src=img/PAD7/PAD7_CB1_3.png width="600" />
 
@@ -94,13 +95,13 @@ The bracket attaches securely to the back of the Pad 7 during storage and foldin
 
 &nbsp;&nbsp;Press down on the CM4 until it is firmly seated in place. Please note that CM4 should be installed in the direction shown in the figure below.
 
-<font  color="red">**&nbsp;&nbsp;Plug the antenna connector into the port highlighted in 2. **</font>
+<font  color="red">**Plug the antenna connector into the port highlighted in 2. **</font>
 
 <img src=img/PAD7/PAD7_CB1_4.png width="600" />
 
 6.Cover the heatsink back onto the CM4.
 
-<font  color="red">**&nbsp;&nbsp;Use a 2.0mm hex key to tighten the four M2.5 x 10 socket head cap screws in a clockwise direction. **</font>
+<font  color="red">**Use a 2.0mm hex key to tighten the four M2.5 x 10 socket head cap screws in a clockwise direction. **</font>
 
 <img src=img/PAD7/PAD7_CB1_5.png width="600" />
 
@@ -110,7 +111,7 @@ The bracket attaches securely to the back of the Pad 7 during storage and foldin
 
 8.Cover the bottom cover back onto the Pad 7.
 
-<font  color="red">**&nbsp;&nbsp;Use a 1.5 mm hex key to fix the bottom cover in place using the two M2.5 x 3 flat head countersunk screws.**</font>
+<font  color="red">**Use a 1.5 mm hex key to fix the bottom cover in place using the two M2.5 x 3 flat head countersunk screws.**</font>
 
 <img src=img/PAD7/PAD7_CB1_7.png width="600" />
 
