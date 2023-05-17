@@ -18,7 +18,7 @@ KNOMI is a mini round screen designed specififically for Klipper running 3D prin
 
 <font  color="red">**For information about KNOMI structure, please click**</font> :
 
-[KNOMI USER GUIDE.PDF](https://raw.githack.com/bigtreetech/docs/master/docs/download/KNOMI USER GUIDE.pdf)
+[KNOMI USER GUIDE.PDF](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/download/KNOMI USER GUIDE.pdf)
 
 ## **Customize UI**
 
