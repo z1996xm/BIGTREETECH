@@ -28,7 +28,7 @@ KNOMI is a mini round screen designed specififically for Klipper running 3D prin
 
 <img src=img/KNOMI/KNOMI_GIF.png width="600" />
 
-<font  color="red">**For information about KNOMI GIF, please click**</font> :[KNOMI GIF](https://raw.githack.com/bigtreetech/docs/master/docs/download/KNOMI_GIF.zip)
+<font  color="red">**For information about KNOMI GIF, please click**</font> :[KNOMI GIF](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/download/KNOMI_GIF.zip)
 
 2、Change your GIF to the same name and pixel as the GIF you want to replace.
 
