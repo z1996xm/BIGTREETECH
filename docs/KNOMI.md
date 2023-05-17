@@ -168,7 +168,7 @@ KNOMI user interface employs visual elements during various stages of printer op
 
 <img src=img/KNOMI/KNOMI_Tip5.png width="600" />
 
-<font  color="red">**After selecting CF_RAW_CHROMA, it will display as CF_RAW, please ignore this issue**</font> 
+<font  color="red">**Note:After selecting CF_RAW_CHROMA, it will display as CF_RAW, please ignore this issue**</font> 
 
 8、The Output format select C array,and click on Convert.
 
