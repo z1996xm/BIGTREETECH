@@ -91,6 +91,7 @@ Due to device compatibility issues, KNOMI cannot confifigure networks with WPA P
 <img src=img/KNOMI/KNOMI_IN9.png width="600" />
 
 <font  color="red">**KNOMI DISCONNECTED**</font> 
+
 If KNOMI is displaying this interface, it means that KNOMI is disconnected from the printer. 
 This may be caused by the following problems:
 
