@@ -163,6 +163,8 @@ KNOMI user interface employs visual elements during various stages of printer op
 
 2、Click to download [KNOMI GIF](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/download/KNOMI_GIF.zip) . Must change your GIF to the same name and pixel as the GIF what you want to replace. You can click on https://www.gifgit.com/gif/resize to modify your GIF pixels and right-click to view the GIF's.
 
+For more GIF pixels, please click onhttps://z1996xm.github.io/BIGTREETECH/KNOMI.html#Picture-Pixels
+
 <img src=img/KNOMI/KNOMI_Tip.png width="600" />
 
 3、Click https://github.com/bigtreetech/KNOMI to download knomi project . Using VSCODE https://marlinfw.org/docs/...mio_vscode.html to open the project and enter lvgl_ Gif.cpp file.
@@ -202,3 +204,33 @@ KNOMI user interface employs visual elements during various stages of printer op
 11、After the compilation is completed, connect knomi to the computer through TYPE-C, click on download, and once the download is completed, power on knomi again.
 
 <img src=img/KNOMI/KNOMI_Tip9.png width="600" />
+
+### **Picture Pixels**
+
+<img src=img/KNOMI/KNOMI_gif1.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif2.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif3.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif4.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif5.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif6.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif7.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif8.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif9.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif10.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif11.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif12.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif13.png width="600" />
+
+<img src=img/KNOMI/KNOMI_gif14.png width="600" />
