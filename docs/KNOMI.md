@@ -161,7 +161,7 @@ KNOMI user interface employs visual elements during various stages of printer op
 
 <img src=img/KNOMI/KNOMI_GIF.png width="600" />
 
-2、Click to download [KNOMI GIF](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/download/KNOMI_GIF.zip) . Must change your GIF to the same name and pixel as the GIF what you want to replace. You can click on <a href="https://www.gifgit.com/gif/resize">Link (English)</a> or <a href="https://www.gif.cn/">Link (Chinese)</a> to modify your GIF pixels and right-click to view the GIF's.
+2、Click to download [KNOMI GIF](https://raw.githack.com/z1996xm/BIGTREETECH/main/docs/download/KNOMI_GIF.zip) . Must change your GIF to the same name and pixel as the GIF what you want to replace. You can click on [Link (English)](https://www.gifgit.com/gif/resize)or  [Link (Chinese)](https://www.gif.cn/) to modify your GIF pixels and right-click to view the GIF's.
 
 For more GIF pixels, please click onhttps://z1996xm.github.io/BIGTREETECH/KNOMI.html#Picture-Pixels
 
