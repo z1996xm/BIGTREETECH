@@ -251,8 +251,11 @@ https://biqu3d.com/pages/submit-a-ticket
 
 **Navigation:**
 
-BIQU Official Website                            				http://biqu3d.com
-BIGTREETECH Official Website            				 http://bigtree-tech.com
-Online Store                                           				 https://biqu.equipment
-Community                                            				  https://community.biqu3d.com
+BIQU Official Website：                            				http://biqu3d.com
+
+BIGTREETECH Official Website：            				 http://bigtree-tech.com
+
+Online Store：                                           				 https://biqu.equipment
+
+Community：                                            				  https://community.biqu3d.com
 
