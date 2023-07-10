@@ -192,7 +192,7 @@ Open **platformio.ini** file and change **default_envs** to **STM32H723Zx_btt**.
 
 \#define MOTHERBOARD BOARD_BTT_OCTOPUS_MAX_EZ
 
-#define SERIAL_PORT 3      (enable TFT serial port)
+\#define SERIAL_PORT 3      (enable TFT serial port)
 
 \#define BAUDRATE 115200   (set baudrate to the same as the communication device)
 
@@ -230,7 +230,7 @@ When using 100K NTC, pull-up resistance is 4.7K, when using PT1000, pull-up resi
 
 \#define TEMP_SENSOR_1 1
 
-#define TEMP_SENSOR_BED 1
+\#define TEMP_SENSOR_BED 1
 
 <img src=img/Octopus_MAX_EZ/Octopus_MAX_EZ_Software6.png width="600"/>
 
