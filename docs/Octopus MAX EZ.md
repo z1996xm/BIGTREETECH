@@ -189,10 +189,15 @@ Open **platformio.ini** file and change **default_envs** to **STM32H723Zx_btt**.
 **Configure Motherboard and Serial Port**
 
 **Set MOTHERBOARD to BOARD_BTT_OCTOPUS_MAX_EZ**
+
 \#define MOTHERBOARD BOARD_BTT_OCTOPUS_MAX_EZ
-\#define SERIAL_PORT 3      (enable TFT serial port)
+
+#define SERIAL_PORT 3      (enable TFT serial port)
+
 \#define BAUDRATE 115200   (set baudrate to the same as the communication device)
+
 \#define SERIAL_PORT_2 -1  (enable USB serial port)
+
 \#define SERIAL_PORT_3 7   (enable WIFI serial port) 
 
 <img src=img/Octopus_MAX_EZ/Octopus_MAX_EZ_Software2.png width="600"/>
@@ -219,11 +224,13 @@ When using SPI mode, you need to enable TMC_USE_SW_SPI in Configuration_adv.h
 
 #### 100K NTC or PT1000
 
-When using 100K NTC, pull-up resistance is 4.7K, when using PT1000, pull-up resistance is 2.2K, set sensor type to 1 for 100K NTC +4.7K pull-up resistance, 1022 for PT1000 + 2.2K pull-up resistance. (Note: this method has a much lower accuracy than the MAX31865 in reading temperature.)
+When using 100K NTC, pull-up resistance is 4.7K, when using PT1000, pull-up resistance is 2.2K, set sensor type to 1 for 100K NTC +4.7K pull-up resistance, 1022 for PT1000 + 2.2K pull-up resistance.**<font  color="red"> (Note: this method has a much lower accuracy than the MAX31865 in reading temperature.)</font>**
 
 \#define TEMP_SENSOR_0 1
+
 \#define TEMP_SENSOR_1 1
-\#define TEMP_SENSOR_BED 1
+
+#define TEMP_SENSOR_BED 1
 
 <img src=img/Octopus_MAX_EZ/Octopus_MAX_EZ_Software6.png width="600"/>
 
@@ -309,7 +316,7 @@ There are two methods for power loss recovery
 
 \#define NEOPIXEL_PIXELS 30 // number of LEDs
 
-#define NEOPIXEL_STARTUP_TEST // the light will show red green and blue sequentially to self-test
+\#define NEOPIXEL_STARTUP_TEST // the light will show red green and blue sequentially to self-test
 
 If you are using displays like LCD2004, 12864, mini12864, etc., you can also control RGB from your display directly. 
 
