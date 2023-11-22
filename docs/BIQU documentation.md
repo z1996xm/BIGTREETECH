@@ -1,5 +1,4 @@
-# BIQU Series
-
+# BIQU
 
 
 
