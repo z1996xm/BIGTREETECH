@@ -14,13 +14,53 @@ site_dir: '../../site/'
 
 # Custom markdown dialect settings
 markdown_extensions:
-  - toc:
-      permalink: True
-      toc_depth: 6
+  - abbr
+  - admonition
   - attr_list
-  - mdx_partial_gfm
-  - mdx_truly_sane_lists
-  - mdx_breakless_lists
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 plugins:
   search:
     lang: en
@@ -33,6 +73,7 @@ plugins:
 # Website layout configuration (using mkdocs-material theme)
 theme:
   name: material
+  custom_dir: material/overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -54,14 +95,32 @@ theme:
     repo: fontawesome/brands/github
     alternate: material/web
   features:
-      #- navigation.tabs
-      #- navigation.expand
-      - navigation.top
-      # if enabled, the TOC doesn't work for some pages
-      # - toc.integrate
-      - search.suggest
-      - search.highlight
-      - search.share
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   language: en
 extra_css:
   - _biqumkdocs/css/extra.css
