@@ -203,10 +203,10 @@ nav:
         - Octopus Pro: Octopus Pro.md
         - Octopus MAX EZ: Octopus MAX EZ.md
     - IOT:
-      - CB1: CB1.md
-      - PI4B: PI4B.md
-      - PAD7: PAD7.md
-      - KNOMI: KNOMI.md 
+      - CB1.md
+      - PI4B.md
+      - PAD7.md
+      - KNOMI.md 
   - BIQU: 
     - Extruders: Extruders.md
     - Hotends: Hotends.md
