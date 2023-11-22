@@ -81,6 +81,7 @@ extra_css:
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
+  - BTT documentation.md
   - Motherboards:
     - SKR Series:
       - SKR MINI E3.md
@@ -133,5 +134,15 @@ nav:
     - Software Installation.md
     - EBB Series.md
   - BIQU documentation.md
+  - Extruders:
+    - Extruders.md
+  - Hotends:
+    - Hotends.md
+  - Sensor modules:
+    - Sensor modules.md
+  - Printers:
+    - Printers.md
+  - Panda series:
+    - Panda series.md
 
 
