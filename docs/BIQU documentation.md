@@ -1,4 +1,4 @@
-# **BIQU documentation**
+# BIQU Series
 
 
 
