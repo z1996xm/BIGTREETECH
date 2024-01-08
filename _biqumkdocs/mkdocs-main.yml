@@ -212,6 +212,7 @@ nav:
       - PI4B.md
       - PAD7.md
       - KNOMI.md 
+      - Octopus.md
   - BIQU: 
     - Extruders: Extruders.md
     - Hotends: Hotends.md
