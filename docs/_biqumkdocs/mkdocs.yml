@@ -201,7 +201,7 @@ extra_css:
 nav:
   - Home: https://z1996xm.github.io/BIGTREETECH
   - BTT: 
-    - Motherboards: Motherboards.md
+    - Motherboards:
       - SKR Series: SKR MINI E3.md
       - Octopus Series:
         - Octopus: Octopus.md
