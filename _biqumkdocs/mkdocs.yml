@@ -119,10 +119,10 @@ theme:
 extra_css:
   - _biqumkdocs/css/extra.css
   - _biqumkdocs/css/zoom.css
-extra:
-  social:
-    - tpye: 'github'
-      link: 'https://github.com/z1996xm/BIGTREETECH'
+# extra:
+#   social:
+#     - tpye: 'github'
+#       link: 'https://github.com/z1996xm/BIGTREETECH'
 # Site usage statistics
 # extra:
 #   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#site-search-tracking
