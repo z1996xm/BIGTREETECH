@@ -222,6 +222,8 @@ nav:
 
 copyright: <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备xxxxxxxx号</a>
 
+extra:
+  generator: false
 # extra:
 #   status:
 #     new: Recently added
