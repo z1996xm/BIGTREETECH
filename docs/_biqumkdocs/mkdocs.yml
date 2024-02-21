@@ -49,6 +49,24 @@ plugins:
       on_page_markdown: "docs._biqumkdocs.mkdocs_hooks:transform"
   exclude:
     glob: "README.md"
+  i18n: # 多语言插件
+        docs_structure: suffix # 抄来的，不太懂
+        fallback_to_default: true # 抄来的，不太懂
+        reconfigure_material: true # 抄来的，不太懂
+        reconfigure_search: true # 抄来的，不太懂
+        languages: # 多语言配置 - 需要小心一点
+          - locale: en
+            default: true # 默认语言
+            name: English
+            build: true # 是否构建
+            # site_name: Infinity
+          - locale: zh
+            name: 简体中文
+            build: true
+            nav_translations: # 导航栏翻译，不可以有缩进
+              HOME: 首页
+              BTT:  BTT
+              BIQU:  BIQU
 
 # Website layout configuration (using mkdocs-material theme)
 theme:
