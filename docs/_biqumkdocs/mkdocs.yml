@@ -140,7 +140,7 @@ nav:
     - HDMI5:
       - HDMI5: HDMI5.md
   - BIQU: 
-    - HDMI7: Extruders.md
+    - HDMI7:
       - HDMI7: HDMI7.md
 
 copyright: <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备xxxxxxxx号</a>
