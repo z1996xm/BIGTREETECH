@@ -98,6 +98,9 @@ plugins:
           name: 简体中文
           build: true
           nav_translations: # 导航栏翻译，不可以有缩进
+            HOME: 首页
+            BTT:  BTT
+            BIQU:  BIQU
 
 # Website layout configuration (using mkdocs-material theme)
 theme:
