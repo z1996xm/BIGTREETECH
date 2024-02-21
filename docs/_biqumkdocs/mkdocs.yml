@@ -68,20 +68,20 @@ markdown_extensions:
 #         BIQU:  BIQU
 
 plugins:
-  - tags # 标签功能插件
-  - blog # 博客功能插件
-  - rss: # rss订阅插件 - 不太懂是干嘛的目前
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags 
+  # - tags # 标签功能插件
+  # - blog # 博客功能插件
+  # - rss: # rss订阅插件 - 不太懂是干嘛的目前
+  #     match_path: blog/posts/.* 
+  #     date_from_meta:
+  #       as_creation: date
+  #     categories:
+  #       - categories
+  #       - tags 
   # - social # 目前我开启会报错，还没研究透 
-  - search: # 搜索插件
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])' # 分隔符
-  - minify: # 压缩插件
-      minify_html: true
+  # - search: # 搜索插件
+  #     separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])' # 分隔符
+  # - minify: # 压缩插件
+  #     minify_html: true
   # - privacy # 隐私插件
   - i18n: # 多语言插件
       docs_structure: suffix # 抄来的，不太懂
