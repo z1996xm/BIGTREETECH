@@ -133,92 +133,15 @@ extra_css:
 #       lang: en
     # Alternate language links automatically added here
 
-# Navigation hierarchy (this should mimic the layout of Overview.md)
-# nav:
-#   - BTT documentation.md
-#   - Motherboards:
-#     - SKR Series:
-#       - SKR MINI E3.md
-#     - Octopus Series:
-#       - Octopus.md
-#       - Octopus Pro.md
-#       - Octopus MAX EZ.md
-#     - Manta Series:
-#       - M4P.md
-#       - M5P.md
-#       - M8P.md
-#     - EBB Series:
-#       - EBB 36 CAN.md
-#       - EBB 42 CAN.md
-#       - EBB 2240 2209 CAN.md
-#       - EBB 2240 2209 CAN RP2024.md
-#       - U2C.md
-#   - IOT:
-#     - CB1.md
-#     - PI4B.md
-#     - PAD7.md
-#     - KNOMI.md
-#   - Displays:
-#     - TFT43-DIP.md
-#     - TFT35 E3.md
-#     - TFT35.md
-#     - TFT24.md
-#     - TFT35 SPI.md
-#     - HDMI5.md
-#     - HDMI7.md
-#   - Motor Drives:
-#     - TMC Series:
-#       - TMC2130.md
-#       - TMC5160.md
-#       - TMC2209.md
-#       - TMC2208.md
-#       - Tutorials.md
-#     - EZ Series:
-#       - EZ2130.md
-#       - EZ2208.md
-#       - EZ2225.md
-#       - EZ2226.md
-#       - EZ5160 Pro.md
-#       - EZDriver Connector.md
-#       - EZ2209.md
-#       - EZ2240.md
-#       - EZ31865.md
-#   - Software Tutorials:
-#     - Software Configuration.md
-#     - Software Installation.md
-#     - EBB Series.md
-#   - BIQU documentation.md
-#   - Extruders:
-#     - Extruders.md
-#   - Hotends:
-#     - Hotends.md
-#   - Sensor modules:
-#     - Sensor modules.md
-#   - Printers:
-#     - Printers.md
-#   - Panda series:
-#     - Panda series.md
 
 nav:
   - Home: https://z1996xm.github.io/BIGTREETECH
   - BTT: 
-    - Motherboards:
-      - SKR Series: SKR MINI E3.md
-      - Octopus Series:
-        - Octopus: Octopus.md
-        - Octopus Pro: Octopus Pro.md
-        - Octopus MAX EZ: Octopus MAX EZ.md
-    - IOT:
-      - CB1.md
-      - PI4B.md
-      - PAD7.md
-      - KNOMI.md 
-      - Octopus.md
+    - HDMI5:
+      - HDMI5: HDMI5.md
   - BIQU: 
-    - Extruders: Extruders.md
-    - Hotends: Hotends.md
-    - Sensor modules: Sensor modules.md
-  - ABOUT: About.md
+    - HDMI7: Extruders.md
+      - HDMI7: HDMI7.md
 
 copyright: <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备xxxxxxxx号</a>
 
