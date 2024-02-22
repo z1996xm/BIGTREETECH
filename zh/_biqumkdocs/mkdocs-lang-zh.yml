@@ -43,7 +43,7 @@ markdown_extensions:
   - meta # 支持Markdown文件上方自定义标题标签等
 plugins:
   search:
-    lang: en
+    lang: ja
   mkdocs-simple-hooks:
     hooks:
       on_page_markdown: "docs._biqumkdocs.mkdocs_hooks:transform"
@@ -115,7 +115,7 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
-  language: en
+  language: zh
 extra_css:
   - _biqumkdocs/css/extra.css
   - _biqumkdocs/css/zoom.css
@@ -131,6 +131,9 @@ extra:
     - name: English
       link: /
       lang: en
+    - name: 简体中文
+      link: /zh/
+      lang: zh
     # Alternate language links automatically added here
 
 
